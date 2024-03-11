@@ -1,0 +1,38 @@
+// Add typography from https://simplecss.org/
+
+h1, h2, h3, h4, h5, h6 {
+	color: $color--primary;
+}
+
+h1 {}
+
+h2 {
+	font-family: $brand--font-bold;
+	color: $color--primary;
+	font-size: 4rem;
+}
+
+h3 {
+	font-family: $brand--font-bold;
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 0.9rem;
+}
+
+p {
+	@include pragmaticaBook;
+	margin-bottom: $margin--general;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.ut--uc {
+	@include headingUC;
+}
+
+.ut--secondary {
+	color: $color--secondary;
+}

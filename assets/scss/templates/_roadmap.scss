@@ -1,0 +1,119 @@
+.org--content-roadmap {
+	margin: $margin--large 0;
+	padding: $padding--large 0;
+	& .org--rm--item {
+		padding: $padding--small;
+		padding-left: 30px;
+		border-left: 5px solid $color--primary;
+		& .mol--gs--inner { 
+			padding: $padding--general;
+			padding-top: $padding--large;
+			padding-left: $padding--large;
+			padding-right: $padding--large;
+			background: $color--white;
+			box-shadow: $box--shadow-light;
+			position: relative;
+			& .atm--rm-marker {
+				display: block;
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				top: 50%;
+				left: -20px;
+				transform: translate(-50%, -50%);
+				z-index: 15;
+			}
+			& .atm--rm-status {
+				display: block;
+				position: absolute; 
+				margin: 7px;
+				width: 50px;
+				height: 50px;
+				top: 0;
+				right: 0;
+				z-index: 20;
+				& i {
+					color: $color--secondary;
+				}
+			}
+			& h2 {
+				font-size: 3rem;
+			}
+			& p {
+				font-family: $brand--font-reg;
+				font-size: 1.2rem;
+				line-height: 1.4;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			& a {
+				color: $color--secondary;
+				font-family: $brand--font-semi;
+				&:hover {
+					color: $color--primary;
+				}
+			}
+			& ul {
+				margin-top: $margin--small;
+				margin-bottom: 0;
+				padding-left: 0.8rem;
+				list-style-type: none;
+				& li {
+					font-family: $brand--font-semi;
+					font-size: 1.1rem;
+					margin-bottom: 4px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					& i {
+						margin-right: 4px;
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+@media (min-width: $media-desktop) {
+	.org--content-roadmap {
+		& .org--rm--item {
+			& .mol--gs--inner { 
+				padding-right: $padding--xxlarge;
+			}
+		}
+	}
+}
+
+// Live Dot
+.pulsatingDot {
+	animation: pulseDot 1.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.3s infinite;
+	background-color: $color--live;
+	border-radius: 50%;
+	box-sizing: border-box;
+	height: 20px;
+	width: 20px;
+}
+
+.pulsatingDot:before {
+	animation: pulseRing 1.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+	background-color: $color--live;
+	border-radius: 50px;
+	content: '';
+	display: block;
+	height: 300%;
+	left: -100%;
+	position: relative;
+	top: -100%;
+	width: 300%;
+}  
+
+@keyframes pulseRing {
+	0% { transform: scale(.4); }
+	80%, 100% { opacity: 0; }
+}
+
+@keyframes pulseDot {
+	0%, 100% { transform: scale(1); }
+	50% { transform: scale(1.05); }
+}

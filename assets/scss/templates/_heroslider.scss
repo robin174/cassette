@@ -1,0 +1,37 @@
+.org--slider-hero {
+	& .mol--slider-content {
+		padding: $padding--xlarge;
+		height: 500px;
+		& h4 {
+			margin-bottom: $margin--general;
+		}
+		& h1 { 
+			font-size: 6rem;
+		}
+		& p {
+
+		}
+		.mol-slider-content-buttons { 
+			margin-top: $margin--large;
+		}
+	}
+}
+
+.splide__arrow {
+	opacity: 1;
+	border-radius: unset;
+	background-color: rgba($color--primary, 0.1);
+	color: $color--secondary;
+	cursor: pointer;
+	&:hover {
+		background-color: rgba($color--primary, 0.2);
+	}
+}
+
+.splide__pagination__page {
+	background: $color--primary;
+	opacity: 1;
+	&.is-active {
+		background: $color--secondary;
+	}
+}

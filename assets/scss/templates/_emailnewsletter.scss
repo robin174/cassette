@@ -1,0 +1,18 @@
+.org--content-newsletter {
+	margin-top: $margin--large;
+	padding: 0;
+	text-align: center;
+	color: $color--white;
+	& .org--content-newsletter-inner {
+		margin: 0;
+		padding: $padding--large 0;
+	}
+	& h3 {
+		color: $color--white;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+	& p {
+		font-size: 1.3rem;
+	}
+}

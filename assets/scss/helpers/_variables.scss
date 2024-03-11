@@ -1,0 +1,174 @@
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$color--primary: #212222; // To be used with black
+$color--secondary: #ff3390;
+$color--tertiary: #798d91; //To check
+$color--white: #fff; // white
+$color--black: #000; // black
+
+$color--live: #25BF00;
+
+/* Brand colour */
+$color--flamingo: #D62898;
+$color--walletconnect: #3396ff;
+$color--inst: #0045ff;
+$color--alchemy: #0b48e6;
+
+$color--highlight-light: $color--secondary;
+$color--highlight-dark: darken($color--secondary, 6%);
+
+$box--shadow-light: 0 0 10px rgba(0,0,0,0.3); 
+$box--shadow-dark: 0 0 10px rgba(0,0,0,0.6);
+
+$base--transition: 0.4s;
+
+$base--value: 1rem; // To test: rems/ems/px
+
+/* Media Queries & Max Width
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Bootstrap XL (≥1200px) and XXL (≥1400px) are available
+// https://getbootstrap.com/docs/5.3/layout/breakpoints/
+
+$media-mobile: 576px;
+$media-tablet: 768px;
+$media-desktop: 992px;
+$media-wide: 1200px;
+$media-xwide: 1400px;
+
+$max-width: 2400px;
+
+/* Margin & Padding
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$margin--xsmall: $base--value*0.5;
+$margin--small: $base--value;
+$margin--general: $base--value*2;
+$margin--large: $base--value*4;
+$margin--xlarge: $base--value*6;
+$margin--xxlarge: $base--value*10;
+
+$padding--xsmall: $base--value*0.5;
+$padding--small: $base--value;
+$padding--general: $base--value*2;
+$padding--large: $base--value*4;
+$padding--xlarge: $base--value*6;
+$padding--xxlarge: $base--value*10;
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Myfonts.com - use the 'Webfont Kit Download' configuration
+@import url("//hello.myfonts.net/count/3e7d84");
+
+@font-face {
+    font-family: 'AvertaStdPE-Regular';
+    src: url('fonts/AvertaStdPERegular/font.woff2') format('woff2'), url('../fonts/AvertaStdPERegular/font.woff') format('woff');
+}
+@font-face {
+    font-family: 'AvertaStdPE-Semibold';
+    src: url('fonts/AvertaStdPESemibold/font.woff2') format('woff2'), url('../fonts/AvertaStdPESemibold/font.woff') format('woff');
+}
+@font-face {
+    font-family: 'AvertaStdPE-Bold';
+    src: url('fonts/AvertaStdPEBold/font.woff2') format('woff2'), url('../fonts/AvertaStdPEBold/font.woff') format('woff');
+}
+
+$brand--font-reg: 'AvertaStdPE-Regular', Arial, Helvetica, sans-serif;
+$brand--font-semi: 'AvertaStdPE-Semibold', Arial, Helvetica, sans-serif;
+$brand--font-bold: 'AvertaStdPE-Bold', Arial, Helvetica, sans-serif;
+
+
+
+@mixin pragmaticaBook {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@mixin pragmaticaBookItalic {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+@mixin pragmaticaMedium {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+@mixin pragmaticaMediumItalic {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+@mixin pragmaticaBold {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+@mixin pragmaticaBoldItalic {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Variable Font Sizes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Body font size. By default 16px, based on 16px as 'root em' */
+$brand--font-size: 1rem;
+
+/* Major second scale progression - see https://type-scale.com/ */
+$brand--header-scale: 1.125;
+
+/* Line height is set to the "Golden ratio" for optimal legibility */
+$brand--line-height: 1.618;
+
+body {
+    @include pragmaticaMedium;
+    //font-family: $brand--font-reg;
+    line-height: $brand--line-height;
+}
+
+h1, h2, h4, h4, h5, h6 {
+    font-family: $brand--font-bold;
+}
+
+h1 {
+    font-size: $brand--font-size * $brand--header-scale * $brand--header-scale * $brand--header-scale * $brand--header-scale;
+    //margin-bottom: $brand--line-height * 1.5rem;
+}
+
+h2 {
+    font-size: $brand--font-size * $brand--header-scale * $brand--header-scale * $brand--header-scale;
+    //margin-bottom: $brand--line-height * 1.5rem;
+}
+
+h3 {
+    font-size: $brand--font-size * $brand--header-scale * $brand--header-scale;
+    //margin-bottom: $brand--line-height * 1.5rem;
+}
+
+h4 {
+    font-size: $brand--font-size * $brand--header-scale;
+    //margin-bottom: $brand--line-height * 1.5rem;
+}
+
+h5 {
+    font-size: $brand--font-size;
+    //margin-bottom: $brand--line-height * 1.5rem;
+}
+
+h6 {
+    font-size: calc($brand--font-size / $brand--header-scale);
+    //margin-bottom: $brand--line-height* 1.5rem;
+}
+
+/* Initial sizing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+    font-size: 100%; // 100% equals 16px sizing
+}
+
+body {
+    color: $color--primary;
+    //font-family: $brand--font-reg;
+    font-size: 1em; /* currently ems because Chrome bug misinterpreting rems on body element */
+}

@@ -1,0 +1,26 @@
+@import "bourbon";
+
+a {
+	transition: $base--transition;
+}
+
+@media (min-width: $media-mobile) {}
+
+@media (min-width: $media-desktop) {}
+
+@media (min-width: $media-xwide) {
+	.container-fluid {
+		padding: 0 50px;
+	}
+}
+
+@media (min-width: $max-width) {
+	.container-fluid {
+		max-width: $max-width;
+		padding: 0 180px;
+	}
+}
+
+strong {
+	font-family: $brand--font-semi;
+}

@@ -1,0 +1,23 @@
+// http://www.sitepoint.com/architecture-sass-project/
+
+// Animation
+// https://github.com/geoffgraham/animate.scss
+// @import "animate/animate";
+
+// Helper Files
+@import "helpers/all";
+
+// Base Files
+@import "base/all";
+
+// Components
+@import "components/all";
+
+// Layout
+@import "layout/all";
+
+// Templates
+@import "templates/all";
+
+// Pages
+// @import "pages/all";

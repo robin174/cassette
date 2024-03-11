@@ -1,0 +1,69 @@
+a[class*="atm--button-"] {
+	text-decoration: none;
+	& i {
+		transition: $base--transition;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.atm--button-primary {
+	padding: 12px 28px;
+	padding-right: 40px;
+	background-color: lighten($color--primary, 6%);
+	& span {
+		letter-spacing: 0.02em;
+		color: $color--white;
+	}
+	& i {
+		color: $color--secondary;
+		margin-left: 12px;
+	}
+	&:hover {
+		background-color: $color--primary;
+		& i {
+			transform: translate(12px,0);
+		}
+	}
+}
+
+.atm--button-secondary {
+	font-family: $brand--font-semi;
+	padding: 12px 28px;
+	padding-right: 40px;
+	background-color: rgba($color--primary, 0);
+	& span {
+		letter-spacing: 0.02em;
+		color: $color--secondary;
+	}
+	&:hover {
+		& span {
+			color: $color--secondary;
+			background-color: rgba($color--primary, 0);
+			text-decoration: underline 2px;
+		}
+	}
+}
+
+.atm--button-primary + .atm--button-secondary {
+	margin-left: $margin--small;
+}
+
+// Button - Newsletter
+.mol--content-newsletter {
+	& input[type=text] {
+		padding: 10px;
+		border-radius: 0;
+		border: none;
+	}
+	& button[type=submit] {
+		background-color: $color--secondary;
+		padding: 10px;
+		border-radius: 0;
+		border: none;
+		&:hover {
+			background-color: darken($color--secondary,6%);
+		}
+	}
+}
