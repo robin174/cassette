@@ -38,7 +38,6 @@
 	                		<div class="org__unit-logo">
 	                			 <div class="row">
 	                				<div class="col-12">
-	                					TEST
 	                					<?php if ( is_front_page() && is_home() ) : ?>
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette.svg" alt="Cassette logo">
 	                					<?php else : ?>
