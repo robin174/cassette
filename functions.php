@@ -46,6 +46,11 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'    => 'General Settings',
         'parent_slug'   => 'additional-site-content',
     ));
+     acf_add_options_sub_page(array(
+        'page_title'    => 'Hero Slider',
+        'menu_title'    => 'Hero Slider',
+        'parent_slug'   => 'additional-site-content',
+    ));
     acf_add_options_sub_page(array(
         'page_title'    => 'Download Section',
         'menu_title'    => 'Download Section',
@@ -54,11 +59,6 @@ if( function_exists('acf_add_options_page') ) {
     acf_add_options_sub_page(array(
         'page_title'    => 'Inst Money Section',
         'menu_title'    => 'Inst Money Section',
-        'parent_slug'   => 'additional-site-content',
-    ));
-    acf_add_options_sub_page(array(
-        'page_title'    => 'Hero Slider',
-        'menu_title'    => 'Hero Slider',
         'parent_slug'   => 'additional-site-content',
     ));
     acf_add_options_sub_page(array(
