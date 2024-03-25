@@ -13,8 +13,8 @@ get_header(); ?>
 			<div class="row justify-content-center">
 				<div class="col-12 col-md-10 col-xl-9">
 					<section class="mol--content-introduction">
-						<h1><?php the_title(); ?></h1>
-						<p>Quam interdum tellus, quis dictum lorem elit varius ex. Nam vitae tincidunt risus.</p>
+						<h1><?php the_field('atm_page_name'); ?></h1>
+						<p><?php the_field('atm_page_intro'); ?></p>
 					</section>
 				</div>
 			</div>

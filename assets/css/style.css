@@ -333,12 +333,14 @@ nav.navbar {
   padding: 4rem 0; }
 
 .mol--content-introduction {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  margin-bottom: 1rem; }
   .mol--content-introduction h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center; }
   .mol--content-introduction p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
     font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
     text-align: center; }
 
