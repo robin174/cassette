@@ -3,7 +3,11 @@
 <?php else : ?>
 	<section class="org--content-download">
 <?php endif; ?>
+	<?php if(get_field('download_select', 'option') == 'colorblock') : ?>
 		<div class="org--content-download-inner" style="background:<?php the_field('download_overlay','option'); ?>">
+	<?php elseif (get_field('download_select', 'option') == 'colorgradient') : ?>
+		<div class="org--content-download-inner" style="background:<?php the_field('download_gradient','option'); ?>">
+	<?php endif; ?>	
 			<div class="container-fluid" >
 				<div class="mol--content-download">
 					<div class="row justify-content-center">

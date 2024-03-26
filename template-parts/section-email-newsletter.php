@@ -3,7 +3,11 @@
 <?php else : ?>
 	<section class="org--content-newsletter">
 <?php endif; ?>
+	<?php if(get_field('newsletter_select', 'option') == 'colorblock') : ?>
 		<div class="org--content-newsletter-inner" style="background:<?php the_field('newsletter_overlay','option'); ?>">
+	<?php elseif (get_field('newsletter_select', 'option') == 'colorgradient') : ?>
+		<div class="org--content-newsletter-inner" style="background:<?php the_field('newsletter_gradient','option'); ?>">
+	<?php endif; ?>	
 			<div class="container-fluid" >
 				<div class="mol--content-newsletter">
 					<div class="row justify-content-center">
