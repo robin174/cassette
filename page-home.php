@@ -26,7 +26,7 @@ get_header(); ?>
 				<?php } ?>
 			<?php elseif(get_sub_field('ts_options') == 'introduction') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
-					<?php get_template_part('template-parts/section-introduction'); ?>xx
+					<?php get_template_part('template-parts/section-introduction'); ?>
 				<?php } ?>
 			<?php elseif(get_sub_field('ts_options') == 'newsletter') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
