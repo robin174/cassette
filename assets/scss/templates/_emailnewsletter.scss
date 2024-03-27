@@ -1,11 +1,10 @@
 .org--content-newsletter {
 	margin-top: $margin--large;
-	padding: 0;
 	text-align: center;
 	color: $color--white;
 	& .org--content-newsletter-inner {
 		margin: 0;
-		padding: $padding--large 0;
+		padding: $padding--large*3 0;
 	}
 	& h3 {
 		color: $color--white;

@@ -417,12 +417,11 @@ footer {
 
 .org--content-newsletter {
   margin-top: 4rem;
-  padding: 0;
   text-align: center;
   color: #fff; }
   .org--content-newsletter .org--content-newsletter-inner {
     margin: 0;
-    padding: 4rem 0; }
+    padding: 12rem 0; }
   .org--content-newsletter h3 {
     color: #fff;
     margin-top: 0;

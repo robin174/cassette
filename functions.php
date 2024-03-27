@@ -30,41 +30,46 @@ function cassette_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'cassette_scripts' );
 
-
-// ACF Options
 if( function_exists('acf_add_options_page') ) {
     acf_add_options_page(array(
-        'menu_title'    => 'Additional Content',
-        'menu_slug'     => 'additional-site-content',
+        'menu_title'    => 'Homepage Content',
+        'menu_slug'     => 'homepage-site-content',
         'parent_slug'   => '',
         'capability'    => 'edit_posts',
-        'icon_url'      => 'dashicons-admin-site-alt',
+        'icon_url'      => 'dashicons-admin-home',
         'redirect'      => true
-    ));
-    acf_add_options_sub_page(array(
-        'page_title'    => 'General Settings',
-        'menu_title'    => 'General Settings',
-        'parent_slug'   => 'additional-site-content',
     ));
      acf_add_options_sub_page(array(
         'page_title'    => 'Hero Slider',
         'menu_title'    => 'Hero Slider',
-        'parent_slug'   => 'additional-site-content',
+        'parent_slug'   => 'homepage-site-content',
     ));
     acf_add_options_sub_page(array(
         'page_title'    => 'Download Section',
         'menu_title'    => 'Download Section',
-        'parent_slug'   => 'additional-site-content',
+        'parent_slug'   => 'homepage-site-content',
     ));
     acf_add_options_sub_page(array(
         'page_title'    => 'Inst Money Section',
         'menu_title'    => 'Inst Money Section',
-        'parent_slug'   => 'additional-site-content',
+        'parent_slug'   => 'homepage-site-content',
     ));
     acf_add_options_sub_page(array(
         'page_title'    => 'Newsletter Signup',
         'menu_title'    => 'Newsletter Signup',
-        'parent_slug'   => 'additional-site-content',
+        'parent_slug'   => 'homepage-site-content',
+    ));
+}
+
+// ACF Options
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array(
+        'menu_title'    => 'Additional',
+        'menu_slug'     => 'additional-site-content',
+        'parent_slug'   => '',
+        'capability'    => 'edit_posts',
+        'icon_url'      => 'dashicons-admin-settings',
+        'redirect'      => true
     ));
     acf_add_options_sub_page(array(
         'page_title'    => 'Footer Content',
