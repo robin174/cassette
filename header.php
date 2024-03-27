@@ -48,6 +48,17 @@
         <!-- Adobe Font : Pragmatica
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="stylesheet" href="https://use.typekit.net/xhv0zds.css">
+
+        <!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SN59VN9949"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-SN59VN9949');
+		</script>
+
 		<?php wp_head(); ?>
 	</head>
 
