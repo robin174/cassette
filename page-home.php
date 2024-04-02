@@ -14,15 +14,7 @@ get_header(); ?>
 
 			<?php if(get_sub_field('ts_options') == 'slider') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
-					<section>
-						<div class="container-fluid">
-							<div class="row justify-content-center">
-								<div class="col-12">
-									<?php get_template_part('template-parts/hero-slider-home'); ?>
-								</div>
-							</div>
-						</div>
-					</section>
+					<?php get_template_part('template-parts/hero-slider-home'); ?>
 				<?php } ?>
 			<?php elseif(get_sub_field('ts_options') == 'introduction') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
@@ -41,6 +33,7 @@ get_header(); ?>
 		<?php endif; ?>
 	<?php endwhile; ?>
 
+	<?php /* Sample heirachy for normal content
 	<section class="org--content-default">
 		<div class="container-fluid">
 			<div class="row justify-content-center">
@@ -52,6 +45,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
+	*/ ?>
 
 </section>
 
