@@ -1,24 +1,24 @@
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-$color--primary: #212222; // To be used with black
-$color--secondary: #00DDB3;
-$color--tertiary: #798d91; //To check
+$color--primary: #000C16; // rgb(0,12,22) Dark colour, NOT black
+$color--secondary: #40D3C1; // Turquoise (we need shades too)
+$color--tertiary: #FF8478; // Pink (we need shades too)
 $color--white: #fff; // white
 $color--black: #000; // black
 
 $color--live: #25BF00;
-
-/* Brand colour */
-$color--flamingo: #D62898;
-$color--walletconnect: #3396ff;
-$color--inst: #0045ff;
-$color--alchemy: #0b48e6;
 
 $color--highlight-light: $color--secondary;
 $color--highlight-dark: darken($color--secondary, 6%);
 
 $box--shadow-light: 0 0 10px rgba(0,0,0,0.3); 
 $box--shadow-dark: 0 0 10px rgba(0,0,0,0.6);
+
+/* Brand colors */
+$color--flamingo: #D62898;
+$color--walletconnect: #3396ff;
+$color--inst: #0045ff;
+$color--alchemy: #0b48e6;
 
 $base--transition: 0.4s;
 

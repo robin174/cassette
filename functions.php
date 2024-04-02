@@ -30,6 +30,7 @@ function cassette_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'cassette_scripts' );
 
+// ACF Options
 if( function_exists('acf_add_options_page') ) {
     acf_add_options_page(array(
         'menu_title'    => 'Homepage Content',
@@ -59,10 +60,7 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'    => 'Newsletter Signup',
         'parent_slug'   => 'homepage-site-content',
     ));
-}
 
-// ACF Options
-if( function_exists('acf_add_options_page') ) {
     acf_add_options_page(array(
         'menu_title'    => 'Additional',
         'menu_slug'     => 'additional-site-content',
