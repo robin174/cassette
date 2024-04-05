@@ -45,14 +45,24 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'    => 'Hero Slider',
         'parent_slug'   => 'homepage-site-content',
     ));
-    acf_add_options_sub_page(array(
-        'page_title'    => 'Download Section',
-        'menu_title'    => 'Download Section',
+     acf_add_options_sub_page(array(
+        'page_title'    => 'Introduction',
+        'menu_title'    => 'Introduction',
         'parent_slug'   => 'homepage-site-content',
     ));
     acf_add_options_sub_page(array(
-        'page_title'    => 'Inst Money Section',
-        'menu_title'    => 'Inst Money Section',
+        'page_title'    => 'Download',
+        'menu_title'    => 'Download',
+        'parent_slug'   => 'homepage-site-content',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Inst Money',
+        'menu_title'    => 'Inst Money',
+        'parent_slug'   => 'homepage-site-content',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Alchemy Pay',
+        'menu_title'    => 'Alchemy Pay',
         'parent_slug'   => 'homepage-site-content',
     ));
     acf_add_options_sub_page(array(
