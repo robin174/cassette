@@ -70,6 +70,11 @@ if( function_exists('acf_add_options_page') ) {
         'redirect'      => true
     ));
     acf_add_options_sub_page(array(
+        'page_title'    => 'Site Settings',
+        'menu_title'    => 'Site Settings',
+        'parent_slug'   => 'additional-site-content',
+    ));
+    acf_add_options_sub_page(array(
         'page_title'    => 'Footer Content',
         'menu_title'    => 'Footer Content',
         'parent_slug'   => 'additional-site-content',
