@@ -33,7 +33,9 @@ body {
   line-height: 1.618; }
 
 h1, h2, h4, h4, h5, h6 {
-  font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif; }
+  font-family: "pragmatica-extended", sans-serif;
+  font-weight: 500;
+  font-style: italic; }
 
 h1 {
   font-size: 1.6018066406rem; }
@@ -82,12 +84,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #000C16; }
 
 h2 {
-  font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif;
   color: #000C16;
   font-size: 4rem; }
 
 h3 {
-  font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif;
   font-size: 2rem; }
 
 h5 {
@@ -103,8 +103,7 @@ p {
 
 .ut--uc {
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif; }
+  letter-spacing: 0.2em; }
 
 .ut--secondary {
   color: #40D3C1; }
@@ -176,6 +175,14 @@ a[class*="atm--button-"] {
 .atm--button-primary + .atm--button-secondary {
   margin-left: 1rem; }
 
+a.atm--download {
+  transition: 0.4s;
+  color: #000;
+  text-decoration: none; }
+  a.atm--download:hover {
+    text-decoration: underline;
+    color: #000; }
+
 .mol--content-newsletter input[type=text] {
   padding: 10px;
   border-radius: 0;
@@ -207,7 +214,6 @@ header {
 nav a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif;
   color: #fff; }
   nav a:link {
     color: #fff; }
@@ -225,7 +231,6 @@ nav.navbar {
   nav.navbar h1, nav.navbar h1 a.navbar-brand {
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif;
     font-family: "AvertaStdPE-Regular", Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
     color: #fff;
@@ -401,7 +406,6 @@ footer {
     .org__unit section h4 {
       text-transform: uppercase;
       letter-spacing: 0.2em;
-      font-family: "AvertaStdPE-Bold", Arial, Helvetica, sans-serif;
       color: #40D3C1;
       font-size: 0.9rem;
       margin-bottom: 12px; }
@@ -428,6 +432,33 @@ footer {
     margin-bottom: 5px; }
   .org--content-newsletter p {
     font-size: 1.3rem; }
+  .org--content-newsletter .mol--newsletter-form input {
+    border: none !important; }
+  .org--content-newsletter .mol--newsletter-form input.email {
+    padding-left: 15px; }
+  .org--content-newsletter .mol--newsletter-form input[type="text"] {
+    height: 50px; }
+  .org--content-newsletter .mol--newsletter-form button, .org--content-newsletter .mol--newsletter-form input[type="submit"].button {
+    color: #000C16;
+    min-width: 150px;
+    border: none;
+    transistion: 0.4s;
+    background-color: #40D3C1;
+    height: 50px;
+    font-size: 1rem; }
+    .org--content-newsletter .mol--newsletter-form button:hover, .org--content-newsletter .mol--newsletter-form input[type="submit"].button:hover {
+      color: #000C16;
+      background-color: #2fcbb8; }
+
+@media (min-width: 576px) {
+  .org--newsletter {
+    padding: 1rem; }
+    .org--newsletter .mol--newsletter-form button, .org--newsletter .mol--newsletter-form input[type="submit"].button {
+      min-width: 200px; } }
+
+@media (min-width: 768px) {
+  .org--newsletter {
+    padding: 2rem; } }
 
 .org--content-getstarted {
   margin: 4rem 0;
@@ -701,3 +732,45 @@ footer {
     transform: scale(1); }
   50% {
     transform: scale(1.05); } }
+
+.org--content-download {
+  margin-top: 4rem;
+  text-align: center;
+  color: #000; }
+  .org--content-download .org--content-download-inner {
+    margin: 0; }
+    .org--content-download .org--content-download-inner .mol--content-download {
+      padding-top: 2rem; }
+    .org--content-download .org--content-download-inner .fa-brands, .org--content-download .org--content-download-inner .fa-sharp {
+      margin-right: 10px; }
+
+.mol--cassette-inlay {
+  border: 2px solid #000; }
+  .mol--cassette-inlay .atm--inlay-header {
+    padding: 10px 0;
+    border-bottom: 2px solid #000;
+    background: #000;
+    color: #fff;
+    font-size: 24px; }
+  .mol--cassette-inlay .atm--inlay-half:first-child {
+    border-right: 1px solid #000; }
+  .mol--cassette-inlay .atm--inlay-half:last-child {
+    border-left: 1px solid #000; }
+  .mol--cassette-inlay .atm--inlay-letter {
+    padding: 8px;
+    border-bottom: 2px solid black;
+    font-size: 24px;
+    text-align: left; }
+    .mol--cassette-inlay .atm--inlay-letter span {
+      padding: 3px 9px;
+      color: white;
+      background: #000; }
+  .mol--cassette-inlay .atm--inlay-content {
+    height: 300px;
+    background: url("../images/line-cassette-v5.png");
+    background-repeat: repeat-y; }
+  .mol--cassette-inlay .atm--inlay-download {
+    padding: 15px;
+    border-top: 2px solid black;
+    font-size: 24px;
+    text-align: left; }

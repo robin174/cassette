@@ -11,12 +11,12 @@
 			<div class="container-fluid" >
 				<div class="mol--content-newsletter">
 					<div class="row justify-content-center">
-						<div class="col-12 col-md-10 col-xl-9 justify-content-center">
+						<div class="col-12 col-md-10 col-xl-8 justify-content-center">
 							
 							<h3 class="ut--uc"><?php the_field('newsletter_heading','option'); ?></h3>
 							<p><?php the_field('newsletter_description','option'); ?></p>
 
-							<!-- ORIGINAL -->
+							<?php /* ORIGINAL
 							<form class="row g-0 justify-content-center align-items-center">
 							 	<div class="col-9">
 									<label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
@@ -29,14 +29,28 @@
 							    	<button type="submit" class="btn btn-primary">Submit</button>
 							  	</div>
 							</form>
+							*/ ?>
+							<div class="mol--newsletter-form">
+								<form action="https://getcassette.us18.list-manage.com/subscribe/post?u=0e1673d9b7bae2600be77f1a8&amp;id=8e8b4b9ecd&amp;f_id=0095c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+							        <div class="d-flex" id="mc_embed_signup_scroll">
+							            <input class="flex-grow-1 email helper_text" placeholder="Email address" type="email" name="EMAIL" id="mce-EMAIL required" required="" value="">
+									    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+									        <input type="text" name="b_0e1673d9b7bae2600be77f1a8_8e8b4b9ecd" tabindex="-1" value="">
+									    </div>
+									    <div class="newsletter--signup">
+									        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+									    </div>
+							    	</div>
+								</form>
+							</div>
 
-							<!-- From MailChimp -->
+							<?php /* From Mailchimp
 							<div id="mc_embed_shell">
 							    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 								<style type="text/css">
 							    	#mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
 							    	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-							        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+							        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file.
 								</style>
 								<div id="mc_embed_signup">
 								    <form action="https://getcassette.us18.list-manage.com/subscribe/post?u=0e1673d9b7bae2600be77f1a8&amp;id=8e8b4b9ecd&amp;f_id=0095c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
@@ -48,7 +62,7 @@
 									            <div class="response" id="mce-success-response" style="display: none;"></div>
 									        </div>
 										    <div aria-hidden="true" style="position: absolute; left: -5000px;">
-										        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+										        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups
 										        <input type="text" name="b_0e1673d9b7bae2600be77f1a8_8e8b4b9ecd" tabindex="-1" value="">
 										    </div>
 										    <div class="optionalParent">
@@ -62,6 +76,7 @@
 								</div>
 								<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 							</div>
+							*/ ?>
 							
 						</div>
 					</div>

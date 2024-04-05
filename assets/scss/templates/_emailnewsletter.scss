@@ -14,4 +14,46 @@
 	& p {
 		font-size: 1.3rem;
 	}
+	& .mol--newsletter-form {
+		& input {
+			border: none!important;
+		}
+		& input.email {
+			padding-left: 15px;
+		}
+		& input[type="text"] {
+			height: 50px;
+		}
+		& button, input[type="submit"].button {
+			color: $color--primary;
+			min-width: 150px;
+			border:none;
+			transistion: $base--transition;
+			background-color: $color--secondary;
+			height:50px;
+			font-size: 1rem;
+			&:hover {
+				color: $color--primary;
+				background-color: darken($color--secondary, 5%);
+			}
+		}
+	}
+}
+
+@media (min-width: $media-mobile) {
+	.org--newsletter {
+		padding:$padding--small;
+		& .mol--newsletter-form {
+			& button, input[type="submit"].button {
+				min-width: 200px;
+			}
+		}
+
+	}
+}
+
+@media (min-width: $media-tablet) {
+	.org--newsletter {
+		padding:$padding--general;
+	}
 }

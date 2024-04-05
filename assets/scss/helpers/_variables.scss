@@ -1,6 +1,7 @@
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 $color--primary: #000C16; // rgb(0,12,22) Dark colour, NOT black
+// Potential new colour: #1C2E32 (Tink, dark background from blog)
 $color--secondary: #40D3C1; // Turquoise (we need shades too)
 $color--tertiary: #FF8478; // Pink (we need shades too)
 $color--white: #fff; // white
@@ -127,7 +128,8 @@ body {
 }
 
 h1, h2, h4, h4, h5, h6 {
-    font-family: $brand--font-bold;
+    @include pragmaticaMediumItalic;
+    //font-family: $brand--font-bold;
 }
 
 h1 {
