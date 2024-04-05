@@ -18,7 +18,7 @@
 					<div class="row justify-content-center">
 						<div class="col-12 col-md-10 col-xl-8 justify-content-center">
 
-							<!-- Alternative: CSS Grid:
+							<!-- Alternative: CSS:
 							https://css-tricks.com/equal-columns-with-flexbox-its-more-complicated-than-you-might-think/ -->
 							<section class="mol--cassette-inlay">
 								<div class="row g-0">

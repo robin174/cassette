@@ -33,7 +33,7 @@
 				right: 0;
 				z-index: 20;
 				& i {
-					color: $color--secondary;
+					color: $color--tertiary;
 				}
 			}
 			& h2 {
@@ -47,7 +47,7 @@
 				margin-bottom: 10px;
 			}
 			& a {
-				color: $color--secondary;
+				color: $color--highlight-dark;
 				font-family: $brand--font-semi;
 				&:hover {
 					color: $color--primary;
@@ -88,7 +88,7 @@
 // Live Dot
 .pulsatingDot {
 	animation: pulseDot 1.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.3s infinite;
-	background-color: $color--live;
+	background-color: $color--tertiary;
 	border-radius: 50%;
 	box-sizing: border-box;
 	height: 20px;
@@ -97,7 +97,7 @@
 
 .pulsatingDot:before {
 	animation: pulseRing 1.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-	background-color: $color--live;
+	background-color: $color--tertiary;
 	border-radius: 50px;
 	content: '';
 	display: block;

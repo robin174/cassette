@@ -10,7 +10,7 @@ $color--black: #000; // black
 $color--live: #25BF00;
 
 $color--highlight-light: $color--secondary;
-$color--highlight-dark: darken($color--secondary, 6%);
+$color--highlight-dark: darken($color--secondary, 8%);
 
 $box--shadow-light: 0 0 10px rgba(0,0,0,0.3); 
 $box--shadow-dark: 0 0 10px rgba(0,0,0,0.6);
