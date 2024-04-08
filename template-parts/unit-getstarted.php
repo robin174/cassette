@@ -1,5 +1,5 @@
 <section class="org--gs-item d-flex">
-	<div class="mol--gs-number">
+	<div class="mol--gs-number d-none d-md-flex">
 		<span><?php the_sub_field('repeater_gs_number');?>&period;</span>
 	</div>
 	<div class="flex-grow-1">
