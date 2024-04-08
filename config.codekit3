@@ -674,6 +674,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/scss\/templates\/_introduction.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_introduction.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/scss\/templates\/_postbuilder.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -902,6 +917,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/section-inst.php",
+      "oF" : 0
+    },
+    "\/template-parts\/section-introduction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/section-introduction.php",
       "oF" : 0
     },
     "\/template-parts\/unit-getstarted.php" : {

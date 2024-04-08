@@ -458,6 +458,57 @@ footer {
   margin-top: 1rem;
   font-size: 0.9rem; }
 
+.org--content-download {
+  margin-top: 4rem;
+  text-align: center;
+  color: #000; }
+  .org--content-download .org--content-download-inner {
+    margin: 0; }
+    .org--content-download .org--content-download-inner .mol--content-download {
+      padding-top: 2rem; }
+    .org--content-download .org--content-download-inner .fa-brands, .org--content-download .org--content-download-inner .fa-sharp {
+      margin-right: 10px; }
+  .org--content-download h3 {
+    font-size: 3rem;
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  .org--content-download p {
+    font-size: 1.3rem; }
+
+.mol--cassette-inlay {
+  border: 2px solid #000; }
+  .mol--cassette-inlay .atm--inlay-header {
+    padding: 10px 0;
+    border-bottom: 2px solid #000;
+    background: #000;
+    color: #fff;
+    font-size: 24px; }
+  .mol--cassette-inlay .atm--inlay-half:first-child {
+    border-right: 1px solid #000; }
+  .mol--cassette-inlay .atm--inlay-half:last-child {
+    border-left: 1px solid #000; }
+  .mol--cassette-inlay .atm--inlay-letter {
+    padding: 8px;
+    border-bottom: 2px solid black;
+    font-size: 24px;
+    text-align: left; }
+    .mol--cassette-inlay .atm--inlay-letter span {
+      padding: 3px 9px;
+      color: white;
+      background: #000; }
+  .mol--cassette-inlay .atm--inlay-content {
+    height: 300px;
+    background: url("../images/line-cassette-v5.png");
+    background-repeat: repeat-y; }
+  .mol--cassette-inlay .atm--inlay-download {
+    padding: 15px;
+    border-top: 2px solid black;
+    font-size: 24px;
+    text-align: left; }
+
 .org--content-newsletter {
   margin-top: 4rem;
   text-align: center;
@@ -466,10 +517,15 @@ footer {
     margin: 0;
     padding: 12rem 0; }
   .org--content-newsletter h3 {
+    font-size: 3rem;
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: italic;
     color: #fff;
     margin-top: 0;
     margin-bottom: 5px; }
   .org--content-newsletter p {
+    color: #fff;
     font-size: 1.3rem; }
   .org--content-newsletter .mol--newsletter-form input {
     border: none !important; }
@@ -574,6 +630,22 @@ footer {
   opacity: 1; }
   .splide__pagination__page.is-active {
     background: #40D3C1; }
+
+.org--content-introduction {
+  margin-top: 4rem;
+  color: #000C16; }
+  .org--content-introduction .org--content-introduction-inner {
+    margin: 0;
+    padding: 12rem 0; }
+  .org--content-introduction h3 {
+    font-size: 3rem;
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 5px; }
+  .org--content-introduction p {
+    font-size: 1.3rem; }
 
 .org--content-single {
   margin-top: 4rem;
@@ -785,45 +857,3 @@ footer {
     transform: scale(1); }
   50% {
     transform: scale(1.05); } }
-
-.org--content-download {
-  margin-top: 4rem;
-  text-align: center;
-  color: #000; }
-  .org--content-download .org--content-download-inner {
-    margin: 0; }
-    .org--content-download .org--content-download-inner .mol--content-download {
-      padding-top: 2rem; }
-    .org--content-download .org--content-download-inner .fa-brands, .org--content-download .org--content-download-inner .fa-sharp {
-      margin-right: 10px; }
-
-.mol--cassette-inlay {
-  border: 2px solid #000; }
-  .mol--cassette-inlay .atm--inlay-header {
-    padding: 10px 0;
-    border-bottom: 2px solid #000;
-    background: #000;
-    color: #fff;
-    font-size: 24px; }
-  .mol--cassette-inlay .atm--inlay-half:first-child {
-    border-right: 1px solid #000; }
-  .mol--cassette-inlay .atm--inlay-half:last-child {
-    border-left: 1px solid #000; }
-  .mol--cassette-inlay .atm--inlay-letter {
-    padding: 8px;
-    border-bottom: 2px solid black;
-    font-size: 24px;
-    text-align: left; }
-    .mol--cassette-inlay .atm--inlay-letter span {
-      padding: 3px 9px;
-      color: white;
-      background: #000; }
-  .mol--cassette-inlay .atm--inlay-content {
-    height: 300px;
-    background: url("../images/line-cassette-v5.png");
-    background-repeat: repeat-y; }
-  .mol--cassette-inlay .atm--inlay-download {
-    padding: 15px;
-    border-top: 2px solid black;
-    font-size: 24px;
-    text-align: left; }

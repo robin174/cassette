@@ -10,7 +10,7 @@
 	<?php endif; ?>	
 
 		<div>
-			<h3 class="ut--uc"><?php the_field('download_heading','option'); ?></h3>
+			<h3><?php the_field('download_heading','option'); ?></h3>
 			<p><?php the_field('download_description','option'); ?></p>
 		</div>
 			<div class="container-fluid">

@@ -7,11 +7,14 @@
 		padding: $padding--large*3 0;
 	}
 	& h3 {
+		font-size: 3rem;
+		@include pragmaticaMediumItalic;
 		color: $color--white;
 		margin-top: 0;
 		margin-bottom: 5px;
 	}
 	& p {
+		color: $color--white;
 		font-size: 1.3rem;
 	}
 	& .mol--newsletter-form {
@@ -54,6 +57,6 @@
 
 @media (min-width: $media-tablet) {
 	.org--newsletter {
-		padding:$padding--general;
+		padding: $padding--general;
 	}
 }

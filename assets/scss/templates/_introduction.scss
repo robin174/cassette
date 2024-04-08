@@ -1,0 +1,17 @@
+.org--content-introduction {
+	margin-top: $margin--large;
+	color: $color--primary;
+	& .org--content-introduction-inner {
+		margin: 0;
+		padding: $padding--large*3 0;
+	}
+	& h3 {
+		font-size: 3rem;
+		@include pragmaticaMediumItalic;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+	& p {
+		font-size: 1.3rem;
+	}
+}

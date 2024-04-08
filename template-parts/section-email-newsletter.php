@@ -13,7 +13,7 @@
 					<div class="row justify-content-center">
 						<div class="col-12 col-md-10 col-xl-8 justify-content-center">
 							
-							<h3 class="ut--uc"><?php the_field('newsletter_heading','option'); ?></h3>
+							<h3><?php the_field('newsletter_heading','option'); ?></h3>
 							<p><?php the_field('newsletter_description','option'); ?></p>
 
 							<?php /* ORIGINAL
