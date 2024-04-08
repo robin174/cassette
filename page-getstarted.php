@@ -21,7 +21,7 @@ get_header(); ?>
 		</div>
 		<div class="container-fluid">
 			<div class="row justify-content-center">
-				<div class="col-11 col-xxl-10">
+				<div class="col-11 col-xl-9 col-xxl-8">
 					<?php if( have_rows('repeater_gs')): ?>
 						<?php while( have_rows('repeater_gs')): the_row(); ?>
 							<?php get_template_part('template-parts/unit-getstarted'); ?>
