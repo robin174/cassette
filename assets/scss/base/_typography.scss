@@ -27,13 +27,18 @@ h5 {
 
 h6 {}
 
-p, li {
+p {
 	@include pragmaticaBook;
 	color: $color--primary;
 	margin-bottom: $margin--general;
 	&:last-child {
 		margin-bottom: 0;
 	}
+}
+
+li {
+	@include pragmaticaBook;
+	color: $color--primary;
 }
 
 strong {

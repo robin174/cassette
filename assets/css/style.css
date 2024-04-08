@@ -103,14 +103,20 @@ h3 {
 h5 {
   font-size: 0.9rem; }
 
-p, li {
+p {
   font-family: "pragmatica-extended", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000C16;
   margin-bottom: 2rem; }
-  p:last-child, li:last-child {
+  p:last-child {
     margin-bottom: 0; }
+
+li {
+  font-family: "pragmatica-extended", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000C16; }
 
 strong {
   font-family: "pragmatica-extended", sans-serif;
