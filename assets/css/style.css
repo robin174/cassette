@@ -80,6 +80,14 @@ a {
 strong {
   font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif; }
 
+::-moz-selection {
+  color: #000C16;
+  background: rgba(64, 211, 193, 0.33); }
+
+::selection {
+  color: #000C16;
+  background: rgba(64, 211, 193, 0.33); }
+
 h1, h2, h3, h4, h5, h6 {
   color: #000C16; }
 

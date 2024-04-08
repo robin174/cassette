@@ -24,3 +24,13 @@ a {
 strong {
 	font-family: $brand--font-semi;
 }
+
+::-moz-selection {
+  color: $color--primary;
+  background: rgba($color--secondary, 0.33);
+}
+
+::selection {
+  color: $color--primary;
+  background: rgba($color--secondary, 0.33);
+}
