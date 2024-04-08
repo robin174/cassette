@@ -27,7 +27,6 @@ $base--value: 1rem; // To test: rems/ems/px
 
 /* Media Queries & Max Width
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 // Bootstrap XL (≥1200px) and XXL (≥1400px) are available
 // https://getbootstrap.com/docs/5.3/layout/breakpoints/
 
@@ -55,30 +54,9 @@ $padding--large: $base--value*4;
 $padding--xlarge: $base--value*6;
 $padding--xxlarge: $base--value*10;
 
-/* Fonts
+
+/* Fonts: Pragmatica
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-// Myfonts.com - use the 'Webfont Kit Download' configuration
-@import url("//hello.myfonts.net/count/3e7d84");
-
-@font-face {
-    font-family: 'AvertaStdPE-Regular';
-    src: url('fonts/AvertaStdPERegular/font.woff2') format('woff2'), url('../fonts/AvertaStdPERegular/font.woff') format('woff');
-}
-@font-face {
-    font-family: 'AvertaStdPE-Semibold';
-    src: url('fonts/AvertaStdPESemibold/font.woff2') format('woff2'), url('../fonts/AvertaStdPESemibold/font.woff') format('woff');
-}
-@font-face {
-    font-family: 'AvertaStdPE-Bold';
-    src: url('fonts/AvertaStdPEBold/font.woff2') format('woff2'), url('../fonts/AvertaStdPEBold/font.woff') format('woff');
-}
-
-$brand--font-reg: 'AvertaStdPE-Regular', Arial, Helvetica, sans-serif;
-$brand--font-semi: 'AvertaStdPE-Semibold', Arial, Helvetica, sans-serif;
-$brand--font-bold: 'AvertaStdPE-Bold', Arial, Helvetica, sans-serif;
-
-
-
 @mixin pragmaticaBook {
     font-family: "pragmatica-extended", sans-serif;
     font-weight: 400;
@@ -110,6 +88,29 @@ $brand--font-bold: 'AvertaStdPE-Bold', Arial, Helvetica, sans-serif;
     font-style: italic;
 }
 
+/* Fonts: Averta (TODELETE)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Myfonts.com - use the 'Webfont Kit Download' configuration
+@import url("//hello.myfonts.net/count/3e7d84");
+
+@font-face {
+    font-family: 'AvertaStdPE-Regular';
+    src: url('fonts/AvertaStdPERegular/font.woff2') format('woff2'), url('../fonts/AvertaStdPERegular/font.woff') format('woff');
+}
+@font-face {
+    font-family: 'AvertaStdPE-Semibold';
+    src: url('fonts/AvertaStdPESemibold/font.woff2') format('woff2'), url('../fonts/AvertaStdPESemibold/font.woff') format('woff');
+}
+@font-face {
+    font-family: 'AvertaStdPE-Bold';
+    src: url('fonts/AvertaStdPEBold/font.woff2') format('woff2'), url('../fonts/AvertaStdPEBold/font.woff') format('woff');
+}
+
+$brand--font-reg: 'AvertaStdPE-Regular', Arial, Helvetica, sans-serif;
+$brand--font-semi: 'AvertaStdPE-Semibold', Arial, Helvetica, sans-serif;
+$brand--font-bold: 'AvertaStdPE-Bold', Arial, Helvetica, sans-serif;
+
+
 /* Variable Font Sizes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Body font size. By default 16px, based on 16px as 'root em' */
@@ -122,14 +123,7 @@ $brand--header-scale: 1.125;
 $brand--line-height: 1.618;
 
 body {
-    @include pragmaticaMedium;
-    //font-family: $brand--font-reg;
     line-height: $brand--line-height;
-}
-
-h1, h2, h4, h4, h5, h6 {
-    @include pragmaticaMediumItalic;
-    //font-family: $brand--font-bold;
 }
 
 h1 {
@@ -164,13 +158,10 @@ h6 {
 
 /* Initial sizing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 html {
     font-size: 100%; // 100% equals 16px sizing
 }
 
 body {
-    color: $color--primary;
-    //font-family: $brand--font-reg;
     font-size: 1em; /* currently ems because Chrome bug misinterpreting rems on body element */
 }

@@ -17,14 +17,14 @@
 		line-height: 1.8;
 		margin-bottom: $margin--general;
 		&.atm--post-intro {
+			@include pragmaticaMedium;
 			font-size: 1.4rem;
 			line-height: 1.6;
-			font-family: $brand--font-semi;
 		}
 		&.atm--post-outro {
+			@include pragmaticaMedium;
 			font-size: 1.4rem;
 			line-height: 1.5;
-			font-family: $brand--font-semi;
 			font-style: italic;
 			margin: 0;
 		}
@@ -46,15 +46,15 @@
 		margin-bottom: $margin--large;
 		position: relative;
 		& figcaption {
+			@include pragmaticaMediumItalic;
 			position: absolute;
 			font-style: italic;
 			z-index: 10;
-			bottom: 50px;
+			bottom: 30px;
 			left: 0;
 			padding: 7px 20px;
 			background-color: #fffbf3;
 			border-top: 5px solid #bf9b30;
-			font-family: $brand--font-semi;
 			font-size: 0.9rem;
 			box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 			border-top-right-radius: 3px;

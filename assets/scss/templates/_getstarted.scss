@@ -3,14 +3,14 @@
 	padding: $padding--large 0;
 	& .org--gs-item {
 		padding: $padding--general;
-		padding-right: $padding--xlarge;
+		padding-right: $padding--xxlarge;
 		background-color: $color--white;
 		margin-bottom: $margin--small;
 		box-shadow: $box--shadow-light;
 		& .mol--gs-number {
 			min-width: 150px;
 			& span {
-				font-family: $brand--font-semi;
+				@include pragmaticaMedium;
 				line-height: 1;
 				font-size: 6rem;
 			}
@@ -19,12 +19,12 @@
 			margin-bottom: 0;
 		}
 		& h2 {
+			@include pragmaticaMediumItalic;
 			margin-top: 10px;
 			font-size: 2rem;
 		}
 		& p {
-			font-family: $brand--font-reg;
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 			line-height: 1.5;
 			margin-top: $margin--small;
 			margin-bottom: $margin--general;
@@ -33,19 +33,21 @@
 			margin-right: $margin--small;
 		}
 		& a {
-			color: $color--highlight-dark;
-			font-family: $brand--font-semi;
+			@include pragmaticaMedium;
+			text-decoration: none;
+			color: $color--primary;
+			background: rgba($color--secondary, 0.33);
 			&:hover {
 				color: $color--primary;
+				 background: rgba($color--secondary, 0.66);
 			}
 		}
 		& ul {
 			margin-top: $margin--small;
 			margin-bottom: 0;
 			& li {
-				font-family: $brand--font-semi;
 				font-size: 1.1rem;
-				margin-bottom: 4px;
+				margin-bottom: $margin--small;
 				&:last-child {
 					margin-bottom: 0;
 				}

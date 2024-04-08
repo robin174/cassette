@@ -12,16 +12,17 @@ footer {
 		color: $color--highlight-light;
 	}
 	a {
+		@include pragmaticaBook;
 		color: $color--white;
 		text-decoration: underline 2px;
 		letter-spacing: 0.05em;
 		&:hover {
-			color: $color--highlight-light;
+			color: $color--tertiary;
 		}
 		& i {
 			transition: 0.3s;
 			&:hover {
-				color: $color--secondary;
+				color: $color--tertiary;
 			}	
 		}
 	}

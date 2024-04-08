@@ -11,7 +11,7 @@ get_header(); ?>
 	<section class="org--content-getstarted">
 		<div class="container-fluid">
 			<div class="row justify-content-center">
-				<div class="col-11 col-xl-9 col-xxl-8">
+				<div class="col-11 col-xl-8 col-xxl-7">
 					<section class="mol--content-introduction">
 						<h1><?php the_field('atm_page_name'); ?></h1>
 						<p><?php the_field('atm_page_intro'); ?></p>

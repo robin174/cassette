@@ -5,11 +5,11 @@
 		padding: $padding--small;
 		padding-left: 30px;
 		border-left: 5px solid $color--primary;
-		& .mol--gs--inner { 
+		& .mol--rm--inner { 
 			padding: $padding--general;
 			padding-top: $padding--large;
 			padding-left: $padding--large;
-			padding-right: $padding--large;
+			padding-right: $padding--xxlarge;
 			background: $color--white;
 			box-shadow: $box--shadow-light;
 			position: relative;
@@ -40,15 +40,14 @@
 				font-size: 3rem;
 			}
 			& p {
-				font-family: $brand--font-reg;
-				font-size: 1.2rem;
-				line-height: 1.4;
-				margin-top: 10px;
-				margin-bottom: 10px;
+				font-size: 1.1rem;
+				line-height: 1.5;
+				margin-top: $margin--small;
+				margin-bottom: $margin--small;
 			}
 			& a {
+				@include pragmaticaMedium;
 				color: $color--highlight-dark;
-				font-family: $brand--font-semi;
 				&:hover {
 					color: $color--primary;
 				}
@@ -59,9 +58,8 @@
 				padding-left: 0.8rem;
 				list-style-type: none;
 				& li {
-					font-family: $brand--font-semi;
 					font-size: 1.1rem;
-					margin-bottom: 4px;
+					margin-bottom: 6px;
 					&:last-child {
 						margin-bottom: 0;
 					}

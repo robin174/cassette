@@ -1,5 +1,5 @@
 <section class="org--rm--item">
-	<div class="mol--gs--inner">
+	<div class="mol--rm--inner">
 		<div class="atm--rm-marker d-flex justify-content-center align-items-center">
 			<i class="fa-2x fa-sharp fa-solid fa-play"></i>
 		</div>

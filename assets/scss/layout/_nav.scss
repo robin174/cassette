@@ -11,7 +11,7 @@ nav a {
 		color: $color--white;
 	}
 	&:hover {
-		color: $color--secondary;
+		color: $color--tertiary;
 	}
 	&:active {
 		color: $color--white;
@@ -45,7 +45,7 @@ nav.navbar {
 			color: $color--white;
 		}
 		&:hover {
-			color: $color--secondary;
+			color: $color--tertiary;
 		}
 		&:active {
 			color: $color--white;
@@ -55,22 +55,22 @@ nav.navbar {
 		}
 	}
 	& li.active a.nav-link {
-		color: $color--secondary;
+		color: $color--tertiary;
 	}
 	& li.getstarted a.nav-link {
 		border: 1px solid $color--white;
 		color: $color--white;
 		&:hover {
-			border: 1px solid $color--secondary;
-			color: $color--secondary;
+			border: 1px solid $color--tertiary;
+			color: $color--tertiary;
 		}
 	}
 	& li.active.getstarted a.nav-link {
-		border: 1px solid $color--secondary;
-		color: $color--secondary;
+		border: 1px solid $color--tertiary;
+		color: $color--tertiary;
 		&:hover {
-			border: 1px solid $color--secondary;
-			color: $color--secondary;
+			border: 1px solid $color--tertiary;
+			color: $color--tertiary;
 		}
 	}
 }
