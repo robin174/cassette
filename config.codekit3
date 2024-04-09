@@ -163,6 +163,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/assets\/images\/logo-apple.png" : {
+      "ft" : 32768,
+      "iS" : 4803,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/logo-apple.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/assets\/images\/logo-cassette.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -259,6 +272,19 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/logo-windows.png" : {
+      "ft" : 32768,
+      "iS" : 3311,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/logo-windows.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/assets\/js\/splide\/css\/splide-core.min.css" : {

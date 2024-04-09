@@ -1,5 +1,6 @@
 footer {
 	background-color: rgba($color--primary,1);
+	background-position: center;
 	i {
 		color: $color--white;
 		margin-right: $margin--small;
@@ -30,6 +31,7 @@ footer {
 
 .org--footer-inner {
 	padding: $padding--general 0;
+
 }
 
 @media (min-width: $media-mobile) {
@@ -73,7 +75,7 @@ footer {
 		color: $color--white;
 		& h4 {
 	  		@include headingUC;
-	  		color: $color--secondary;
+	  		color: $color--white;
 	  		font-size: 0.9rem;
 	  		margin-bottom: 12px;
 	  	}

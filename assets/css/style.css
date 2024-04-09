@@ -383,7 +383,8 @@ nav.navbar {
     text-align: center; }
 
 footer {
-  background-color: #000c16; }
+  background-color: #000c16;
+  background-position: center; }
   footer i {
     color: #fff;
     margin-right: 1rem; }
@@ -445,7 +446,7 @@ footer {
       font-style: normal;
       text-transform: uppercase;
       letter-spacing: 0.2em;
-      color: #40D3C1;
+      color: #fff;
       font-size: 0.9rem;
       margin-bottom: 12px; }
     .org__unit section span {
@@ -711,16 +712,16 @@ footer {
   height: 8px; }
 
 .mol--post-break .mol--line-01 {
-  background-color: #f4c334; }
+  background-color: #40D3C1; }
 
 .mol--post-break .mol--line-02 {
-  background-color: #f56b22; }
+  background-color: #76DCB9; }
 
 .mol--post-break .mol--line-03 {
-  background-color: #e9342e; }
+  background-color: #FF8478; }
 
 .mol--post-break .mol--line-04 {
-  background-color: #b92c3d; }
+  background-color: #EE5B6D; }
 
 .mol--code-block {
   position: relative;
