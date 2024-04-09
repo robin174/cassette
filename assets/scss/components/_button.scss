@@ -11,7 +11,7 @@ a[class*="atm--button-"] {
 .atm--button-primary {
 	padding: 12px 28px;
 	padding-right: 40px;
-	background-color: lighten($color--primary, 6%);
+	background-color: $color--primary-alt;
 	& span {
 		letter-spacing: 0.02em;
 		color: $color--white;
@@ -29,7 +29,6 @@ a[class*="atm--button-"] {
 }
 
 .atm--button-secondary {
-	font-family: $brand--font-semi;
 	padding: 12px 28px;
 	padding-right: 40px;
 	background-color: rgba($color--primary, 0);

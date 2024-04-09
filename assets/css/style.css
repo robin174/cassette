@@ -172,7 +172,7 @@ a[class*="atm--button-"] {
 .atm--button-primary {
   padding: 12px 28px;
   padding-right: 40px;
-  background-color: #001d35; }
+  background-color: #1C2E32; }
   .atm--button-primary span {
     letter-spacing: 0.02em;
     color: #fff; }
@@ -185,7 +185,6 @@ a[class*="atm--button-"] {
       transform: translate(12px, 0); }
 
 .atm--button-secondary {
-  font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
   padding: 12px 28px;
   padding-right: 40px;
   background-color: rgba(0, 12, 22, 0); }
@@ -234,7 +233,7 @@ figure {
     height: 300px; }
 
 header {
-  background-color: #000c16; }
+  background-color: #000C16; }
 
 nav a {
   font-family: "pragmatica-extended", sans-serif;

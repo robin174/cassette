@@ -32,9 +32,12 @@
 											<span>A</span>
 										</div>
 										<div class="atm--inlay-content">
+											One side is mac and one side is Windows, doesn't have to be inl;ay design... could be two tape covers together
+											<?php /*
 											<figure>
 												<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-apple.png">
 											</figure>
+											*/ ?>
 										</div>
 										<div class="atm--inlay-download">
 											<a type="button" class="atm--download" id='url-mac' href=''><i class="fa-sharp fa-regular fa-download"></i>Download for macOS</a>
@@ -45,9 +48,12 @@
 											<span>B</span>
 										</div>
 										<div class="atm--inlay-content">
+											One side is mac and one side is Windows, doesn't have to be inl;ay design... could be two tape covers together
+											<?php /*
 											<figure>
 												<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-windows.png">
 											</figure>
+											*/ ?>
 										</div>
 										<div class="atm--inlay-download">
 											<a type="button" class="atm--download" id='url-windows' href=''><i class="fa-sharp fa-regular fa-download"></i>Download for Windows</a>
