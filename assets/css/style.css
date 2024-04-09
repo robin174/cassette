@@ -383,7 +383,7 @@ nav.navbar {
 
 footer {
   background-color: #000c16;
-  background-position: center; }
+  background-position: top center; }
   footer i {
     color: #fff;
     margin-right: 1rem; }
@@ -461,7 +461,8 @@ footer {
 .org--content-download {
   margin-top: 4rem;
   text-align: center;
-  color: #000; }
+  color: #000;
+  background-position: top center; }
   .org--content-download .org--content-download-inner {
     margin: 0; }
     .org--content-download .org--content-download-inner .mol--content-download {
@@ -512,7 +513,8 @@ footer {
 .org--content-newsletter {
   margin-top: 4rem;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  background-position: top center; }
   .org--content-newsletter .org--content-newsletter-inner {
     margin: 0;
     padding: 12rem 0; }
@@ -633,7 +635,8 @@ footer {
 
 .org--content-introduction {
   margin-top: 4rem;
-  color: #000C16; }
+  color: #000C16;
+  background-position: top center; }
   .org--content-introduction .org--content-introduction-inner {
     margin: 0;
     padding: 12rem 0; }

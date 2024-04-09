@@ -1,4 +1,4 @@
-<?php if(get_field('download_introduction', 'option')) : ?>
+<?php if(get_field('introduction_background', 'option')) : ?>
 	<section class="org--content-introduction" style="background-image: url(<?php the_field('introduction_background','option'); ?>); background-repeat: repeat;">
 <?php else : ?>
 	<section class="org--content-introduction">
