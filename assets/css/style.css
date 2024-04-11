@@ -668,7 +668,7 @@ footer {
     line-height: 1.4; }
 
 .mol--post-tldr {
-  padding: 1rem;
+  padding: 2rem 1rem;
   background: rgba(0, 0, 0, 0.05);
   margin-bottom: 2rem; }
   .mol--post-tldr ul {
@@ -676,10 +676,11 @@ footer {
     .mol--post-tldr ul li {
       font-size: 0.85rem;
       margin-bottom: 15px; }
+      .mol--post-tldr ul li:last-child {
+        margin-bottom: 0; }
 
 .org--content-single {
   margin-top: 4rem;
-  padding-top: 6rem;
   padding-bottom: 6rem; }
   .org--content-single h2 {
     margin-top: 1rem;

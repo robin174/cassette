@@ -9,11 +9,13 @@ get_header(); ?>
 	<section class="org--content-single">
 		<section style="background-color: pink;">
 			<div class="container">
-				<div class="row">
-					<div class="col-6 align-self-center">
-						Image
+				<div class="row g-0">
+					<div class="col-12 col-md-6 align-self-center">
+						<figure>
+                            <?php the_post_thumbnail(); ?>
+                        </figure>
 					</div>
-					<div class="col-6 align-self-center">
+					<div class="col-12 col-md-6 align-self-center">
 						<section class="mol--post-title">
 							<h1><?php the_field('unit_post_title'); ?></h1>
 						</section>

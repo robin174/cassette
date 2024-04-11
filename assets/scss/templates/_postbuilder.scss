@@ -18,7 +18,7 @@
 }
 
 .mol--post-tldr {
-	padding: $padding--small;
+	padding: $padding--general $padding--small;
 	background: rgba(0,0,0,0.05);
 	margin-bottom: $margin--general;
 	& ul {
@@ -26,13 +26,15 @@
 		& li {
 			font-size: 0.85rem;
 			margin-bottom:15px;
+			&:last-child {
+				margin-bottom:0;
+			}
 		}
 	}
 }
 
 .org--content-single {
 	margin-top: $margin--large;
-	padding-top: $padding--xlarge;
 	padding-bottom: $padding--xlarge;
 	& h2 {
 		margin-top: $margin--small;
