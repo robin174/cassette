@@ -650,9 +650,27 @@ footer {
   .org--content-introduction p {
     font-size: 1.3rem; }
 
+.mol--post-title {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  .mol--post-title h1 {
+    font-size: 3rem;
+    margin-bottom: 0; }
+
+.mol--post-synopsis {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+  .mol--post-synopsis p.atm--post-synopsis {
+    font-family: pragmatica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 1.4; }
+
 .mol--post-tldr {
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.05); }
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem; }
   .mol--post-tldr ul {
     padding-left: 1rem; }
     .mol--post-tldr ul li {
@@ -664,7 +682,8 @@ footer {
   padding-top: 6rem;
   padding-bottom: 6rem; }
   .org--content-single h2 {
-    margin-bottom: 32px; }
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
   .org--content-single h3 {
     margin-bottom: 2rem; }
   .org--content-single h4 {

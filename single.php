@@ -5,31 +5,48 @@
 */
 get_header(); ?>
 
-
 <section class="templ--page-main">
 	<section class="org--content-single">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					Intro space
+		<section style="background-color: pink;">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 align-self-center">
+						Image
+					</div>
+					<div class="col-6 align-self-center">
+						<section class="mol--post-title">
+							<h1><?php the_field('unit_post_title'); ?></h1>
+						</section>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12 col-md-3">
-					<section class="mol--post-tldr">
-						<h4>TL:DR</h4>
-						<?php get_template_part('template-parts/post-tldr'); ?>
-					</section>
+		</section>
+		
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<section class="mol--post-synopsis">
+							<p class="atm--post-synopsis"><?php the_field('unit_post_intro'); ?></p>
+						</section>
+					</div>
 				</div>
-				<div class="col-12 offset-md-1 col-md-8">
-					<article>
-						<?php get_template_part('template-parts/post-builder'); ?>
-					</article>
+				<div class="row">
+					<div class="col-12 col-lg-4 col-xl-3">
+						<section class="mol--post-tldr">
+							<h4>TL;DR</h4>
+							<?php get_template_part('template-parts/post-tldr'); ?>
+						</section>
+					</div>
+					<div class="col-12 offset-xl-1 col-lg-8">
+						<article>
+							<?php get_template_part('template-parts/post-builder'); ?>
+						</article>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</section>
-
 </section>
 
 <?php get_footer(); // to counter php close tag issue

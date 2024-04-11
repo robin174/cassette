@@ -31,14 +31,6 @@
 		</div>
 	<?php endif; ?>
 
-	<?php if(get_row_layout() == 'post_introduction'): // Paragraph Introduction ?>
-		<div class="row justify-content-center">
-			<div class="col-12">
-				<p class="atm--post-intro"><?php the_sub_field('unit_introduction'); ?></p>
-			</div>
-		</div>
-	<?php endif; ?>
-
 	<?php if(get_row_layout() == 'post_paragraph'): // Paragraph ?>
 		<div class="row justify-content-center">
 			<div class="col-12">
