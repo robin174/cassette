@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	@include pragmaticaMedium;
+	@include pragmaticaExtMedium;
 	color: $color--primary;
 }
 
@@ -42,7 +42,7 @@ li {
 }
 
 strong {
-	@include pragmaticaMedium;
+	@include pragmaticaBold;
 }
 
 .ut--uc {

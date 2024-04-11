@@ -82,7 +82,7 @@ strong {
   background: rgba(64, 211, 193, 0.33); }
 
 body {
-  font-family: "pragmatica-extended", sans-serif;
+  font-family: pragmatica, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000C16; }
@@ -104,7 +104,7 @@ h5 {
   font-size: 0.9rem; }
 
 p {
-  font-family: "pragmatica-extended", sans-serif;
+  font-family: pragmatica, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000C16;
@@ -113,18 +113,18 @@ p {
     margin-bottom: 0; }
 
 li {
-  font-family: "pragmatica-extended", sans-serif;
+  font-family: pragmatica, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000C16; }
 
 strong {
-  font-family: "pragmatica-extended", sans-serif;
-  font-weight: 500;
+  font-family: pragmatica, sans-serif;
+  font-weight: 700;
   font-style: normal; }
 
 .ut--uc {
-  font-family: "pragmatica-extended", sans-serif;
+  font-family: pragmatica, sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -236,7 +236,7 @@ header {
   background-color: #000C16; }
 
 nav a {
-  font-family: "pragmatica-extended", sans-serif;
+  font-family: pragmatica, sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -256,7 +256,7 @@ nav a {
 nav.navbar {
   padding: 2rem 0; }
   nav.navbar h1, nav.navbar h1 a.navbar-brand {
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: pragmatica, sans-serif;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
@@ -374,8 +374,8 @@ nav.navbar {
     font-size: 4rem;
     text-align: center; }
   .mol--content-introduction p {
-    font-family: "pragmatica-extended", sans-serif;
-    font-weight: 500;
+    font-family: pragmatica, sans-serif;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.4rem;
     line-height: 1.5;
@@ -393,7 +393,7 @@ footer {
   footer .highlight {
     color: #40D3C1; }
   footer a {
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: pragmatica, sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #fff;
@@ -440,7 +440,7 @@ footer {
   .org__unit section {
     color: #fff; }
     .org__unit section h4 {
-      font-family: "pragmatica-extended", sans-serif;
+      font-family: pragmatica, sans-serif;
       font-weight: 700;
       font-style: normal;
       text-transform: uppercase;
@@ -470,10 +470,10 @@ footer {
     .org--content-download .org--content-download-inner .fa-brands, .org--content-download .org--content-download-inner .fa-sharp {
       margin-right: 10px; }
   .org--content-download h3 {
-    font-size: 3rem;
     font-family: "pragmatica-extended", sans-serif;
     font-weight: 500;
     font-style: italic;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 5px; }
   .org--content-download p {
@@ -519,10 +519,10 @@ footer {
     margin: 0;
     padding: 12rem 0; }
   .org--content-newsletter h3 {
-    font-size: 3rem;
     font-family: "pragmatica-extended", sans-serif;
     font-weight: 500;
     font-style: italic;
+    font-size: 3rem;
     color: #fff;
     margin-top: 0;
     margin-bottom: 5px; }
@@ -569,8 +569,8 @@ footer {
     .org--content-getstarted .org--gs-item .mol--gs-number {
       min-width: 150px; }
       .org--content-getstarted .org--gs-item .mol--gs-number span {
-        font-family: "pragmatica-extended", sans-serif;
-        font-weight: 500;
+        font-family: pragmatica, sans-serif;
+        font-weight: 700;
         font-style: normal;
         line-height: 1;
         font-size: 6rem; }
@@ -590,8 +590,8 @@ footer {
     .org--content-getstarted .org--gs-item i.fa-sharp, .org--content-getstarted .org--gs-item i.fa-kit {
       margin-right: 1rem; }
     .org--content-getstarted .org--gs-item a {
-      font-family: "pragmatica-extended", sans-serif;
-      font-weight: 500;
+      font-family: pragmatica, sans-serif;
+      font-weight: 700;
       font-style: normal;
       text-decoration: none;
       color: #000C16;
@@ -650,6 +650,15 @@ footer {
   .org--content-introduction p {
     font-size: 1.3rem; }
 
+.mol--post-tldr {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.05); }
+  .mol--post-tldr ul {
+    padding-left: 1rem; }
+    .mol--post-tldr ul li {
+      font-size: 0.85rem;
+      margin-bottom: 15px; }
+
 .org--content-single {
   margin-top: 4rem;
   padding-top: 6rem;
@@ -657,7 +666,6 @@ footer {
   .org--content-single h2 {
     margin-bottom: 32px; }
   .org--content-single h3 {
-    margin-top: 1rem;
     margin-bottom: 2rem; }
   .org--content-single h4 {
     margin-bottom: 16px; }
@@ -665,15 +673,17 @@ footer {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 2rem; }
+    .org--content-single p:last-child {
+      margin-bottom: 0; }
     .org--content-single p.atm--post-intro {
-      font-family: "pragmatica-extended", sans-serif;
-      font-weight: 500;
+      font-family: pragmatica, sans-serif;
+      font-weight: 700;
       font-style: normal;
       font-size: 1.4rem;
       line-height: 1.6; }
     .org--content-single p.atm--post-outro {
-      font-family: "pragmatica-extended", sans-serif;
-      font-weight: 500;
+      font-family: pragmatica, sans-serif;
+      font-weight: 700;
       font-style: normal;
       font-size: 1.4rem;
       line-height: 1.5;
@@ -681,11 +691,10 @@ footer {
       margin: 0; }
 
 .mol--post-paragraph {
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
 
 .mol--image-full figure.atm--post-img {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   position: relative; }
   .mol--image-full figure.atm--post-img figcaption {
     font-family: "pragmatica-extended", sans-serif;
@@ -698,7 +707,7 @@ footer {
     left: 0;
     padding: 7px 20px;
     background-color: #fffbf3;
-    border-top: 5px solid #bf9b30;
+    border-top: 5px solid #FF8478;
     font-size: 0.9rem;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     border-top-right-radius: 3px;
@@ -710,24 +719,13 @@ footer {
   border-top: 1px solid #40D3C1;
   border-bottom: 1px solid #40D3C1; }
 
-.mol--post-break div[class*="mol--line"] {
-  height: 8px; }
-
-.mol--post-break .mol--line-01 {
-  background-color: #40D3C1; }
-
-.mol--post-break .mol--line-02 {
-  background-color: #76DCB9; }
-
-.mol--post-break .mol--line-03 {
-  background-color: #FF8478; }
-
-.mol--post-break .mol--line-04 {
-  background-color: #EE5B6D; }
+.mol--post-break {
+  margin-bottom: 2rem; }
+  .mol--post-break figure {
+    max-width: 140px; }
 
 .mol--code-block {
   position: relative;
-  margin-top: 4rem;
   margin-bottom: 4rem;
   /* for block of code */ }
   .mol--code-block .atm--code-header {
@@ -806,8 +804,8 @@ footer {
         margin-top: 1rem;
         margin-bottom: 1rem; }
       .org--content-roadmap .org--rm--item .mol--rm--inner a {
-        font-family: "pragmatica-extended", sans-serif;
-        font-weight: 500;
+        font-family: pragmatica, sans-serif;
+        font-weight: 700;
         font-style: normal;
         color: #2cbeac; }
         .org--content-roadmap .org--rm--item .mol--rm--inner a:hover {

@@ -3,7 +3,7 @@
 
 	<?php if(get_row_layout() == 'post_subheading_h2'): // Subheading: h2 ?>
 		<div class="row justify-content-center">
-			<div class="col-11 col-md-10 col-xl-7"> 
+			<div class="col-12"> 
 				<div class="mol--post-text">
 					<h2 class="atm--post-h2"><?php the_sub_field('unit_subheading_h2');?></h2>
 				</div>
@@ -13,7 +13,7 @@
 
 	<?php if(get_row_layout() == 'post_subheading_h3'): // Subheading: h3 ?>
 		<div class="row justify-content-center">
-			<div class="col-11 col-md-10 col-xl-7"> 
+			<div class="col-12"> 
 				<div class="mol--post-text">
 					<h3 class="atm--post-h3"><?php the_sub_field('unit_subheading_h3');?></h3>
 				</div>
@@ -23,7 +23,7 @@
 
 	<?php if(get_row_layout() == 'post_subheading_h4'): // Subheading: h4 ?>
 		<div class="row justify-content-center">
-			<div class="col-11 col-md-10 col-xl-7"> 
+			<div class="col-12"> 
 				<div class="mol--post-text">
 					<h4 class="atm--post-h4"><?php the_sub_field('unit_subheading_h4');?></h4>
 				</div>
@@ -33,7 +33,7 @@
 
 	<?php if(get_row_layout() == 'post_introduction'): // Paragraph Introduction ?>
 		<div class="row justify-content-center">
-			<div class="col-11 col-md-9 col-lg-8 col-xl-6">
+			<div class="col-12">
 				<p class="atm--post-intro"><?php the_sub_field('unit_introduction'); ?></p>
 			</div>
 		</div>
@@ -41,7 +41,7 @@
 
 	<?php if(get_row_layout() == 'post_paragraph'): // Paragraph ?>
 		<div class="row justify-content-center">
-			<div class="col-11 col-md-8 col-xl-6">
+			<div class="col-12">
 				<div class="mol--post-paragraph">
 					<?php the_sub_field('unit_paragraph'); ?>
 				</div>
@@ -51,7 +51,7 @@
 
 	<?php if(get_row_layout() == 'post_image'): // Image ?>
 		<div class="row justify-content-center">
-			<div class="col-9">
+			<div class="col-12">
 				<div class="mol--image-full d-flex justify-content-center">
 					<figure class="atm--post-img">
 						<img class="mw-100" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
@@ -66,7 +66,7 @@
 
 	<?php if(get_row_layout() == 'post_code_block'): // Code block ?>
 		<div class="row justify-content-center">
-			<div class="col-11 col-md-9">
+			<div class="col-12">
 				<section class="mol--code-block atm--highlightjs">
 					
 					<pre><code><?php the_sub_field('unit_code_block'); ?></code></pre>
@@ -102,34 +102,21 @@
 
 	<?php if(get_row_layout() == 'post_hr'): // Pager Break ?>
     	<div class="row justify-content-center">
-			<div class="col-11 col-md-9">
-				<div class="mol--post-break">
+			<div class="col-12">
+				<div class="mol--post-break d-flex justify-content-center">
 					<?php if(get_sub_field('add_page_break')) { ?>
-						<div>
-							<div class="mol--line-01">
-								&nbsp;
-							</div>
-							<div class="mol--line-02">
-								&nbsp;
-							</div>
-							<div class="mol--line-03">
-								&nbsp;
-							</div>
-							<div class="mol--line-04">
-								&nbsp;
-							</div>
-						</div>
+							<figure>
+								<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/use-VersionLogo-Cassette.png">
+							</figure>
 					<?php } ?>
 				</div>
 			</div>
 		</div>
 	<?php endif; ?>
 
-	<!-- Block quote -->
-
 	<?php if(get_row_layout() == 'post_conclusion'): // Conclusion ?>
     	<div class="row justify-content-center">
-			<div class="col-11 col-md-8 col-xl-6">
+			<div class="col-12">
 				<div class="mol--post-conclusion">
 					<p class="atm--post-outro"><?php the_sub_field('unit_conclusion'); ?></p>
 				</div>
@@ -140,7 +127,7 @@
 	<?php if(get_row_layout() == 'post_image_two'): // Two images in a row, no captions  ?>
    		<section class="org--image-block">
 	   		<div class="row g-0 justify-content-center">
-				<div class="col-12 col-md-9">
+				<div class="col-12">
 					<div class="mol--image-block d-flex">
 						<div class="m-1 m-md-2 flex-1 flex-md-fill">
 							<div class="d-flex justify-content-center">
@@ -165,7 +152,7 @@
 	<?php if(get_row_layout() == 'post_image_three'): // Three images in a row, no captions  ?>
 		<section class="org--image-block">
 			<div class="row g-0 justify-content-center">
-				<div class="col-12 col-md-9">
+				<div class="col-12">
 					<div class="mol--image-block d-flex">
 						<div class="m-1 m-md-2 flex-1 flex-md-fill">
 							<div class="d-flex justify-content-center">
@@ -193,5 +180,53 @@
 			</div>
 		</section>
 	<?php endif; ?>
+
+	<?php if(get_row_layout() == 'post_bullet_list'): // Bullet List  ?>
+	        <div class="row">
+	            <div class="col-12">
+	                <section>
+	                    <?php if( get_sub_field('unit_introduction_para') ): ?>
+	                    	<p class="bullet-intro"><?php the_sub_field('unit_introduction_para'); ?></p>
+	                    <?php endif; ?>
+	                    <?php 
+	                    $values = get_sub_field('unit_bullet_point');
+	                    if ($values){ 
+	                    echo '<ul class="bullet">';
+	                    foreach($values as $value){
+	                        echo '<li class="">'.$value['item_list'].'</li>'; 
+	                    }
+	                    echo '</ul>';
+	                    } ?>
+	                    <?php if( get_sub_field('unit_conclusion_para') ): ?>
+	                    	<p><?php the_sub_field('unit_conclusion_para'); ?></p>
+	                    <?php endif; ?>
+	                </section>
+	            </div>
+	        </div><!-- end .row -->
+    <?php endif; ?>
+
+    <?php if(get_row_layout() == 'post_number_list'): // Number List  ?>
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    <?php if( get_sub_field('unit_introduction_para') ): ?>
+                    	<p class="bullet-intro"><?php the_sub_field('unit_introduction_para'); ?></p>
+                    <?php endif; ?>
+                    <?php 
+                    $values = get_sub_field('unit_bullet_point');
+                    if ($values){ 
+                    echo '<ul class="bullet">';
+                    foreach($values as $value){
+                        echo '<li class="">'.$value['item_list'].'</li>'; 
+                    }
+                    echo '</ul>';
+                    } ?>
+                    <?php if( get_sub_field('unit_conclusion_para') ): ?>
+                    	<p><?php the_sub_field('unit_conclusion_para'); ?></p>
+                    <?php endif; ?>
+                </section>
+            </div>
+        </div><!-- end .row -->
+    <?php endif; ?>
 
 <?php endwhile; ?>

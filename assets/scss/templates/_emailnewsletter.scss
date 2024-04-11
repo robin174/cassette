@@ -8,8 +8,8 @@
 		padding: $padding--large*3 0;
 	}
 	& h3 {
+		@include pragmaticaExtMediumItalic;
 		font-size: 3rem;
-		@include pragmaticaMediumItalic;
 		color: $color--white;
 		margin-top: 0;
 		margin-bottom: 5px;

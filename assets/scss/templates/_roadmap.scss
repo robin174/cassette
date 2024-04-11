@@ -46,7 +46,7 @@
 				margin-bottom: $margin--small;
 			}
 			& a {
-				@include pragmaticaMedium;
+				@include pragmaticaBold;
 				color: $color--highlight-dark;
 				&:hover {
 					color: $color--primary;

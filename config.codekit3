@@ -934,6 +934,14 @@
       "oAP" : "\/template-parts\/post-builder.php",
       "oF" : 0
     },
+    "\/template-parts\/post-tldr.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/post-tldr.php",
+      "oF" : 0
+    },
     "\/template-parts\/section-download.php" : {
       "cB" : 0,
       "ft" : 8192,

@@ -58,35 +58,51 @@ $padding--xxlarge: $base--value*10;
 
 /* Fonts: Pragmatica
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@mixin pragmaticaExtBook {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@mixin pragmaticaExtBookItalic {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+@mixin pragmaticaExtMedium {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+@mixin pragmaticaExtMediumItalic {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+@mixin pragmaticaExtBold {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+@mixin pragmaticaExtBoldItalic {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@mixin pragmaticaLight {
+    font-family: pragmatica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
 @mixin pragmaticaBook {
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: pragmatica, sans-serif;
     font-weight: 400;
     font-style: normal;
-}
-@mixin pragmaticaBookItalic {
-    font-family: "pragmatica-extended", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-@mixin pragmaticaMedium {
-    font-family: "pragmatica-extended", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-@mixin pragmaticaMediumItalic {
-    font-family: "pragmatica-extended", sans-serif;
-    font-weight: 500;
-    font-style: italic;
 }
 @mixin pragmaticaBold {
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: pragmatica, sans-serif;
     font-weight: 700;
     font-style: normal;
-}
-@mixin pragmaticaBoldItalic {
-    font-family: "pragmatica-extended", sans-serif;
-    font-weight: 700;
-    font-style: italic;
 }
 
 /* Fonts: Averta (TODELETE)
