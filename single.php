@@ -18,6 +18,7 @@ get_header(); ?>
 					<div class="col-12 col-md-6 align-self-center">
 						<section class="mol--post-title">
 							<h1><?php the_field('unit_post_title'); ?></h1>
+							<span>Date</span>
 						</section>
 					</div>
 				</div>
