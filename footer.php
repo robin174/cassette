@@ -6,7 +6,7 @@
 ?>
 		</main><!-- end main -->
 		
-		<?php get_template_part('template-parts/footer-border'); ?>
+
 
 		<?php if(get_field('f_con_background', 'option')) : ?>
 			<footer style="background-image: url(<?php the_field('f_con_background', 'option'); ?>);background-repeat: repeat;">

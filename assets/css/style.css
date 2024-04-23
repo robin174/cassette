@@ -422,14 +422,6 @@ footer {
 .org--footer-inner {
   padding: 2rem 0; }
 
-@media (min-width: 576px) {
-  footer .org--footer-inner {
-    padding: 6rem 0; } }
-
-@media (min-width: 768px) {
-  footer .org--footer-inner {
-    padding: 10rem 0; } }
-
 .org__unit-logo img {
   height: 40px;
   margin-bottom: 1rem; }
@@ -470,6 +462,14 @@ footer {
   color: rgba(255, 255, 255, 0.5);
   margin-top: 1rem;
   font-size: 0.9rem; }
+
+@media (min-width: 576px) {
+  footer .org--footer-inner {
+    padding: 4rem 0; } }
+
+@media (min-width: 768px) {
+  footer .org--footer-inner {
+    padding: 6rem 0; } }
 
 .org--content-download {
   margin-top: 4rem;
@@ -594,7 +594,7 @@ footer {
     padding: 2rem; } }
 
 [class*="mol--line"] {
-  height: 7px;
+  height: 5px;
   width: 100%; }
 
 .mol--line-01 {

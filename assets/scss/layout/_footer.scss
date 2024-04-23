@@ -34,18 +34,6 @@ footer {
 
 }
 
-@media (min-width: $media-mobile) {
-	footer .org--footer-inner {
-		padding: $padding--xlarge 0;
-	}
-}
-
-@media (min-width: $media-tablet) {
-	footer .org--footer-inner {
-		padding: $padding--xxlarge 0;
-	}
-}
-
 .org__unit-logo {
 	& img {
 		height:40px;
@@ -95,3 +83,16 @@ footer {
 	  	font-size: 0.9rem;
 	}
 }
+
+@media (min-width: $media-mobile) {
+	footer .org--footer-inner {
+		padding: $padding--large 0;
+	}
+}
+
+@media (min-width: $media-tablet) {
+	footer .org--footer-inner {
+		padding: $padding--xlarge 0;
+	}
+}
+

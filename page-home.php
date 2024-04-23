@@ -37,7 +37,7 @@ get_header(); ?>
 
 								<div class="container-grid">
 									<aside class="grid-border d-flex flex-column">
-						               	<div class="flex-fill" style="background:linear-gradient(180deg, rgba(255,95,95,1) 0%, rgba(255,128,120,1) 25%, rgba(227,189,159,1) 50%, rgba(64,206,188,1) 75%, rgba(37,131,131,1) 100%);;"></div>
+						               	<div class="flex-fill" style="background:linear-gradient(180deg, rgba(255,95,95,1) 0%, rgba(255,128,120,1) 25%, rgba(227,189,159,1) 50%, rgba(64,206,188,1) 75%, rgba(37,131,131,1) 100%);"></div>
 						            </aside>
 									<header class="d-flex justify-content-between">
 										<span><i class="fa-sharp fa-lg fa-solid fa-corner fa-flip-horizontal"></i></span>
@@ -96,7 +96,7 @@ get_header(); ?>
 				</div>
 				<div class="col-12 col-md-6" style="padding-right:120px;">
 					<p class="bold">The mixed tape, an emblem of personal expression and grassroots sharing in the 80s and 90s, symbolizes the dawn of decentralized data sharing.</p>
-					<p><i>Background like a zine.</i></p>
+					<p><i>Background like a zine. Or layered paper with shadow</i></p>
 				</div>
 				<div class="col-12 col-md-6" style="padding-right:120px;">
 					<p class="norm">Individuals curated and distributed music compilations on cassette tapes, bypassing traditional music distribution channels and creating personalized experiences. This physical act of sharing, inherently decentralized, foreshadowed the digital data distribution networks that would emerge later.</p>
