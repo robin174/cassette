@@ -71,10 +71,13 @@
 			<nav class="navbar navbar-expand-md navbar-offcanvas"> 
 				<div class="container-fluid">
 					<?php if ( is_front_page() && is_home() ) : ?>
-						<h1><?php bloginfo( 'name' ); ?></h1>
+						<?php /* <h1><?php bloginfo( 'name' ); ?></h1> */ ?>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo">
 					<?php else : ?>
-						<h1><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-								<?php bloginfo( 'name' ); ?></a></h1>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo"></a>
+						<?php /*
+						<h1><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						*/ ?>
 					<?php endif; ?>
 
 					<div class="d-md-none">

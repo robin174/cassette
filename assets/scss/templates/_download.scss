@@ -13,12 +13,13 @@
 		}
 	}
 	& h3 {
-		@include pragmaticaExtMediumItalic;
-		font-size: 3rem;
+		@include pragmaticaExtBold;
+		font-size: 2.7rem;
 		margin-top: 0;
 		margin-bottom: 5px;
 	}
 	& p {
+		@include pragmaticaExtMedium;
 		font-size: 1.3rem;
 	}
 }
@@ -31,6 +32,10 @@
 		background: $color--black;
 		color: $color--white;
 		font-size:24px;
+		& .atm--release-number {
+			@include pragmaticaExtBookItalic;
+			letter-spacing: 0.1em;
+		}
 	}
 	& .atm--inlay-half {
 		&:first-child {
@@ -39,35 +44,35 @@
 		&:last-child {
 			border-left: 1px solid $color--black;
 		}
-	}
-	& .atm--inlay-letter {
-		padding: 8px;
-		border-bottom: 2px solid black; 
-		font-size:24px;
-		text-align: left;
-		& span {
-			padding: 3px 9px;
-			color: white;
-			background: $color--black;
+		& .atm--inlay-letter {
+			padding: 8px;
+			border-bottom: 2px solid black; 
+			font-size:24px;
+			text-align: left;
+			& span {
+				padding: 3px 9px;
+				color: white;
+				background: $color--black;
+			}
 		}
-	}
-	& .atm--inlay-content {
-		height: 300px;
-		background: url('../images/line-cassette-v5.png');
-		background-repeat: repeat-y;
-		text-align: left;
-		padding-left: $padding--small;
-		& span {
-			margin-left:15px;
-			font-size: 12rem;
-			line-height: 1.3;
-			@include chainPrinter;
+		& .atm--inlay-content {
+			height: 300px;
+			background: url('../images/line-cassette-v5.png');
+			background-repeat: repeat-y;
+			text-align: left;
+			padding-left: $padding--small;
+			& span {
+				margin-left:15px;
+				font-size: 12rem;
+				line-height: 1.3;
+				@include chainPrinter;
+			}
 		}
-	}
-	& .atm--inlay-download {
-		padding: 15px; 
-		border-top: 2px solid black; 
-		font-size:24px;
-		text-align: left;
+		& .atm--inlay-download {
+			padding: 15px; 
+			border-top: 2px solid black; 
+			font-size:24px;
+			text-align: left;
+		}
 	}
 }

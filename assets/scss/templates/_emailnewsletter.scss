@@ -8,15 +8,16 @@
 		padding: $padding--large*3 0;
 	}
 	& h3 {
-		@include pragmaticaExtMediumItalic;
-		font-size: 3rem;
-		color: $color--white;
+		@include pragmaticaExtBold;
+		font-size: 2.4rem;
 		margin-top: 0;
 		margin-bottom: 5px;
+		color: $color--white;
 	}
 	& p {
-		color: $color--white;
+		@include pragmaticaExtMedium;
 		font-size: 1.3rem;
+		color: $color--white;
 	}
 	& .mol--newsletter-form {
 		& input {

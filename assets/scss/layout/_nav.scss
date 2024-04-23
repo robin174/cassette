@@ -33,11 +33,16 @@ nav.navbar {
 	& h1 a.navbar-brand:hover {
 		color: $color--secondary;
 	}
+	a img {
+		width: 200px;
+	}
 	& li a.nav-link {
+		@include navigationUC;
+		@include pragmaticaExtBook;
 		transition: $base--transition;
 		margin-left: $margin--small;
-		@include navigationUC;
 		color: $color--white;
+		padding-top: 12px;
 		&:link {
 			color: $color--white;
 		}

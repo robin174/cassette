@@ -204,6 +204,9 @@ a[class*="atm--button-"] {
   margin-left: 1rem; }
 
 a.atm--download {
+  font-family: "pragmatica-extended", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   transition: 0.4s;
   color: #000;
   text-decoration: none; }
@@ -271,13 +274,19 @@ nav.navbar {
     margin-bottom: 0; }
   nav.navbar h1 a.navbar-brand:hover {
     color: #40D3C1; }
+  nav.navbar a img {
+    width: 200px; }
   nav.navbar li a.nav-link {
-    transition: 0.4s;
-    margin-left: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
-    color: #fff; }
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.4s;
+    margin-left: 1rem;
+    color: #fff;
+    padding-top: 12px; }
     nav.navbar li a.nav-link:link {
       color: #fff; }
     nav.navbar li a.nav-link:visited {
@@ -475,12 +484,15 @@ footer {
       margin-right: 10px; }
   .org--content-download h3 {
     font-family: "pragmatica-extended", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 3rem;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.7rem;
     margin-top: 0;
     margin-bottom: 5px; }
   .org--content-download p {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 1.3rem; }
 
 .mol--cassette-inlay {
@@ -491,33 +503,38 @@ footer {
     background: #000;
     color: #fff;
     font-size: 24px; }
+    .mol--cassette-inlay .atm--inlay-header .atm--release-number {
+      font-family: "pragmatica-extended", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 0.1em; }
   .mol--cassette-inlay .atm--inlay-half:first-child {
     border-right: 1px solid #000; }
   .mol--cassette-inlay .atm--inlay-half:last-child {
     border-left: 1px solid #000; }
-  .mol--cassette-inlay .atm--inlay-letter {
+  .mol--cassette-inlay .atm--inlay-half .atm--inlay-letter {
     padding: 8px;
     border-bottom: 2px solid black;
     font-size: 24px;
     text-align: left; }
-    .mol--cassette-inlay .atm--inlay-letter span {
+    .mol--cassette-inlay .atm--inlay-half .atm--inlay-letter span {
       padding: 3px 9px;
       color: white;
       background: #000; }
-  .mol--cassette-inlay .atm--inlay-content {
+  .mol--cassette-inlay .atm--inlay-half .atm--inlay-content {
     height: 300px;
     background: url("../images/line-cassette-v5.png");
     background-repeat: repeat-y;
     text-align: left;
     padding-left: 1rem; }
-    .mol--cassette-inlay .atm--inlay-content span {
+    .mol--cassette-inlay .atm--inlay-half .atm--inlay-content span {
       margin-left: 15px;
       font-size: 12rem;
       line-height: 1.3;
       font-family: "chainprinter", sans-serif;
       font-weight: 400;
       font-style: normal; }
-  .mol--cassette-inlay .atm--inlay-download {
+  .mol--cassette-inlay .atm--inlay-half .atm--inlay-download {
     padding: 15px;
     border-top: 2px solid black;
     font-size: 24px;
@@ -533,15 +550,18 @@ footer {
     padding: 12rem 0; }
   .org--content-newsletter h3 {
     font-family: "pragmatica-extended", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 3rem;
-    color: #fff;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.4rem;
     margin-top: 0;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    color: #fff; }
   .org--content-newsletter p {
-    color: #fff;
-    font-size: 1.3rem; }
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: #fff; }
   .org--content-newsletter .mol--newsletter-form input {
     border: none !important; }
   .org--content-newsletter .mol--newsletter-form input.email {
@@ -693,8 +713,8 @@ footer {
 .container-grid {
   display: grid;
   grid-template-rows: 1fr 8fr 1fr;
-  grid-template-columns: 14fr 2fr;
-  grid-template-areas: "header aside" "main aside" "footer aside";
+  grid-template-columns: 1fr 87fr 12fr;
+  grid-template-areas: "border header aside" "border main aside" "border footer aside";
   /* grid-gap: .75em;  */ }
   @media (max-width: 480px) {
     .container-grid {
@@ -715,10 +735,11 @@ footer {
     padding: 60px 40px; }
   .container-grid main div {
     padding: 10px 30px; }
-  .container-grid aside {
+  .container-grid aside.grid-border {
+    grid-area: border;
+    background: red; }
+  .container-grid aside.grid-half {
     grid-area: aside; }
-  .container-grid aside div {
-    padding: 20px; }
   .container-grid footer {
     grid-area: footer;
     font-family: "pragmatica-extended", sans-serif;

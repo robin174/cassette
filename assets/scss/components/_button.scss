@@ -53,6 +53,7 @@ a[class*="atm--button-"] {
 
 
 a.atm--download {
+	@include pragmaticaExtMedium;
 	transition: $base--transition;
 	color: $color--black;
 	text-decoration: none;

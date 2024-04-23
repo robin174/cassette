@@ -26,9 +26,11 @@
 	                			 <div class="row">
 	                				<div class="col-12">
 	                					<?php if ( is_front_page() && is_home() ) : ?>
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-dk.svg" alt="Cassette logo">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo">
 	                					<?php else : ?>
-											<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo"></a>
+											<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo">
+											</a>
 										<?php endif; ?>
 	                				</div>
 	                			</div>

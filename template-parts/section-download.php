@@ -23,7 +23,7 @@
 							<section class="mol--cassette-inlay">
 								<div class="row g-0">
 									<div class="col-12 atm--inlay-header">
-										<span id="release-number"></span>
+										<span class="atm--release-number" id="release-number"></span>
 									</div>
 								</div>
 								<div class="row g-0">
@@ -43,7 +43,7 @@
 											<a type="button" class="atm--download" id='url-mac' href=''><i class="fa-sharp fa-regular fa-download"></i>Download for macOS</a>
 										</div>
 									</div>
-									<div class="col-6">
+									<div class="col-6 atm--inlay-half">
 										<div class="atm--inlay-letter">
 											<span>B</span>
 										</div>

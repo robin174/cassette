@@ -35,8 +35,10 @@ get_header(); ?>
 							<div style="background:<?php the_field('main_section_gradient','option'); ?>">
 						<?php endif; ?>	
 
-
 								<div class="container-grid">
+									<aside class="grid-border d-flex flex-column">
+						               	<div class="flex-fill" style="background:linear-gradient(180deg, rgba(255,95,95,1) 0%, rgba(255,128,120,1) 25%, rgba(227,189,159,1) 50%, rgba(64,206,188,1) 75%, rgba(37,131,131,1) 100%);;"></div>
+						            </aside>
 									<header class="d-flex justify-content-between">
 										<span><i class="fa-sharp fa-lg fa-solid fa-corner fa-flip-horizontal"></i></span>
 										<span><i class="fa-sharp fa-lg fa-solid fa-plus"></i></span>
@@ -72,7 +74,7 @@ get_header(); ?>
 										<span><i class="fa-sharp fa-lg fa-solid fa-plus"></i></span>
 										<span><i class="fa-sharp fa-lg fa-solid fa-corner fa-flip-vertical"></i></span>
 						            </footer>
-						            <aside class="d-flex flex-column">
+						            <aside class="grid-half d-flex flex-column">
 						                <div class="flex-fill" style="background: #40D3C1;"></div>
 						                <div class="flex-fill" style="background: #FF8478;"></div>
 						            </aside>
@@ -144,10 +146,12 @@ get_header(); ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
 					<?php get_template_part('template-parts/hero-slider-home'); ?>
 				<?php } ?>
+			<?php /* 
 			<?php elseif(get_sub_field('ts_options') == 'introduction') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
 					<?php get_template_part('template-parts/section-introduction'); ?>
 				<?php } ?>
+			*/?>
 			<?php elseif(get_sub_field('ts_options') == 'newsletter') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
 					<?php get_template_part('template-parts/section-email-newsletter'); ?>

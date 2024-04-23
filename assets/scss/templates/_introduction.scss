@@ -27,11 +27,11 @@
 .container-grid {
     display: grid;
     grid-template-rows: 1fr 8fr 1fr;
-    grid-template-columns: 14fr 2fr;
+    grid-template-columns: 1fr 87fr 12fr;
     grid-template-areas: 
-        "header aside"
-        "main aside"
-        "footer aside";
+        "border header aside"
+        "border main aside"
+        "border footer aside";
     /* grid-gap: .75em;  */      
     // height: 100vh;
     // height: 720px;
@@ -63,12 +63,14 @@
         //padding-right: 40px;
 
     }
-    aside {
-        grid-area: aside;
+    aside.grid-border {
+        grid-area: border;
+        background: red;
         //overflow-y: auto;
     }
-    aside div {
-        padding: 20px;
+    aside.grid-half {
+        grid-area: aside;
+        //overflow-y: auto;
     }
     footer {
     	grid-area: footer;
