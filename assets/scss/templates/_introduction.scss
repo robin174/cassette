@@ -27,7 +27,7 @@
 .container-grid {
     display: grid;
     grid-template-rows: 1fr 8fr 1fr;
-    grid-template-columns: 1fr 87fr 12fr;
+    grid-template-columns: 1fr 87fr 8fr;
     grid-template-areas: 
         "border header aside"
         "border main aside"
@@ -84,3 +84,29 @@
 
     }
 }
+
+h3 {
+    @include pragmaticaExtBold;
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+p.bold {
+    @include pragmaticaBold;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+p.norm {
+    @include pragmaticaBold;
+    font-size: 1rem;
+    line-height: 1.7;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+

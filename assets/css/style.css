@@ -569,6 +569,9 @@ footer {
   .org--content-newsletter .mol--newsletter-form input[type="text"] {
     height: 50px; }
   .org--content-newsletter .mol--newsletter-form button, .org--content-newsletter .mol--newsletter-form input[type="submit"].button {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     color: #000C16;
     min-width: 150px;
     border: none;
@@ -713,7 +716,7 @@ footer {
 .container-grid {
   display: grid;
   grid-template-rows: 1fr 8fr 1fr;
-  grid-template-columns: 1fr 87fr 12fr;
+  grid-template-columns: 1fr 87fr 8fr;
   grid-template-areas: "border header aside" "border main aside" "border footer aside";
   /* grid-gap: .75em;  */ }
   @media (max-width: 480px) {
@@ -750,6 +753,31 @@ footer {
     background: unset; }
     .container-grid footer i {
       color: #000C16; }
+
+h3 {
+  font-family: "pragmatica-extended", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+p.bold {
+  font-family: pragmatica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 0; }
+
+p.norm {
+  font-family: pragmatica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.7; }
+  p.norm:last-child {
+    margin-bottom: 0; }
 
 .mol--post-title {
   padding-top: 4rem;

@@ -9,9 +9,9 @@ get_header(); ?>
 <section class="templ--page-main">
 
 	<?php if(get_field('intro_section_background', 'option')) : ?>
-		<section style="background-image: url(<?php the_field('intro_section_background','option'); ?>); background-repeat: repeat; background-position:center; box-shadow: 0 0 40px rgba(0,0,0,0.1);">
+		<section style="position: relative;z-index: 10; background-image: url(<?php the_field('intro_section_background','option'); ?>); background-repeat: repeat; background-position:center; box-shadow: 0 0 40px rgba(0,0,0,0.2);">
 	<?php else : ?>
-		<section style="box-shadow: 0 0 40px rgba(0,0,0,0.1);">
+		<section style="position: relative;z-index: 10; box-shadow: 0 0 40px rgba(0,0,0,0.2);">
 	<?php endif; ?>
 		<?php if(get_field('intro_section_select', 'option') == 'colorblock') : ?>
 			<div style="background:<?php the_field('intro_section_overlay','option'); ?>">
@@ -25,9 +25,9 @@ get_header(); ?>
 				<div class="row g-0">
 
 					<?php if(get_field('main_section_background', 'option')) : ?>
-						<section style="background-image: url(<?php the_field('main_section_background','option'); ?>); background-repeat: repeat; background-position:center; box-shadow: 0 0 30px rgba(0,0,0,0.1);">
+						<section style="background-image: url(<?php the_field('main_section_background','option'); ?>); background-repeat: repeat; background-position:center; box-shadow: 0 0 30px rgba(0,0,0,0.2);">
 					<?php else : ?>
-						<section style="box-shadow: 0 0 30px rgba(0,0,0,0.1);">
+						<section style="box-shadow: 0 0 30px rgba(0,0,0,0.2);">
 					<?php endif; ?>
 						<?php if(get_field('main_section_select', 'option') == 'colorblock') : ?>
 							<div style="background:<?php the_field('main_section_overlay','option'); ?>">
@@ -75,14 +75,33 @@ get_header(); ?>
 										<span><i class="fa-sharp fa-lg fa-solid fa-corner fa-flip-vertical"></i></span>
 						            </footer>
 						            <aside class="grid-half d-flex flex-column">
+						            	<div class="flex-fill" style="background: #FF8478;"></div>
 						                <div class="flex-fill" style="background: #40D3C1;"></div>
-						                <div class="flex-fill" style="background: #FF8478;"></div>
 						            </aside>
 								</div>
 						</div>
 					</section>
 				
 
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section style="position: relative;z-index: 5;background: #FF8478;padding: 100px 0;box-shadow: 0 0 40px rgba(0,0,0,0.5);">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3>Why Cassette?</h3>
+				</div>
+				<div class="col-12 col-md-6" style="padding-right:120px;">
+					<p class="bold">The mixed tape, an emblem of personal expression and grassroots sharing in the 80s and 90s, symbolizes the dawn of decentralized data sharing.</p>
+					<p><i>Background like a zine.</i></p>
+				</div>
+				<div class="col-12 col-md-6" style="padding-right:120px;">
+					<p class="norm">Individuals curated and distributed music compilations on cassette tapes, bypassing traditional music distribution channels and creating personalized experiences. This physical act of sharing, inherently decentralized, foreshadowed the digital data distribution networks that would emerge later.</p>
+					<p class="norm">In parallel, the anarchistic ethos of the cipher punks of the same era laid the groundwork for what would become the bedrock of today's digital decentralization movements. Advocating for privacy, anonymity, and security in the digital realm through the use of cryptography, the cipher punks envisioned a world where individuals could communicate and transact without the oversight of central authorities. This philosophy directly influenced the development of decentralized money, most notably bitcoin, and the broader blockchain technology, which champions decentralization, transparency, and peer-to-peer exchanges.</p>
+					<p class="norm">Cassette, as a decentralized file-sharing platform, embodies this spirit of autonomy and innovation. It draws from the symbolic act of sharing mixtapes, integrating it with the digital ethos of decentralization heralded by the cipher punks, thereby contributing to the evolving narrative of data sovereignty and the democratization of content distribution in the blockchain era.</p>
 				</div>
 			</div>
 		</div>
