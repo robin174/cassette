@@ -32,7 +32,7 @@
 											<span>A</span>
 										</div>
 										<div class="atm--inlay-content">
-											One side is mac and one side is Windows, doesn't have to be inl;ay design... could be two tape covers together
+											<span>MAC</span>
 											<?php /*
 											<figure>
 												<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-apple.png">
@@ -48,7 +48,7 @@
 											<span>B</span>
 										</div>
 										<div class="atm--inlay-content">
-											One side is mac and one side is Windows, doesn't have to be inl;ay design... could be two tape covers together
+											<span>WIN</span>
 											<?php /*
 											<figure>
 												<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-windows.png">

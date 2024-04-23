@@ -9,11 +9,13 @@ a[class*="atm--button-"] {
 }
 
 .atm--button-primary {
+	@include pragmaticaExtBook;
 	padding: 12px 28px;
 	padding-right: 40px;
 	background-color: $color--primary-alt;
+	text-transform: uppercase;
 	& span {
-		letter-spacing: 0.02em;
+		letter-spacing: 0.1em;
 		color: $color--white;
 	}
 	& i {

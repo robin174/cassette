@@ -5,22 +5,9 @@
 */ 
 ?>
 		</main><!-- end main -->
-		<div class="mol--post-break">
-			<div>
-				<div class="mol--line-01">
-					&nbsp;
-				</div>
-				<div class="mol--line-02">
-					&nbsp;
-				</div>
-				<div class="mol--line-03">
-					&nbsp;
-				</div>
-				<div class="mol--line-04">
-					&nbsp;
-				</div>
-			</div>
-		</div>
+		
+		<?php get_template_part('template-parts/footer-border'); ?>
+
 		<?php if(get_field('f_con_background', 'option')) : ?>
 			<footer style="background-image: url(<?php the_field('f_con_background', 'option'); ?>);background-repeat: repeat;">
 		<?php else : ?>
@@ -39,9 +26,9 @@
 	                			 <div class="row">
 	                				<div class="col-12">
 	                					<?php if ( is_front_page() && is_home() ) : ?>
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette.svg" alt="Cassette logo">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-dk.svg" alt="Cassette logo">
 	                					<?php else : ?>
-											<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette.svg" alt="Cassette logo"></a>
+											<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo"></a>
 										<?php endif; ?>
 	                				</div>
 	                			</div>

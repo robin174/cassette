@@ -16,3 +16,69 @@
 		font-size: 1.3rem;
 	}
 }
+
+.introducing {
+	@include pragmaticaExtBold;
+	font-size: 1rem;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 14fr 2fr;
+    grid-template-areas: 
+        "header aside"
+        "main aside"
+        "footer aside";
+    /* grid-gap: .75em;  */      
+    // height: 100vh;
+    // height: 720px;
+    @media(max-width: 768px){}
+    @media(max-width: 480px){
+        display: block;
+    }
+    header {
+    	grid-area: header;
+    	@include pragmaticaExtBold;
+        background: unset;
+        padding: 40px 70px;
+        padding-bottom: 10px;
+		//font-size: 0.8rem;
+		letter-spacing: 0.1em;
+    }
+    nav {
+        grid-area: nav;
+    }
+    main {
+        grid-area: main;
+        padding:60px 40px;
+        //overflow-y: auto;
+        //margin: 10px;
+    }
+    main div {
+        //border-right: 1px solid black;  
+        padding: 10px 30px;
+        //padding-right: 40px;
+
+    }
+    aside {
+        grid-area: aside;
+        //overflow-y: auto;
+    }
+    aside div {
+        padding: 20px;
+    }
+    footer {
+    	grid-area: footer;
+    	@include pragmaticaExtBold;
+    	padding: 40px 70px;
+    	padding-top: 10px;
+        background: unset;
+        & i {
+        	color: $color--primary;
+        }
+
+    }
+}

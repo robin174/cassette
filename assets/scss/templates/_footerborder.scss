@@ -1,0 +1,20 @@
+[class*="mol--line"] {
+	height:7px;
+	width: 100%;
+}
+
+.mol--line-01 {
+ 	background-color: #258484;
+}
+.mol--line-02 {
+	background-color: $color--secondary;
+}
+.mol--line-03 {
+	background-color: #F6BC9D;
+}
+.mol--line-04 {
+	background-color: $color--tertiary;
+}
+.mol--line-05 {
+	background-color: #FF5F5F;
+}

@@ -29,7 +29,7 @@
 								<a class="button atm--button-secondary" href="/labs">
 									<span>Explore our Roadmap</span>
 								</a>
-								</section>
+							</section>
 						</div>
 					</div>
 				</div>
