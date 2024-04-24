@@ -629,6 +629,33 @@ footer {
   letter-spacing: 0.5em;
   text-transform: uppercase; }
 
+h3 {
+  font-family: "pragmatica-extended", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+p.bold {
+  font-family: pragmatica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 0; }
+
+p.norm {
+  font-family: pragmatica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.7; }
+  p.norm:last-child {
+    margin-bottom: 0; }
+
+/* CSS Grid: .container-grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container-grid {
   display: grid;
   grid-template-rows: 1fr 8fr 1fr;
@@ -669,31 +696,6 @@ footer {
     background: unset; }
     .container-grid footer i {
       color: #000C16; }
-
-h3 {
-  font-family: "pragmatica-extended", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2.4rem;
-  margin-top: 0;
-  margin-bottom: 20px; }
-
-p.bold {
-  font-family: pragmatica, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  margin-bottom: 0; }
-
-p.norm {
-  font-family: pragmatica, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.7; }
-  p.norm:last-child {
-    margin-bottom: 0; }
 
 [class*="org--content-"] {
   margin: 2rem 0;
@@ -805,7 +807,7 @@ p.norm {
     padding-left: 4rem;
     padding-right: 10rem; } }
 
-/* Live Dot
+/*  Animation: .pulsatingDot
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .pulsatingDot {
   animation: pulseDot 1.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.3s infinite;

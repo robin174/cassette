@@ -63,7 +63,7 @@
 @media (min-width: $max-width) {}
 
 
-/* Live Dot
+/*  Animation: .pulsatingDot
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .pulsatingDot {
 	animation: pulseDot 1.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.3s infinite;
