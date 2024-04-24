@@ -47,15 +47,14 @@ get_header(); ?>
 						            <!-- Template for 1 column, 2 column and 3 column -->
 						            <main>
 										<div style="margin-bottom:30px;">
-											<span class="introducing d-block">Introducing</span>
+											<span class="introducing d-block"><?php the_field('intro_verb','option');?></span>
 											<img style="width: 840px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-dk.svg" alt="Cassette logo">
 										</div>
 										<div style="margin-bottom:20px; padding-right: 180px;">
-											<?php /* <h1 style="font-size: 2.2rem;margin-bottom: 20px;"><?php the_field('introduction_heading','option'); ?></h1> */ ?>
-											<h2 style="font-size:1.8rem;line-height: 1.4;"><?php the_field('introduction_description','option'); ?></h2>
+											<h2 style="font-size:1.8rem;line-height: 1.4;"><?php the_field('intro_description','option');?></</h2>
 										</div>
 										<div style="margin-bottom:60px; padding-right: 180px;">
-											<a class="button atm--button-primary" href="/labs">
+											<a class="button atm--button-primary" href="/downloads">
 												<span>Download Cassette</span><i class="fas fa-arrow-right"></i>
 											</a>
 										</div>
@@ -92,10 +91,10 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h3>Why Cassette?</h3>
+					<h3><?php the_field('origin_title');?></h3>
 				</div>
 				<div class="col-12 col-md-6" style="padding-right:120px;">
-					<p class="bold">The mixed tape, an emblem of personal expression and grassroots sharing in the 80s and 90s, symbolizes the dawn of decentralized data sharing.</p>
+					<p class="bold"><?php the_field('origin_introduction');?></p>
 					<p><i>Background like a zine. Or layered paper with shadow</i></p>
 				</div>
 				<div class="col-12 col-md-6" style="padding-right:120px;">

@@ -50,6 +50,11 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'    => 'Introduction',
         'parent_slug'   => 'homepage-site-content',
     ));
+      acf_add_options_sub_page(array(
+        'page_title'    => 'Origin',
+        'menu_title'    => 'Origin',
+        'parent_slug'   => 'homepage-site-content',
+    ));
     acf_add_options_sub_page(array(
         'page_title'    => 'Download',
         'menu_title'    => 'Download',
