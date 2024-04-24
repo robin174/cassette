@@ -471,6 +471,286 @@ footer {
   footer .org--footer-inner {
     padding: 6rem 0; } }
 
+.org--content-getstarted {
+  margin: 4rem 0;
+  padding: 4rem 0; }
+  .org--content-getstarted .org--gs-item {
+    padding: 2rem;
+    padding-right: 10rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+    .org--content-getstarted .org--gs-item .mol--gs-number {
+      min-width: 150px; }
+      .org--content-getstarted .org--gs-item .mol--gs-number span {
+        font-family: pragmatica, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 1;
+        font-size: 6rem; }
+    .org--content-getstarted .org--gs-item:last-child {
+      margin-bottom: 0; }
+    .org--content-getstarted .org--gs-item h2 {
+      font-family: "pragmatica-extended", sans-serif;
+      font-weight: 500;
+      font-style: italic;
+      margin-top: 10px;
+      font-size: 2rem; }
+    .org--content-getstarted .org--gs-item p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    .org--content-getstarted .org--gs-item i.fa-sharp, .org--content-getstarted .org--gs-item i.fa-kit {
+      margin-right: 1rem; }
+    .org--content-getstarted .org--gs-item a {
+      font-family: pragmatica, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      color: #000C16;
+      background: rgba(64, 211, 193, 0.33); }
+      .org--content-getstarted .org--gs-item a:hover {
+        color: #000C16;
+        background: rgba(64, 211, 193, 0.66); }
+    .org--content-getstarted .org--gs-item ul {
+      margin-top: 1rem;
+      margin-bottom: 0; }
+      .org--content-getstarted .org--gs-item ul li {
+        font-size: 1.1rem;
+        margin-bottom: 1rem; }
+        .org--content-getstarted .org--gs-item ul li:last-child {
+          margin-bottom: 0; }
+
+.org--content-roadmap {
+  margin: 4rem 0;
+  padding: 4rem 0; }
+  .org--content-roadmap .org--rm--item {
+    padding: 1rem;
+    padding-left: 30px;
+    border-left: 5px solid #000C16; }
+    .org--content-roadmap .org--rm--item .mol--rm--inner {
+      padding: 2rem;
+      padding-top: 4rem;
+      padding-left: 4rem;
+      padding-right: 10rem;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      position: relative; }
+      .org--content-roadmap .org--rm--item .mol--rm--inner .atm--rm-marker {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        left: -20px;
+        transform: translate(-50%, -50%);
+        z-index: 15; }
+      .org--content-roadmap .org--rm--item .mol--rm--inner .atm--rm-status {
+        display: block;
+        position: absolute;
+        margin: 7px;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right: 0;
+        z-index: 20; }
+        .org--content-roadmap .org--rm--item .mol--rm--inner .atm--rm-status i {
+          color: #FF8478; }
+      .org--content-roadmap .org--rm--item .mol--rm--inner h2 {
+        font-size: 3rem; }
+      .org--content-roadmap .org--rm--item .mol--rm--inner p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
+      .org--content-roadmap .org--rm--item .mol--rm--inner a {
+        font-family: pragmatica, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #2cbeac; }
+        .org--content-roadmap .org--rm--item .mol--rm--inner a:hover {
+          color: #000C16; }
+      .org--content-roadmap .org--rm--item .mol--rm--inner ul {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        padding-left: 0.8rem;
+        list-style-type: none; }
+        .org--content-roadmap .org--rm--item .mol--rm--inner ul li {
+          font-size: 1.1rem;
+          margin-bottom: 6px; }
+          .org--content-roadmap .org--rm--item .mol--rm--inner ul li:last-child {
+            margin-bottom: 0; }
+          .org--content-roadmap .org--rm--item .mol--rm--inner ul li i {
+            margin-right: 4px; }
+
+@media (min-width: 992px) {
+  .org--content-roadmap .org--rm--item .mol--gs--inner {
+    padding-right: 10rem; } }
+
+.pulsatingDot {
+  animation: pulseDot 1.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.3s infinite;
+  background-color: #FF8478;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px; }
+
+.pulsatingDot:before {
+  animation: pulseRing 1.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  background-color: #FF8478;
+  border-radius: 50px;
+  content: '';
+  display: block;
+  height: 300%;
+  left: -100%;
+  position: relative;
+  top: -100%;
+  width: 300%; }
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.4); }
+  80%, 100% {
+    opacity: 0; } }
+
+@keyframes pulseDot {
+  0%, 100% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); } }
+
+.mol--post-title {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  .mol--post-title h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem; }
+
+.mol--post-synopsis {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+  .mol--post-synopsis p.atm--post-synopsis {
+    font-family: pragmatica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 1.4; }
+
+.mol--post-tldr {
+  padding: 2rem 1rem;
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem; }
+  .mol--post-tldr ul {
+    padding-left: 1rem; }
+    .mol--post-tldr ul li {
+      font-size: 0.85rem;
+      margin-bottom: 15px; }
+      .mol--post-tldr ul li:last-child {
+        margin-bottom: 0; }
+
+.org--content-single {
+  margin-top: 4rem;
+  padding-bottom: 6rem; }
+  .org--content-single h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
+  .org--content-single h3 {
+    margin-bottom: 2rem; }
+  .org--content-single h4 {
+    margin-bottom: 16px; }
+  .org--content-single p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem; }
+    .org--content-single p:last-child {
+      margin-bottom: 0; }
+    .org--content-single p.atm--post-intro {
+      font-family: pragmatica, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.4rem;
+      line-height: 1.6; }
+    .org--content-single p.atm--post-outro {
+      font-family: pragmatica, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      font-style: italic;
+      margin: 0; }
+
+.mol--post-paragraph {
+  margin-bottom: 2rem; }
+
+.mol--image-full figure.atm--post-img {
+  margin-bottom: 2rem;
+  position: relative; }
+  .mol--image-full figure.atm--post-img figcaption {
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    position: absolute;
+    font-style: italic;
+    z-index: 10;
+    bottom: 30px;
+    left: 0;
+    padding: 7px 20px;
+    background-color: #fffbf3;
+    border-top: 5px solid #FF8478;
+    font-size: 0.9rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
+
+.mol--post-conclusion {
+  padding: 40px 80px;
+  margin-top: 60px;
+  border-top: 1px solid #40D3C1;
+  border-bottom: 1px solid #40D3C1; }
+
+.mol--post-break {
+  margin-bottom: 2rem; }
+  .mol--post-break figure {
+    max-width: 140px; }
+
+.mol--code-block {
+  position: relative;
+  margin-bottom: 4rem;
+  /* for block of code */ }
+  .mol--code-block .atm--code-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2); }
+    .mol--code-block .atm--code-header button {
+      cursor: pointer;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
+      color: #fff;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.3); }
+      .mol--code-block .atm--code-header button:hover {
+        background-color: rgba(0, 0, 0, 0.6); }
+  .mol--code-block pre code.hljs {
+    padding: 2rem;
+    padding-top: 50px; }
+  .mol--code-block .hljs-ln-numbers {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    vertical-align: top;
+    padding-right: 5px; }
+  .mol--code-block .hljs-ln-code {
+    padding-left: 15px; }
+
 .org--content-download {
   margin-top: 4rem;
   text-align: center;
@@ -612,57 +892,6 @@ footer {
 .mol--line-05 {
   background-color: #FF5F5F; }
 
-.org--content-getstarted {
-  margin: 4rem 0;
-  padding: 4rem 0; }
-  .org--content-getstarted .org--gs-item {
-    padding: 2rem;
-    padding-right: 10rem;
-    background-color: #fff;
-    margin-bottom: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
-    .org--content-getstarted .org--gs-item .mol--gs-number {
-      min-width: 150px; }
-      .org--content-getstarted .org--gs-item .mol--gs-number span {
-        font-family: pragmatica, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        line-height: 1;
-        font-size: 6rem; }
-    .org--content-getstarted .org--gs-item:last-child {
-      margin-bottom: 0; }
-    .org--content-getstarted .org--gs-item h2 {
-      font-family: "pragmatica-extended", sans-serif;
-      font-weight: 500;
-      font-style: italic;
-      margin-top: 10px;
-      font-size: 2rem; }
-    .org--content-getstarted .org--gs-item p {
-      font-size: 1.1rem;
-      line-height: 1.5;
-      margin-top: 1rem;
-      margin-bottom: 2rem; }
-    .org--content-getstarted .org--gs-item i.fa-sharp, .org--content-getstarted .org--gs-item i.fa-kit {
-      margin-right: 1rem; }
-    .org--content-getstarted .org--gs-item a {
-      font-family: pragmatica, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      color: #000C16;
-      background: rgba(64, 211, 193, 0.33); }
-      .org--content-getstarted .org--gs-item a:hover {
-        color: #000C16;
-        background: rgba(64, 211, 193, 0.66); }
-    .org--content-getstarted .org--gs-item ul {
-      margin-top: 1rem;
-      margin-bottom: 0; }
-      .org--content-getstarted .org--gs-item ul li {
-        font-size: 1.1rem;
-        margin-bottom: 1rem; }
-        .org--content-getstarted .org--gs-item ul li:last-child {
-          margin-bottom: 0; }
-
 .org--slider-hero .mol--slider-content {
   padding: 6rem;
   height: 500px; }
@@ -778,232 +1007,3 @@ p.norm {
   line-height: 1.7; }
   p.norm:last-child {
     margin-bottom: 0; }
-
-.mol--post-title {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
-  .mol--post-title h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem; }
-
-.mol--post-synopsis {
-  margin-top: 4rem;
-  margin-bottom: 4rem; }
-  .mol--post-synopsis p.atm--post-synopsis {
-    font-family: pragmatica, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.8rem;
-    line-height: 1.4; }
-
-.mol--post-tldr {
-  padding: 2rem 1rem;
-  background: rgba(0, 0, 0, 0.05);
-  margin-bottom: 2rem; }
-  .mol--post-tldr ul {
-    padding-left: 1rem; }
-    .mol--post-tldr ul li {
-      font-size: 0.85rem;
-      margin-bottom: 15px; }
-      .mol--post-tldr ul li:last-child {
-        margin-bottom: 0; }
-
-.org--content-single {
-  margin-top: 4rem;
-  padding-bottom: 6rem; }
-  .org--content-single h2 {
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
-  .org--content-single h3 {
-    margin-bottom: 2rem; }
-  .org--content-single h4 {
-    margin-bottom: 16px; }
-  .org--content-single p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 2rem; }
-    .org--content-single p:last-child {
-      margin-bottom: 0; }
-    .org--content-single p.atm--post-intro {
-      font-family: pragmatica, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      font-size: 1.4rem;
-      line-height: 1.6; }
-    .org--content-single p.atm--post-outro {
-      font-family: pragmatica, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      font-size: 1.4rem;
-      line-height: 1.5;
-      font-style: italic;
-      margin: 0; }
-
-.mol--post-paragraph {
-  margin-bottom: 2rem; }
-
-.mol--image-full figure.atm--post-img {
-  margin-bottom: 2rem;
-  position: relative; }
-  .mol--image-full figure.atm--post-img figcaption {
-    font-family: "pragmatica-extended", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    position: absolute;
-    font-style: italic;
-    z-index: 10;
-    bottom: 30px;
-    left: 0;
-    padding: 7px 20px;
-    background-color: #fffbf3;
-    border-top: 5px solid #FF8478;
-    font-size: 0.9rem;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px; }
-
-.mol--post-conclusion {
-  padding: 40px 80px;
-  margin-top: 60px;
-  border-top: 1px solid #40D3C1;
-  border-bottom: 1px solid #40D3C1; }
-
-.mol--post-break {
-  margin-bottom: 2rem; }
-  .mol--post-break figure {
-    max-width: 140px; }
-
-.mol--code-block {
-  position: relative;
-  margin-bottom: 4rem;
-  /* for block of code */ }
-  .mol--code-block .atm--code-header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2); }
-    .mol--code-block .atm--code-header button {
-      cursor: pointer;
-      padding: 4px 10px;
-      font-size: 0.8rem;
-      font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
-      color: #fff;
-      border: none;
-      background-color: rgba(0, 0, 0, 0.3); }
-      .mol--code-block .atm--code-header button:hover {
-        background-color: rgba(0, 0, 0, 0.6); }
-  .mol--code-block pre code.hljs {
-    padding: 2rem;
-    padding-top: 50px; }
-  .mol--code-block .hljs-ln-numbers {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.3);
-    vertical-align: top;
-    padding-right: 5px; }
-  .mol--code-block .hljs-ln-code {
-    padding-left: 15px; }
-
-.org--content-roadmap {
-  margin: 4rem 0;
-  padding: 4rem 0; }
-  .org--content-roadmap .org--rm--item {
-    padding: 1rem;
-    padding-left: 30px;
-    border-left: 5px solid #000C16; }
-    .org--content-roadmap .org--rm--item .mol--rm--inner {
-      padding: 2rem;
-      padding-top: 4rem;
-      padding-left: 4rem;
-      padding-right: 10rem;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      position: relative; }
-      .org--content-roadmap .org--rm--item .mol--rm--inner .atm--rm-marker {
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        top: 50%;
-        left: -20px;
-        transform: translate(-50%, -50%);
-        z-index: 15; }
-      .org--content-roadmap .org--rm--item .mol--rm--inner .atm--rm-status {
-        display: block;
-        position: absolute;
-        margin: 7px;
-        width: 50px;
-        height: 50px;
-        top: 0;
-        right: 0;
-        z-index: 20; }
-        .org--content-roadmap .org--rm--item .mol--rm--inner .atm--rm-status i {
-          color: #FF8478; }
-      .org--content-roadmap .org--rm--item .mol--rm--inner h2 {
-        font-size: 3rem; }
-      .org--content-roadmap .org--rm--item .mol--rm--inner p {
-        font-size: 1.1rem;
-        line-height: 1.5;
-        margin-top: 1rem;
-        margin-bottom: 1rem; }
-      .org--content-roadmap .org--rm--item .mol--rm--inner a {
-        font-family: pragmatica, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        color: #2cbeac; }
-        .org--content-roadmap .org--rm--item .mol--rm--inner a:hover {
-          color: #000C16; }
-      .org--content-roadmap .org--rm--item .mol--rm--inner ul {
-        margin-top: 1rem;
-        margin-bottom: 0;
-        padding-left: 0.8rem;
-        list-style-type: none; }
-        .org--content-roadmap .org--rm--item .mol--rm--inner ul li {
-          font-size: 1.1rem;
-          margin-bottom: 6px; }
-          .org--content-roadmap .org--rm--item .mol--rm--inner ul li:last-child {
-            margin-bottom: 0; }
-          .org--content-roadmap .org--rm--item .mol--rm--inner ul li i {
-            margin-right: 4px; }
-
-@media (min-width: 992px) {
-  .org--content-roadmap .org--rm--item .mol--gs--inner {
-    padding-right: 10rem; } }
-
-.pulsatingDot {
-  animation: pulseDot 1.75s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.3s infinite;
-  background-color: #FF8478;
-  border-radius: 50%;
-  box-sizing: border-box;
-  height: 20px;
-  width: 20px; }
-
-.pulsatingDot:before {
-  animation: pulseRing 1.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-  background-color: #FF8478;
-  border-radius: 50px;
-  content: '';
-  display: block;
-  height: 300%;
-  left: -100%;
-  position: relative;
-  top: -100%;
-  width: 300%; }
-
-@keyframes pulseRing {
-  0% {
-    transform: scale(0.4); }
-  80%, 100% {
-    opacity: 0; } }
-
-@keyframes pulseDot {
-  0%, 100% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.05); } }

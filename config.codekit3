@@ -689,7 +689,7 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/scss\/templates\/_download.scss" : {
+    "\/assets\/scss\/templates\/_pagegetstarted.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -698,13 +698,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/scss\/css\/_download.css",
+      "oAP" : "\/assets\/scss\/css\/_pagegetstarted.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/scss\/templates\/_emailnewsletter.scss" : {
+    "\/assets\/scss\/templates\/_pageroadmap.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -713,67 +713,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/scss\/css\/_emailnewsletter.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/scss\/templates\/_footerborder.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/scss\/css\/_footerborder.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/scss\/templates\/_getstarted.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/scss\/css\/_getstarted.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/scss\/templates\/_heroslider.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/scss\/css\/_heroslider.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/scss\/templates\/_introduction.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/scss\/css\/_introduction.css",
+      "oAP" : "\/assets\/scss\/css\/_pageroadmap.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -794,7 +734,7 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/assets\/scss\/templates\/_roadmap.scss" : {
+    "\/assets\/scss\/templates\/_sectiondownload.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -803,7 +743,67 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/scss\/css\/_roadmap.css",
+      "oAP" : "\/assets\/scss\/css\/_sectiondownload.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/scss\/templates\/_sectionemailnewsletter.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_sectionemailnewsletter.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/scss\/templates\/_sectionfooterborder.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_sectionfooterborder.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/scss\/templates\/_sectionheroslider.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_sectionheroslider.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/scss\/templates\/_sectionintroduction.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_sectionintroduction.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -985,22 +985,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/template-parts\/footer-border.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/footer-border.php",
-      "oF" : 0
-    },
-    "\/template-parts\/hero-slider-home.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/hero-slider-home.php",
-      "oF" : 0
-    },
     "\/template-parts\/post-builder.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1025,12 +1009,28 @@
       "oAP" : "\/template-parts\/section-download.php",
       "oF" : 0
     },
-    "\/template-parts\/section-email-newsletter.php" : {
+    "\/template-parts\/section-emailnewsletter.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/template-parts\/section-email-newsletter.php",
+      "oAP" : "\/template-parts\/section-emailnewsletter.php",
+      "oF" : 0
+    },
+    "\/template-parts\/section-footerborder.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/section-footerborder.php",
+      "oF" : 0
+    },
+    "\/template-parts\/section-heroslider.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/section-heroslider.php",
       "oF" : 0
     },
     "\/template-parts\/section-inst.php" : {

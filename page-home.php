@@ -163,7 +163,7 @@ get_header(); ?>
 
 			<?php if(get_sub_field('ts_options') == 'slider') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
-					<?php get_template_part('template-parts/hero-slider-home'); ?>
+					<?php get_template_part('template-parts/section-heroslider.php'); ?>
 				<?php } ?>
 			<?php /* 
 			<?php elseif(get_sub_field('ts_options') == 'introduction') : ?>
@@ -173,7 +173,7 @@ get_header(); ?>
 			*/?>
 			<?php elseif(get_sub_field('ts_options') == 'newsletter') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
-					<?php get_template_part('template-parts/section-email-newsletter'); ?>
+					<?php get_template_part('template-parts/section-emailnewsletter'); ?>
 				<?php } ?>
 			<?php elseif(get_sub_field('ts_options') == 'download') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
