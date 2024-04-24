@@ -1065,6 +1065,14 @@
       "oAP" : "\/template-parts\/home-introduction.php",
       "oF" : 0
     },
+    "\/template-parts\/home-origin.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/home-origin.php",
+      "oF" : 0
+    },
     "\/template-parts\/post-builder.php" : {
       "cB" : 0,
       "ft" : 8192,
