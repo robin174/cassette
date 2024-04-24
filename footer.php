@@ -22,7 +22,7 @@
 				<div class="container-fluid">
 	                <div class="row">
 	                	<div class="col-12">
-	                		<div class="org__unit-logo">
+	                		<div class="org--unit-logo">
 	                			 <div class="row">
 	                				<div class="col-12">
 	                					<?php if ( is_front_page() && is_home() ) : ?>
@@ -35,19 +35,19 @@
 	                				</div>
 	                			</div>
 	                		</div>
-	                		<div class="org__unit">
+	                		<div class="org--unit">
 	                			<div class="row">
 	                				<div class="col-12 col-lg-6 d-flex align-items-center">
-	                					<p class="atm__description"><?php the_field('f_con_description', 'option'); ?></p>
+	                					<p class="atm--description"><?php the_field('f_con_description', 'option'); ?></p>
 	                				</div>
 	                				<div class="col-12 col-lg-3 d-flex align-items-center">
-	                					<section>
+	                					<section class="mol--unit-contact">
 	                						<h4>Email</h4>
-											<span><a href="mailto:<?php the_field('f_con_email', 'option'); ?>" target="_blank" title="Email <?php the_title();?>"><?php the_field('f_con_email', 'option'); ?></a></span>
+											<span><a href="mailto:<?php the_field('f_con_email', 'option'); ?>" title="Email <?php the_title();?>"><?php the_field('f_con_email', 'option'); ?></a></span>
 										</section>
 	                				</div>
 	                				<div class="col-12 col-lg-3 d-flex align-items-center">
-	                					<section>
+	                					<section class="mol--unit-contact">
 											<h4>Social</h4>
 											<!-- Discord -->
 											<?php if( get_field('f_con_discord', 'option') ): ?>
@@ -77,10 +77,10 @@
 	                				</div>
 	                			</div>
 	                		</div>
-	                		<div class="org__unit_copyright">
+	                		<div class="org--unit-copyright">
 	                			<div class="row">
 				    				<div class="col-12">
-				    					<p class="atm__copyright">&copy;&nbsp;<?php echo date('Y'); ?>&nbsp;<?php the_field('f_con_copyright', 'option'); ?></p>
+				    					<p class="atm--copyright">&copy;&nbsp;<?php echo date('Y'); ?>&nbsp;<?php the_field('f_con_copyright', 'option'); ?></p>
 				    				</div>
 				                </div>
 	                		</div>

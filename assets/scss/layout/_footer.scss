@@ -18,81 +18,87 @@ footer {
 		text-decoration: underline 2px;
 		letter-spacing: 0.05em;
 		&:hover {
-			color: $color--tertiary;
+			color: $color--secondary;
+			cursor: pointer;
 		}
 		& i {
 			transition: 0.3s;
 			&:hover {
-				color: $color--tertiary;
+				cursor: pointer;
+				color: $color--secondary;
 			}	
+		}
+	}
+	.org--footer-inner {
+		padding: $padding--general 0;
+		& .org--unit-logo {
+			margin-top: $margin--general;
+			& img {
+				height:50px;
+				margin-bottom: $margin--small;
+			}
+		}
+		& .org--unit {
+			border-bottom: solid 1px $color--white;
+			border-top: solid 1px $color--white;
+			padding: $padding--large 0;
+			margin-top: $margin--general;
+			margin-bottom: $margin--xsmall;
+			color: $color--white;
+			& p.atm--description {
+				@include pragmaticaExtMedium;
+				font-size: 1.8rem;
+				line-height: 1.4;
+				color: $color--white;
+				font-weight: 400;
+				letter-spacing: 0.01em;
+				padding: 0;
+				margin: 0;
+				padding-right: $padding--general*2;
+			}
+			& section.mol--unit-contact {
+				margin-top: $margin--general;
+				color: $color--white;
+				& h4 {
+			  		@include headingUC;
+			  		color: $color--white;
+			  		font-size: 0.9rem;
+			  		margin-bottom: 12px;
+			  	}
+			  	& span {
+			  		font-size: 1.2rem;
+			  	}
+			}
+			& i {
+				margin-right: $margin--small;
+			}
+		}
+		& .org--unit-copyright {
+			& p.atm--copyright {
+		 		color: rgba($color--white,0.5);
+			 	margin-top: $padding--small;
+			  	font-size: 0.9rem;
+			}
 		}
 	}
 }
 
-.org--footer-inner {
-	padding: $padding--general 0;
-
-}
-
-.org__unit-logo {
-	& img {
-		height:40px;
-		margin-bottom: $margin--small;
+@media (min-width: $media-desktop) {
+	footer {
+		& .org--footer-inner {
+			padding: $padding--xlarge 0;
+			& .org--unit-logo {
+				margin-top: 0;
+			}
+			& .org--unit {
+				& section.mol--unit-contact {
+					margin-top: 0;
+				}
+			}
+		}
 	}
 }
 
-.org__unit {
-	border-bottom: solid 1px $color--white;
-	border-top: solid 1px $color--white;
-	padding: $padding--large 0;
-	margin-top: $margin--general;
-	margin-bottom: $margin--xsmall;
-	color: $color--white;
-	& p.atm__description {
-		font-size: 1.8rem;
-		line-height: 1.4;
-		color: $color--white;
-		font-weight: 400;
-		letter-spacing: 0.01em;
-		padding: 0;
-		margin: 0;
-		padding-right: $padding--general*2;
-	}
-	& section {
-		// margin-bottom: $margin--small*3;
-		color: $color--white;
-		& h4 {
-	  		@include headingUC;
-	  		color: $color--white;
-	  		font-size: 0.9rem;
-	  		margin-bottom: 12px;
-	  	}
-	  	& span {
-	  		font-size: 1.2rem;
-	  	}
-	}
-	& i {
-		margin-right: $margin--small;
-	}
-}
+@media (min-width: $media-xwide) {}
 
-.org__unit_copyright {
-	& p.atm__copyright {
- 		color: rgba($color--white,0.5);
-	 	margin-top: $padding--small;
-	  	font-size: 0.9rem;
-	}
-}
-
-@media (min-width: $media-mobile) {
-	footer .org--footer-inner {
-		padding: $padding--large 0;
-	}
-}
-
-@media (min-width: $media-tablet) {
-	footer .org--footer-inner {
-		padding: $padding--xlarge 0;
-	}
-}
-
+@media (min-width: $max-width) {}

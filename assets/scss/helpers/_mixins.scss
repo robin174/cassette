@@ -2,11 +2,10 @@
 	@include pragmaticaBold;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	
 }
 
 @mixin navigationUC {
 	text-transform: uppercase;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.3em;
 	font-family: $brand--font-semi;
 }

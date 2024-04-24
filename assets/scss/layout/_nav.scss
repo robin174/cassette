@@ -39,6 +39,7 @@ nav.navbar {
 	& li a.nav-link {
 		@include navigationUC;
 		@include pragmaticaExtBook;
+		font-size: 0.9rem;
 		transition: $base--transition;
 		margin-left: $margin--small;
 		color: $color--white;

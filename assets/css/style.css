@@ -278,11 +278,12 @@ nav.navbar {
     width: 200px; }
   nav.navbar li a.nav-link {
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
     font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
     font-family: "pragmatica-extended", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 0.9rem;
     transition: 0.4s;
     margin-left: 1rem;
     color: #fff;
@@ -399,63 +400,67 @@ footer {
     text-decoration: underline 2px;
     letter-spacing: 0.05em; }
     footer a:hover {
-      color: #FF8478; }
+      color: #40D3C1;
+      cursor: pointer; }
     footer a i {
       transition: 0.3s; }
       footer a i:hover {
-        color: #FF8478; }
-
-.org--footer-inner {
-  padding: 2rem 0; }
-
-.org__unit-logo img {
-  height: 40px;
-  margin-bottom: 1rem; }
-
-.org__unit {
-  border-bottom: solid 1px #fff;
-  border-top: solid 1px #fff;
-  padding: 4rem 0;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  color: #fff; }
-  .org__unit p.atm__description {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    color: #fff;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    padding: 0;
-    margin: 0;
-    padding-right: 4rem; }
-  .org__unit section {
-    color: #fff; }
-    .org__unit section h4 {
-      font-family: pragmatica, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: #fff;
-      font-size: 0.9rem;
-      margin-bottom: 12px; }
-    .org__unit section span {
-      font-size: 1.2rem; }
-  .org__unit i {
-    margin-right: 1rem; }
-
-.org__unit_copyright p.atm__copyright {
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 1rem;
-  font-size: 0.9rem; }
-
-@media (min-width: 576px) {
+        cursor: pointer;
+        color: #40D3C1; }
   footer .org--footer-inner {
-    padding: 4rem 0; } }
+    padding: 2rem 0; }
+    footer .org--footer-inner .org--unit-logo {
+      margin-top: 2rem; }
+      footer .org--footer-inner .org--unit-logo img {
+        height: 50px;
+        margin-bottom: 1rem; }
+    footer .org--footer-inner .org--unit {
+      border-bottom: solid 1px #fff;
+      border-top: solid 1px #fff;
+      padding: 4rem 0;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: #fff; }
+      footer .org--footer-inner .org--unit p.atm--description {
+        font-family: "pragmatica-extended", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        padding: 0;
+        margin: 0;
+        padding-right: 4rem; }
+      footer .org--footer-inner .org--unit section.mol--unit-contact {
+        margin-top: 2rem;
+        color: #fff; }
+        footer .org--footer-inner .org--unit section.mol--unit-contact h4 {
+          font-family: pragmatica, sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: #fff;
+          font-size: 0.9rem;
+          margin-bottom: 12px; }
+        footer .org--footer-inner .org--unit section.mol--unit-contact span {
+          font-size: 1.2rem; }
+      footer .org--footer-inner .org--unit i {
+        margin-right: 1rem; }
+    footer .org--footer-inner .org--unit-copyright p.atm--copyright {
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 1rem;
+      font-size: 0.9rem; }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   footer .org--footer-inner {
-    padding: 6rem 0; } }
+    padding: 6rem 0; }
+    footer .org--footer-inner .org--unit-logo {
+      margin-top: 0; }
+    footer .org--footer-inner .org--unit section.mol--unit-contact {
+      margin-top: 0; } }
 
 .org--content-download {
   margin-top: 4rem;
