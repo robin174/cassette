@@ -299,16 +299,16 @@ nav.navbar {
       color: rgba(255, 255, 255, 0.3); }
   nav.navbar li.active a.nav-link {
     color: #FF8478; }
-  nav.navbar li.getstarted a.nav-link {
+  nav.navbar li.outline a.nav-link {
     border: 1px solid #fff;
     color: #fff; }
-    nav.navbar li.getstarted a.nav-link:hover {
+    nav.navbar li.outline a.nav-link:hover {
       border: 1px solid #FF8478;
       color: #FF8478; }
-  nav.navbar li.active.getstarted a.nav-link {
+  nav.navbar li.active.outline a.nav-link {
     border: 1px solid #FF8478;
     color: #FF8478; }
-    nav.navbar li.active.getstarted a.nav-link:hover {
+    nav.navbar li.active.outline a.nav-link:hover {
       border: 1px solid #FF8478;
       color: #FF8478; }
 

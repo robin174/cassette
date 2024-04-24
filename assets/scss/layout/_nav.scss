@@ -62,7 +62,7 @@ nav.navbar {
 	& li.active a.nav-link {
 		color: $color--tertiary;
 	}
-	& li.getstarted a.nav-link {
+	& li.outline a.nav-link {
 		border: 1px solid $color--white;
 		color: $color--white;
 		&:hover {
@@ -70,7 +70,7 @@ nav.navbar {
 			color: $color--tertiary;
 		}
 	}
-	& li.active.getstarted a.nav-link {
+	& li.active.outline a.nav-link {
 		border: 1px solid $color--tertiary;
 		color: $color--tertiary;
 		&:hover {
