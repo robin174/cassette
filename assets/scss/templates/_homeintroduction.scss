@@ -1,0 +1,112 @@
+.org--content-introduction {
+	margin-top: $margin--large;
+	color: $color--primary;
+	background-position: top center;
+	& .org--content-introduction-inner {
+		margin: 0;
+		padding: $padding--large*3 0;
+	}
+	& h3 {
+		font-size: 3rem;
+		@include pragmaticaExtMediumItalic;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+	& p {
+		font-size: 1.3rem;
+	}
+}
+
+.introducing {
+	@include pragmaticaExtBold;
+	font-size: 1rem;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 87fr 8fr;
+    grid-template-areas: 
+        "border header aside"
+        "border main aside"
+        "border footer aside";
+    /* grid-gap: .75em;  */      
+    // height: 100vh;
+    // height: 720px;
+    @media(max-width: 768px){}
+    @media(max-width: 480px){
+        display: block;
+    }
+    header {
+    	grid-area: header;
+    	@include pragmaticaExtBold;
+        background: unset;
+        padding: 40px 70px;
+        padding-bottom: 10px;
+		//font-size: 0.8rem;
+		letter-spacing: 0.1em;
+    }
+    nav {
+        grid-area: nav;
+    }
+    main {
+        grid-area: main;
+        padding:60px 40px;
+        //overflow-y: auto;
+        //margin: 10px;
+    }
+    main div {
+        //border-right: 1px solid black;  
+        padding: 10px 30px;
+        //padding-right: 40px;
+
+    }
+    aside.grid-border {
+        grid-area: border;
+        background: red;
+        //overflow-y: auto;
+    }
+    aside.grid-half {
+        grid-area: aside;
+        //overflow-y: auto;
+    }
+    footer {
+    	grid-area: footer;
+    	@include pragmaticaExtBold;
+    	padding: 40px 70px;
+    	padding-top: 10px;
+        background: unset;
+        & i {
+        	color: $color--primary;
+        }
+
+    }
+}
+
+h3 {
+    @include pragmaticaExtBold;
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+p.bold {
+    @include pragmaticaBold;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+p.norm {
+    @include pragmaticaBold;
+    font-size: 1rem;
+    line-height: 1.7;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+

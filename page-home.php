@@ -107,80 +107,27 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<?php /*
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-10">
-					<div style="padding-top:200px;padding-bottom: 80px;">
-						<img style="width: 800px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-dk.svg" alt="Cassette logo">
-					</div>
-					<div style="margin-bottom:60px; padding-right: 180px;">
-						<h1 style="font-size: 2.4rem;margin-bottom: 20px;">Welcome to Cassette.</h1>
-						<h2 style="font-size:1.6rem;">The new name for Greenfinch. Decentralized file storage you control. Built on Neo.</h2>
-						<p style="font-size: 1.6rem;"></p>
-					</div>
-					<div style="margin-bottom:60px; padding-right: 180px;">
-						<a class="button atm--button-primary" href="/labs">
-							<span>Download Cassette</span><i class="fas fa-arrow-right"></i>
-						</a>
-					</div>
-					<div class="row">
-						<div class="col-2">
-							<figure>
-								<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/use-VersionLogo-Cassette.png">
-							</figure>
-						</div>
-						<div class="col-2">
-							<figure>
-								<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/use-VersionLogo-Cassette.png">
-							</figure>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12 d-flex" style="margin-top:40px;margin-bottom:40px;">
-							<span style="font-size: 0.9rem;font-weight:700;">500.975</span>
-							<span class="ms-auto" style="font-size: 0.9rem;font-weight:700;">820.275</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="d-flex flex-column">
-						<div class="flex-fill" style="background: #40D3C1;">
-						</div>
-						<div class="flex-fill" style="background: #FF8478;">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	*/ ?>
-
 	<!-- Homepage Builder -->
 	<?php while(has_sub_field('homepage_builder')): ?>
 		<?php if(get_row_layout() == 'template_select'): // Template Select ?>
 
 			<?php if(get_sub_field('ts_options') == 'slider') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
-					<?php get_template_part('template-parts/section-heroslider.php'); ?>
+					<?php get_template_part('template-parts/home-heroslider.php'); ?>
 				<?php } ?>
-			<?php /* 
 			<?php elseif(get_sub_field('ts_options') == 'introduction') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
-					<?php get_template_part('template-parts/section-introduction'); ?>
-				<?php } ?>
-			*/?>
-			<?php elseif(get_sub_field('ts_options') == 'newsletter') : ?>
-				<?php if(get_sub_field('ts_visible')) { ?>
-					<?php get_template_part('template-parts/section-emailnewsletter'); ?>
+					<?php get_template_part('template-parts/home-introduction'); ?>
 				<?php } ?>
 			<?php elseif(get_sub_field('ts_options') == 'download') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
-					<?php get_template_part('template-parts/section-download'); ?>
+					<?php get_template_part('template-parts/home-download'); ?>
 				<?php } ?>
 			<?php endif; ?>	
-
+			<?php elseif(get_sub_field('ts_options') == 'newsletter') : ?>
+				<?php if(get_sub_field('ts_visible')) { ?>
+					<?php get_template_part('template-parts/home-emailnewsletter'); ?>
+				<?php } ?>
 		<?php endif; ?>
 	<?php endwhile; ?>
 

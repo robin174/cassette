@@ -1,4 +1,3 @@
-
 // Organisms
 .org--content-default {
 	margin: $margin--large 0;
@@ -36,24 +35,7 @@
 	padding: $padding--large 0;
 }
 
-
-
 // Molecules
-.mol--content-introduction {
-	padding: $padding--general 0;
-	margin-bottom: $margin--small;
-	& h1 {
-		font-size: 4rem;
-		text-align: center;
-	}
-	& p {
-		@include pragmaticaBold;
-		font-size: 1.4rem;
-		line-height: 1.5;
-		text-align: center;
-	}
-}
-
 .mol--content-default {}
 .mol--content-alchemy {}
 .mol--content-newsletter {}
