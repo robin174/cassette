@@ -884,6 +884,14 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
+    "\/page-downloads.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-downloads.php",
+      "oF" : 0
+    },
     "\/page-getstarted.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -906,6 +914,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-roadmap.php",
+      "oF" : 0
+    },
+    "\/page-template.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-template.php",
       "oF" : 0
     },
     "\/page.php" : {

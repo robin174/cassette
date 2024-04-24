@@ -1,6 +1,6 @@
  <?php
 /**
-* Template Name: Page - Roadmap
+* Template Name: Page - Template
 * @package cassette
 */
 
@@ -8,7 +8,7 @@ get_header(); ?>
 
 <section class="templ--page-main">
 	
-	<section class="org--content-roadmap">
+	<section class="org--content-template">
 		<div class="container-fluid">
 			<div class="row justify-content-center">
 				<div class="col-11 col-xl-8 col-xxl-7">
@@ -22,11 +22,9 @@ get_header(); ?>
 		<div class="container-fluid">
 			<div class="row justify-content-center">
 				<div class="col-11 col-xl-9 col-xxl-8">
-					<?php if( have_rows('repeater_rm')): ?>
-						<?php while( have_rows('repeater_rm')): the_row(); ?>
-							<?php get_template_part('template-parts/unit-roadmap'); ?>
-						<?php endwhile; ?>		
-					<?php endif; ?>
+					
+					To test
+
 				</div>
 			</div>
 		</div>
