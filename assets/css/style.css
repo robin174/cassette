@@ -698,6 +698,19 @@ p.norm {
 [class*="org--content-"] {
   margin: 2rem 0;
   padding: 2rem 0; }
+  [class*="org--content-"] p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  [class*="org--content-"] ul {
+    margin-top: 1rem;
+    margin-bottom: 0; }
+    [class*="org--content-"] ul li {
+      font-size: 1.1rem;
+      margin-bottom: 1rem; }
+      [class*="org--content-"] ul li:last-child {
+        margin-bottom: 0; }
 
 @media (min-width: 992px) {
   [class*="org--content-"] {
@@ -710,26 +723,21 @@ p.norm {
   margin-bottom: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
   .org--content-getstarted .org--gs-item .mol--gs-number {
-    min-width: 150px; }
+    min-width: 100px; }
     .org--content-getstarted .org--gs-item .mol--gs-number span {
       font-family: pragmatica, sans-serif;
       font-weight: 700;
       font-style: normal;
       line-height: 1;
-      font-size: 6rem; }
+      font-size: 4rem; }
   .org--content-getstarted .org--gs-item:last-child {
     margin-bottom: 0; }
   .org--content-getstarted .org--gs-item h2 {
     font-family: "pragmatica-extended", sans-serif;
     font-weight: 500;
     font-style: italic;
-    margin-top: 10px;
-    font-size: 2rem; }
-  .org--content-getstarted .org--gs-item p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
+    font-size: 1.6rem;
+    margin-top: 7px; }
   .org--content-getstarted .org--gs-item i.fa-sharp, .org--content-getstarted .org--gs-item i.fa-kit {
     margin-right: 1rem; }
   .org--content-getstarted .org--gs-item a {
@@ -742,18 +750,16 @@ p.norm {
     .org--content-getstarted .org--gs-item a:hover {
       color: #000C16;
       background: rgba(64, 211, 193, 0.66); }
-  .org--content-getstarted .org--gs-item ul {
-    margin-top: 1rem;
-    margin-bottom: 0; }
-    .org--content-getstarted .org--gs-item ul li {
-      font-size: 1.1rem;
-      margin-bottom: 1rem; }
-      .org--content-getstarted .org--gs-item ul li:last-child {
-        margin-bottom: 0; }
 
 @media (min-width: 992px) {
   .org--content-getstarted .org--gs-item {
-    padding-right: 10rem; } }
+    padding-right: 10rem; }
+    .org--content-getstarted .org--gs-item .mol--gs-number {
+      min-width: 150px; }
+      .org--content-getstarted .org--gs-item .mol--gs-number span {
+        font-size: 6rem; }
+    .org--content-getstarted .org--gs-item h2 {
+      font-size: 2rem; } }
 
 .org--content-roadmap .org--rm--item {
   padding: 1rem;
@@ -786,11 +792,6 @@ p.norm {
         color: #FF8478; }
     .org--content-roadmap .org--rm--item .mol--rm--inner h2 {
       font-size: 3rem; }
-    .org--content-roadmap .org--rm--item .mol--rm--inner p {
-      font-size: 1.1rem;
-      line-height: 1.5;
-      margin-top: 1rem;
-      margin-bottom: 1rem; }
     .org--content-roadmap .org--rm--item .mol--rm--inner a {
       font-family: pragmatica, sans-serif;
       font-weight: 700;
@@ -798,18 +799,6 @@ p.norm {
       color: #2cbeac; }
       .org--content-roadmap .org--rm--item .mol--rm--inner a:hover {
         color: #000C16; }
-    .org--content-roadmap .org--rm--item .mol--rm--inner ul {
-      margin-top: 1rem;
-      margin-bottom: 0;
-      padding-left: 0.8rem;
-      list-style-type: none; }
-      .org--content-roadmap .org--rm--item .mol--rm--inner ul li {
-        font-size: 1.1rem;
-        margin-bottom: 6px; }
-        .org--content-roadmap .org--rm--item .mol--rm--inner ul li:last-child {
-          margin-bottom: 0; }
-        .org--content-roadmap .org--rm--item .mol--rm--inner ul li i {
-          margin-right: 4px; }
 
 @media (min-width: 992px) {
   .org--content-roadmap .org--rm--item .mol--rm--inner {

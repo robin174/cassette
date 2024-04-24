@@ -34,12 +34,6 @@
 			& h2 {
 				font-size: 3rem;
 			}
-			& p {
-				font-size: 1.1rem;
-				line-height: 1.5;
-				margin-top: $margin--small;
-				margin-bottom: $margin--small;
-			}
 			& a {
 				@include pragmaticaBold;
 				color: $color--highlight-dark;
@@ -47,24 +41,7 @@
 					color: $color--primary;
 				}
 			}
-			& ul {
-				margin-top: $margin--small;
-				margin-bottom: 0;
-				padding-left: 0.8rem;
-				list-style-type: none;
-				& li {
-					font-size: 1.1rem;
-					margin-bottom: 6px;
-					&:last-child {
-						margin-bottom: 0;
-					}
-					& i {
-						margin-right: 4px;
-					}
-				}
-			}
 		}
-		
 	}
 }
 

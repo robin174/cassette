@@ -5,11 +5,11 @@
 		margin-bottom: $margin--small;
 		box-shadow: $box--shadow-light;
 		& .mol--gs-number {
-			min-width: 150px;
+			min-width: 100px;
 			& span {
 				@include pragmaticaBold;
 				line-height: 1;
-				font-size: 6rem;
+				font-size: 4rem;
 			}
 		}
 		&:last-child {
@@ -17,14 +17,8 @@
 		}
 		& h2 {
 			@include pragmaticaExtMediumItalic;
-			margin-top: 10px;
-			font-size: 2rem;
-		}
-		& p {
-			font-size: 1.1rem;
-			line-height: 1.5;
-			margin-top: $margin--small;
-			margin-bottom: $margin--general;
+			font-size: 1.6rem;
+			margin-top: 7px;
 		}
 		& i.fa-sharp, & i.fa-kit {
 			margin-right: $margin--small;
@@ -39,18 +33,6 @@
 				 background: rgba($color--secondary, 0.66);
 			}
 		}
-		& ul {
-			margin-top: $margin--small;
-			margin-bottom: 0;
-			& li {
-				font-size: 1.1rem;
-				margin-bottom: $margin--small;
-				&:last-child {
-					margin-bottom: 0;
-				}
-				
-			}
-		}
 	}
 }
 
@@ -60,6 +42,15 @@
 	.org--content-getstarted {
 		& .org--gs-item {
 			padding-right: $padding--xxlarge;
+			& .mol--gs-number {
+				min-width: 150px;
+				& span {
+					font-size: 6rem;
+				}
+			}
+			& h2 {
+				font-size: 2rem;
+			}
 		}
 	}
 }
