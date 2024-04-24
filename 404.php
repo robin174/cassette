@@ -9,14 +9,16 @@ get_header(); ?>
 
 <section class="templ--page-main">
 	
-	<section class="org--content-downloads">
+	<section class="org--content-404">
 		<div class="container-fluid">
 			<div class="row justify-content-center">
 				<div class="col-11 col-xl-8 col-xxl-7">
 					<section class="mol--content-introduction">
-						<h1>404</h1>
-						<?php if(get_field('atm_page_intro')) : ?>
-							<p><?php the_field('atm_page_intro'); ?></p>
+						<?php if(get_field('404_title','option')) : ?>
+							<h1><?php the_field('404_title','option'); ?></h1>
+						<?php endif; ?>	
+						<?php if(get_field('404_description','option')) : ?>
+							<p><?php the_field('404_description','option'); ?></p>
 						<?php endif; ?>	
 					</section>
 				</div>
