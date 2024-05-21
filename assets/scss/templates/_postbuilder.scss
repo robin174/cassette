@@ -11,7 +11,7 @@
 	margin-top: $margin--large;
 	margin-bottom: $margin--large;
 	& p.atm--post-synopsis {
-		@include pragmaticaBold;
+		@include neueHaasGroBold;
 		font-size: 1.8rem;
 		line-height: 1.4;
 	}
@@ -54,12 +54,12 @@
 			margin-bottom:0;
 		}
 		&.atm--post-intro {
-			@include pragmaticaBold;
+			@include neueHaasGroBold;
 			font-size: 1.4rem;
 			line-height: 1.6;
 		}
 		&.atm--post-outro {
-			@include pragmaticaBold;
+			@include neueHaasGroBold;
 			font-size: 1.4rem;
 			line-height: 1.5;
 			font-style: italic;
@@ -80,7 +80,7 @@
 		margin-bottom: $margin--general;
 		position: relative;
 		& figcaption {
-			@include pragmaticaExtMediumItalic;
+			@include neueHaasGroMedium;
 			position: absolute;
 			font-style: italic;
 			z-index: 10;
@@ -124,7 +124,7 @@
 			cursor: pointer;
 			padding: 4px 10px;
 			font-size: 0.8rem;
-			font-family: $brand--font-semi;
+			@include neueHaasGroMedium;
 			color: $color--white;
 			border: none;
 			background-color: rgba(0,0,0,0.3);

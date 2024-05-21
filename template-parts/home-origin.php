@@ -1,4 +1,4 @@
-<section style="position: relative;z-index: 5;background: #FF8478;padding: 100px 0;box-shadow: 0 0 40px rgba(0,0,0,0.5);">
+<section style="background: #FF8478;padding: 100px 0;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">

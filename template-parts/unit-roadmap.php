@@ -16,11 +16,11 @@
 			<h2><?php the_sub_field('repeater_rm_title');?><span class="ut--secondary">&nbsp|&nbsp</span><?php the_sub_field('repeater_rm_year');?></h2>
 			<p><?php the_sub_field('repeater_rm_descr');?></p>
 			<?php if( have_rows('repeater_rm_item')): ?>
-				<ul>
+				<ul class="atm--list-nobullet">
 					<?php while( have_rows('repeater_rm_item')): the_row(); ?>
 						<li>
 							<?php if(get_sub_field('repeater_rm_complete')) : ?>
-								<i class="fa-solid fa-sm fa-circle-check"></i></i>
+								<i class="fa-solid fa-sm fa-circle-check">&nbsp;</i>
 							<?php else : ?>
 								<i class="fa-regular fa-sm fa-circle">&nbsp;</i>
 							<?php endif; ?>

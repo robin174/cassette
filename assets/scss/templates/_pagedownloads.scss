@@ -1,5 +1,34 @@
 .org--content-downloads {
-
+	& .mol--download-gradient {
+		@include colorGradient(90deg, 1);
+		padding:7px; 
+		border: 10px solid $color--white; 
+		& .mol--download-gradient-inner {
+			background: white;
+			padding: $padding--general;
+			& i.fa-brands {
+				color: $color--primary;
+				margin-top: $margin--small;
+				margin-bottom: $margin--small; 
+				display: block;
+			}
+			& a.button {
+				display: inline-block;
+				margin-top: $margin--small;
+			}
+		}
+	}
+	& .mol--download-release {
+		margin: $margin--general 0;
+		& .atm--release-number {
+			@include neueHaasGroBold;
+			padding-top: $padding--small;
+			font-size: 2rem;
+		}
+		& .atm--release-date {
+			@include neueHaasGroBold;
+		}
+	}
 }
 
 @media (min-width: $media-mobile) {}

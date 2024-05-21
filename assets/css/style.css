@@ -6,23 +6,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Margin & Padding
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Fonts: Pragmatica
+/* Fonts: Neue Haas
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Fonts: Averta (TODELETE)
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import url("//hello.myfonts.net/count/3e7d84");
-@font-face {
-  font-family: 'AvertaStdPE-Regular';
-  src: url("fonts/AvertaStdPERegular/font.woff2") format("woff2"), url("../fonts/AvertaStdPERegular/font.woff") format("woff"); }
-
-@font-face {
-  font-family: 'AvertaStdPE-Semibold';
-  src: url("fonts/AvertaStdPESemibold/font.woff2") format("woff2"), url("../fonts/AvertaStdPESemibold/font.woff") format("woff"); }
-
-@font-face {
-  font-family: 'AvertaStdPE-Bold';
-  src: url("fonts/AvertaStdPEBold/font.woff2") format("woff2"), url("../fonts/AvertaStdPEBold/font.woff") format("woff"); }
-
 /* Variable Font Sizes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Body font size. By default 16px, based on 16px as 'root em' */
@@ -70,9 +55,6 @@ a {
     max-width: 2400px;
     padding: 0 180px; } }
 
-strong {
-  font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif; }
-
 ::-moz-selection {
   color: #000C16;
   background: rgba(64, 211, 193, 0.33); }
@@ -82,14 +64,14 @@ strong {
   background: rgba(64, 211, 193, 0.33); }
 
 body {
-  font-family: pragmatica, sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000C16; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "pragmatica-extended", sans-serif;
-  font-weight: 500;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 700;
   font-style: normal;
   color: #000C16; }
 
@@ -104,7 +86,7 @@ h5 {
   font-size: 0.9rem; }
 
 p {
-  font-family: pragmatica, sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000C16;
@@ -112,19 +94,19 @@ p {
   p:last-child {
     margin-bottom: 0; }
 
+strong {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal; }
+
 li {
-  font-family: pragmatica, sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000C16; }
 
-strong {
-  font-family: pragmatica, sans-serif;
-  font-weight: 700;
-  font-style: normal; }
-
 .ut--uc {
-  font-family: pragmatica, sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -170,8 +152,8 @@ a[class*="atm--button-"] {
     cursor: pointer; }
 
 .atm--button-primary {
-  font-family: "pragmatica-extended", sans-serif;
-  font-weight: 400;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
   font-style: normal;
   padding: 12px 28px;
   padding-right: 40px;
@@ -204,7 +186,7 @@ a[class*="atm--button-"] {
   margin-left: 1rem; }
 
 a.atm--download {
-  font-family: "pragmatica-extended", sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 500;
   font-style: normal;
   transition: 0.4s;
@@ -243,7 +225,7 @@ header {
   background-color: #000C16; }
 
 nav a {
-  font-family: pragmatica, sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -263,12 +245,11 @@ nav a {
 nav.navbar {
   padding: 2rem 0; }
   nav.navbar h1, nav.navbar h1 a.navbar-brand {
-    font-family: pragmatica, sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-family: "AvertaStdPE-Regular", Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
     color: #fff;
     margin-bottom: 0; }
@@ -277,12 +258,11 @@ nav.navbar {
   nav.navbar a img {
     width: 200px; }
   nav.navbar li a.nav-link {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
-    font-family: "pragmatica-extended", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 0.9rem;
     transition: 0.4s;
     margin-left: 1rem;
@@ -301,16 +281,18 @@ nav.navbar {
   nav.navbar li.active a.nav-link {
     color: #FF8478; }
   nav.navbar li.outline a.nav-link {
-    border: 1px solid #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
     color: #fff; }
     nav.navbar li.outline a.nav-link:hover {
-      border: 1px solid #FF8478;
+      border: 2px solid #FF8478;
       color: #FF8478; }
   nav.navbar li.active.outline a.nav-link {
-    border: 1px solid #FF8478;
+    border-radius: 5px;
+    border: 2px solid #FF8478;
     color: #FF8478; }
     nav.navbar li.active.outline a.nav-link:hover {
-      border: 1px solid #FF8478;
+      border: 2px solid #FF8478;
       color: #FF8478; }
 
 @media (max-width: 767px) {
@@ -381,6 +363,14 @@ nav.navbar {
   margin: 4rem 0;
   padding: 4rem 0; }
 
+.org--brand-gradient {
+  background: linear-gradient(90deg, #ff5f5f 0%, #ff8078 25%, #e3bd9f 50%, #40cebc 75%, #258383 100%);
+  display: block;
+  height: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
 footer {
   background-color: #000c16;
   background-position: top center; }
@@ -393,7 +383,7 @@ footer {
   footer .highlight {
     color: #40D3C1; }
   footer a {
-    font-family: pragmatica, sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #fff;
@@ -422,7 +412,7 @@ footer {
       margin-bottom: 0.5rem;
       color: #fff; }
       footer .org--footer-inner .org--unit p.atm--description {
-        font-family: "pragmatica-extended", sans-serif;
+        font-family: neue-haas-grotesk-text, sans-serif;
         font-weight: 500;
         font-style: normal;
         font-size: 1.8rem;
@@ -437,7 +427,7 @@ footer {
         margin-top: 2rem;
         color: #fff; }
         footer .org--footer-inner .org--unit section.mol--unit-contact h4 {
-          font-family: pragmatica, sans-serif;
+          font-family: neue-haas-grotesk-text, sans-serif;
           font-weight: 700;
           font-style: normal;
           text-transform: uppercase;
@@ -474,17 +464,27 @@ footer {
     .org--content-download .org--content-download-inner .fa-brands, .org--content-download .org--content-download-inner .fa-sharp {
       margin-right: 10px; }
   .org--content-download h3 {
-    font-family: "pragmatica-extended", sans-serif;
-    font-weight: 700;
-    font-style: normal;
     font-size: 2.7rem;
     margin-top: 0;
     margin-bottom: 5px; }
   .org--content-download p {
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.3rem; }
+  .org--content-download .atm--release-number {
+    font-size: 42px; }
+  .org--content-download .mol--download-gradient {
+    background: linear-gradient(90deg, #ff5f5f 0%, #ff8078 25%, #e3bd9f 50%, #40cebc 75%, #258383 100%);
+    padding: 7px;
+    border: 10px solid white; }
+    .org--content-download .mol--download-gradient .mol--download-gradient-inner {
+      background: white;
+      padding: 50px; }
+
+.mol--content-download {
+  background: #fff;
+  padding: 40px; }
 
 .mol--cassette-inlay {
   border: 2px solid #000; }
@@ -495,9 +495,9 @@ footer {
     color: #fff;
     font-size: 24px; }
     .mol--cassette-inlay .atm--inlay-header .atm--release-number {
-      font-family: "pragmatica-extended", sans-serif;
-      font-weight: 400;
-      font-style: italic;
+      font-family: neue-haas-grotesk-text, sans-serif;
+      font-weight: 500;
+      font-style: normal;
       letter-spacing: 0.1em; }
   .mol--cassette-inlay .atm--inlay-half:first-child {
     border-right: 1px solid #000; }
@@ -521,10 +521,7 @@ footer {
     .mol--cassette-inlay .atm--inlay-half .atm--inlay-content span {
       margin-left: 15px;
       font-size: 12rem;
-      line-height: 1.3;
-      font-family: "chainprinter", sans-serif;
-      font-weight: 400;
-      font-style: normal; }
+      line-height: 1.3; }
   .mol--cassette-inlay .atm--inlay-half .atm--inlay-download {
     padding: 15px;
     border-top: 2px solid black;
@@ -532,7 +529,6 @@ footer {
     text-align: left; }
 
 .org--content-newsletter {
-  margin-top: 4rem;
   text-align: center;
   color: #fff;
   background-position: top center; }
@@ -540,7 +536,7 @@ footer {
     margin: 0;
     padding: 12rem 0; }
   .org--content-newsletter h3 {
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2.4rem;
@@ -548,7 +544,7 @@ footer {
     margin-bottom: 5px;
     color: #fff; }
   .org--content-newsletter p {
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.3rem;
@@ -560,7 +556,7 @@ footer {
   .org--content-newsletter .mol--newsletter-form input[type="text"] {
     height: 50px; }
   .org--content-newsletter .mol--newsletter-form button, .org--content-newsletter .mol--newsletter-form input[type="submit"].button {
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
     font-style: normal;
     color: #000C16;
@@ -575,14 +571,8 @@ footer {
       background-color: #2fcbb8; }
 
 @media (min-width: 576px) {
-  .org--newsletter {
-    padding: 1rem; }
-    .org--newsletter .mol--newsletter-form button, .org--newsletter .mol--newsletter-form input[type="submit"].button {
-      min-width: 200px; } }
-
-@media (min-width: 768px) {
-  .org--newsletter {
-    padding: 2rem; } }
+  .org--content-newsletter .mol--newsletter-form button, .org--content-newsletter .mol--newsletter-form input[type="submit"].button {
+    min-width: 200px; } }
 
 .org--slider-hero .mol--slider-content {
   padding: 6rem;
@@ -618,16 +608,16 @@ footer {
     padding: 12rem 0; }
   .org--content-introduction h3 {
     font-size: 3rem;
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
-    font-style: italic;
+    font-style: normal;
     margin-top: 0;
     margin-bottom: 5px; }
   .org--content-introduction p {
     font-size: 1.3rem; }
 
 .introducing {
-  font-family: "pragmatica-extended", sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
@@ -635,7 +625,7 @@ footer {
   text-transform: uppercase; }
 
 h3 {
-  font-family: "pragmatica-extended", sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 2.4rem;
@@ -643,7 +633,7 @@ h3 {
   margin-bottom: 20px; }
 
 p.bold {
-  font-family: pragmatica, sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.6rem;
@@ -651,7 +641,7 @@ p.bold {
   margin-bottom: 0; }
 
 p.norm {
-  font-family: pragmatica, sans-serif;
+  font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
@@ -672,7 +662,7 @@ p.norm {
       display: block; } }
   .container-grid header {
     grid-area: header;
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
     background: unset;
@@ -693,7 +683,7 @@ p.norm {
     grid-area: aside; }
   .container-grid footer {
     grid-area: footer;
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
     padding: 40px 70px;
@@ -702,27 +692,62 @@ p.norm {
     .container-grid footer i {
       color: #000C16; }
 
-[class*="org--content-"] {
-  margin: 2rem 0;
-  padding: 2rem 0; }
-  [class*="org--content-"] p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-top: 1rem;
-    margin-bottom: 1rem; }
-  [class*="org--content-"] ul {
-    margin-top: 1rem;
-    margin-bottom: 0; }
-    [class*="org--content-"] ul li {
-      font-size: 1.1rem;
-      margin-bottom: 1rem; }
-      [class*="org--content-"] ul li:last-child {
-        margin-bottom: 0; }
+[class*="org--content-"] p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
-@media (min-width: 992px) {
-  [class*="org--content-"] {
-    margin: 4rem 0;
-    padding: 4rem 0; } }
+[class*="org--content-"] ul {
+  margin-top: 1rem;
+  margin-bottom: 0; }
+  [class*="org--content-"] ul.atm--list-bullet li {
+    list-style: disc; }
+  [class*="org--content-"] ul.atm--list-nobullet li {
+    list-style: none; }
+  [class*="org--content-"] ul li {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.15rem;
+    margin-bottom: 8px; }
+    [class*="org--content-"] ul li:last-child {
+      margin-bottom: 0; }
+
+.org--content-introduction {
+  background: linear-gradient(90deg, rgba(255, 95, 95, 0.2) 0%, rgba(255, 128, 120, 0.2) 25%, rgba(227, 189, 159, 0.2) 50%, rgba(64, 206, 188, 0.2) 75%, rgba(37, 131, 131, 0.2) 100%); }
+
+.page--test {
+  padding: 40px 0; }
+
+.org--content-downloads .mol--download-gradient {
+  background: linear-gradient(90deg, #ff5f5f 0%, #ff8078 25%, #e3bd9f 50%, #40cebc 75%, #258383 100%);
+  padding: 7px;
+  border: 10px solid #fff; }
+  .org--content-downloads .mol--download-gradient .mol--download-gradient-inner {
+    background: white;
+    padding: 2rem; }
+    .org--content-downloads .mol--download-gradient .mol--download-gradient-inner i.fa-brands {
+      color: #000C16;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: block; }
+    .org--content-downloads .mol--download-gradient .mol--download-gradient-inner a.button {
+      display: inline-block;
+      margin-top: 1rem; }
+
+.org--content-downloads .mol--download-release {
+  margin: 2rem 0; }
+  .org--content-downloads .mol--download-release .atm--release-number {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 1rem;
+    font-size: 2rem; }
+  .org--content-downloads .mol--download-release .atm--release-date {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 700;
+    font-style: normal; }
 
 .org--content-getstarted .org--gs-item {
   padding: 2rem;
@@ -732,7 +757,7 @@ p.norm {
   .org--content-getstarted .org--gs-item .mol--gs-number {
     min-width: 100px; }
     .org--content-getstarted .org--gs-item .mol--gs-number span {
-      font-family: pragmatica, sans-serif;
+      font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
       font-style: normal;
       line-height: 1;
@@ -740,15 +765,17 @@ p.norm {
   .org--content-getstarted .org--gs-item:last-child {
     margin-bottom: 0; }
   .org--content-getstarted .org--gs-item h2 {
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
-    font-style: italic;
+    font-style: normal;
     font-size: 1.6rem;
     margin-top: 7px; }
+  .org--content-getstarted .org--gs-item h5 {
+    color: #FF8478; }
   .org--content-getstarted .org--gs-item i.fa-sharp, .org--content-getstarted .org--gs-item i.fa-kit {
     margin-right: 1rem; }
   .org--content-getstarted .org--gs-item a {
-    font-family: pragmatica, sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
@@ -769,9 +796,12 @@ p.norm {
       font-size: 2rem; } }
 
 .org--content-roadmap .org--rm--item {
-  padding: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
   padding-left: 30px;
   border-left: 5px solid #000C16; }
+  .org--content-roadmap .org--rm--item:last-child {
+    padding-bottom: 0; }
   .org--content-roadmap .org--rm--item .mol--rm--inner {
     padding: 2rem;
     background: #fff;
@@ -800,7 +830,7 @@ p.norm {
     .org--content-roadmap .org--rm--item .mol--rm--inner h2 {
       font-size: 3rem; }
     .org--content-roadmap .org--rm--item .mol--rm--inner a {
-      font-family: pragmatica, sans-serif;
+      font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
       font-style: normal;
       color: #2cbeac; }
@@ -857,7 +887,7 @@ p.norm {
   margin-top: 4rem;
   margin-bottom: 4rem; }
   .mol--post-synopsis p.atm--post-synopsis {
-    font-family: pragmatica, sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.8rem;
@@ -892,13 +922,13 @@ p.norm {
     .org--content-single p:last-child {
       margin-bottom: 0; }
     .org--content-single p.atm--post-intro {
-      font-family: pragmatica, sans-serif;
+      font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 1.4rem;
       line-height: 1.6; }
     .org--content-single p.atm--post-outro {
-      font-family: pragmatica, sans-serif;
+      font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 1.4rem;
@@ -913,9 +943,9 @@ p.norm {
   margin-bottom: 2rem;
   position: relative; }
   .mol--image-full figure.atm--post-img figcaption {
-    font-family: "pragmatica-extended", sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
-    font-style: italic;
+    font-style: normal;
     position: absolute;
     font-style: italic;
     z-index: 10;
@@ -954,7 +984,9 @@ p.norm {
       cursor: pointer;
       padding: 4px 10px;
       font-size: 0.8rem;
-      font-family: "AvertaStdPE-Semibold", Arial, Helvetica, sans-serif;
+      font-family: neue-haas-grotesk-text, sans-serif;
+      font-weight: 500;
+      font-style: normal;
       color: #fff;
       border: none;
       background-color: rgba(0, 0, 0, 0.3); }
@@ -1003,12 +1035,14 @@ p.norm {
   .mol--content-introduction h1 {
     font-size: 2.4rem; }
   .mol--content-introduction p {
-    font-family: pragmatica, sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.4rem;
-    line-height: 1.5; }
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 0; }
 
 @media (min-width: 992px) {
   .mol--content-introduction h1 {
-    font-size: 4rem; } }
+    margin-top: 5px;
+    font-size: 3rem; } }

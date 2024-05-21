@@ -1,6 +1,4 @@
 [class*="org--content-"] {
-	margin: $margin--general 0;
-	padding: $padding--general 0;
 	& p {
 		font-size: 1.1rem;
 		line-height: 1.5;
@@ -10,25 +8,35 @@
 	& ul {
 		margin-top: $margin--small;
 		margin-bottom: 0;
+		&.atm--list-bullet li {
+			list-style: disc;
+		}
+		&.atm--list-nobullet li {
+			list-style: none;
+		}
 		& li {
-			font-size: 1.1rem;
-			margin-bottom: $margin--small;
+			@include neueHaasGroMedium;
+			font-size: 1.15rem;
+			margin-bottom: 8px;
 			&:last-child {
 				margin-bottom: 0;
 			}
-			
 		}
 	}
 }
 
+.org--content-introduction {
+	@include colorGradient(90deg, 0.2);
+}
+
+.page--test {
+	padding: 40px 0;
+}
+
 @media (min-width: $media-mobile) {}
 
-@media (min-width: $media-desktop) {
-	[class*="org--content-"] {
-		margin: $margin--large 0;
-		padding: $padding--large 0;
-	}
-}
+@media (min-width: $media-desktop) {}
+
 @media (min-width: $media-xwide) {}
 
 @media (min-width: $max-width) {}

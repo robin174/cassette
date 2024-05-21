@@ -13,17 +13,35 @@
 		}
 	}
 	& h3 {
-		@include pragmaticaExtBold;
 		font-size: 2.7rem;
 		margin-top: 0;
 		margin-bottom: 5px;
 	}
 	& p {
-		@include pragmaticaExtMedium;
+		@include neueHaasGroMedium;
 		font-size: 1.3rem;
+	}
+	& .atm--release-number {
+		font-size: 42px;
+	}
+	& .mol--download-gradient {
+		@include colorGradient(90deg, 1);
+		padding:7px; 
+		border: 10px solid white; 
+		& .mol--download-gradient-inner {
+			background: white;
+			padding: 50px;
+		}
 	}
 }
 
+.mol--content-download {
+	background: $color--white;
+	padding:40px;
+}
+
+
+// To Delete
 .mol--cassette-inlay {
 	border: 2px solid $color--black;
 	& .atm--inlay-header {
@@ -33,7 +51,7 @@
 		color: $color--white;
 		font-size:24px;
 		& .atm--release-number {
-			@include pragmaticaExtBookItalic;
+			@include neueHaasGroMedium;
 			letter-spacing: 0.1em;
 		}
 	}
@@ -65,7 +83,6 @@
 				margin-left:15px;
 				font-size: 12rem;
 				line-height: 1.3;
-				@include chainPrinter;
 			}
 		}
 		& .atm--inlay-download {

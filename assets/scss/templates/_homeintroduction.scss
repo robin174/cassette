@@ -8,7 +8,7 @@
 	}
 	& h3 {
 		font-size: 3rem;
-		@include pragmaticaExtMediumItalic;
+		@include neueHaasGroMedium;
 		margin-top: 0;
 		margin-bottom: 5px;
 	}
@@ -18,35 +18,33 @@
 }
 
 .introducing {
-	@include pragmaticaExtBold;
+	@include neueHaasGroBold;
 	font-size: 1rem;
 	letter-spacing: 0.5em;
 	text-transform: uppercase;
 }
 
-
 h3 {
-    @include pragmaticaExtBold;
+    @include neueHaasGroBold;
     font-size: 2.4rem;
     margin-top: 0;
     margin-bottom: 20px;
 }
 
 p.bold {
-    @include pragmaticaBold;
+    @include neueHaasGroBold;
     font-size: 1.6rem;
     line-height: 1.5;
     margin-bottom: 0;
 }
 p.norm {
-    @include pragmaticaBold;
+    @include neueHaasGroBold;
     font-size: 1rem;
     line-height: 1.7;
     &:last-child {
         margin-bottom: 0;
     }
 }
-
 
 /* CSS Grid: .container-grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -67,7 +65,7 @@ p.norm {
     }
     header {
     	grid-area: header;
-    	@include pragmaticaExtBold;
+    	@include neueHaasGroBold;
         background: unset;
         padding: 40px 70px;
         padding-bottom: 10px;
@@ -100,7 +98,7 @@ p.norm {
     }
     footer {
     	grid-area: footer;
-    	@include pragmaticaExtBold;
+    	@include neueHaasGroBold;
     	padding: 40px 70px;
     	padding-top: 10px;
         background: unset;

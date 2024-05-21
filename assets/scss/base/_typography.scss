@@ -1,12 +1,12 @@
 // Add typography from https://simplecss.org/
 
 body {
-    @include pragmaticaBook;
+    @include neueHaasGroRoman;
     color: $color--primary;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	@include pragmaticaExtMedium;
+	@include neueHaasGroBold;
 	color: $color--primary;
 }
 
@@ -28,7 +28,7 @@ h5 {
 h6 {}
 
 p {
-	@include pragmaticaBook;
+	@include neueHaasGroRoman;
 	color: $color--primary;
 	margin-bottom: $margin--general;
 	&:last-child {
@@ -36,14 +36,15 @@ p {
 	}
 }
 
+strong {
+	@include neueHaasGroMedium;
+}
+
 li {
-	@include pragmaticaBook;
+	@include neueHaasGroRoman;
 	color: $color--primary;
 }
 
-strong {
-	@include pragmaticaBold;
-}
 
 .ut--uc {
 	@include headingUC;

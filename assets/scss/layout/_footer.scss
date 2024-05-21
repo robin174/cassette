@@ -1,3 +1,12 @@
+.org--brand-gradient {
+	@include colorGradient(90deg, 1)
+	display: block;
+	height: 20px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 footer {
 	background-color: rgba($color--primary,1);
 	background-position: top center;
@@ -13,7 +22,7 @@ footer {
 		color: $color--highlight-light;
 	}
 	a {
-		@include pragmaticaBook;
+		@include neueHaasGroRoman;
 		color: $color--white;
 		text-decoration: underline 2px;
 		letter-spacing: 0.05em;
@@ -46,7 +55,7 @@ footer {
 			margin-bottom: $margin--xsmall;
 			color: $color--white;
 			& p.atm--description {
-				@include pragmaticaExtMedium;
+				@include neueHaasGroMedium;
 				font-size: 1.8rem;
 				line-height: 1.4;
 				color: $color--white;

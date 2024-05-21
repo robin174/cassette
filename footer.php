@@ -6,7 +6,7 @@
 ?>
 		</main><!-- end main -->
 		
-
+		<section class="org--brand-gradient">&nbsp;</section>
 
 		<?php if(get_field('f_con_background', 'option')) : ?>
 			<footer style="background-image: url(<?php the_field('f_con_background', 'option'); ?>);background-repeat: repeat;">
@@ -62,8 +62,8 @@
 												<i class="fa-brands fa-2x fa-x-twitter inactive"></i>
 											<?php endif; ?>
 											<!-- GitHub -->
-											<?php if( get_field('f_con_twitter', 'option') ): ?>
-												<a href="<?php the_field('f_con_twitter', 'option'); ?>" target="_blank" title="<?php bloginfo( 'name' ); ?> on Twitter" target="_blank"><i class="fa-brands fa-2x fa-github"></i></a>
+											<?php if( get_field('f_con_github', 'option') ): ?>
+												<a href="<?php the_field('f_con_github', 'option'); ?>" target="_blank" title="<?php bloginfo( 'name' ); ?> on GitHub" target="_blank"><i class="fa-brands fa-2x fa-github"></i></a>
 											<?php else: ?>
 												<i class="fa-brands fa-2x fa-github inactive"></i>
 											<?php endif; ?>

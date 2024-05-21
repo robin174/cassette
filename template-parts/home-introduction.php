@@ -1,7 +1,7 @@
 <section class="templ--page-main">
 
 	<?php if(get_field('intro_section_background', 'option')) : ?>
-		<section style="position: relative;z-index: 10; background-image: url(<?php the_field('intro_section_background','option'); ?>); background-repeat: repeat; background-position:center; box-shadow: 0 0 40px rgba(0,0,0,0.2);">
+		<section style="position: relative;z-index: 10; background-image: url(<?php the_field('intro_section_background','option'); ?>); background-repeat: repeat; background-position:center;">
 	<?php else : ?>
 		<section style="position: relative;z-index: 10; box-shadow: 0 0 40px rgba(0,0,0,0.2);">
 	<?php endif; ?>
@@ -17,9 +17,9 @@
 				<div class="row g-0">
 
 					<?php if(get_field('main_section_background', 'option')) : ?>
-						<section style="background-image: url(<?php the_field('main_section_background','option'); ?>); background-repeat: repeat; background-position:center; box-shadow: 0 0 30px rgba(0,0,0,0.2);">
+						<section style="background-image: url(<?php the_field('main_section_background','option'); ?>); background-repeat: repeat; background-position:center;">
 					<?php else : ?>
-						<section style="box-shadow: 0 0 30px rgba(0,0,0,0.2);">
+						<section>
 					<?php endif; ?>
 						<?php if(get_field('main_section_select', 'option') == 'colorblock') : ?>
 							<div style="background:<?php the_field('main_section_overlay','option'); ?>">
@@ -47,7 +47,7 @@
 										</div>
 										<div style="margin-bottom:60px; padding-right: 180px;">
 											<a class="button atm--button-primary" href="/downloads">
-												<span>Download Cassette</span><i class="fas fa-arrow-right"></i>
+												<span>Download Cassette</span><i class="fa-sharp fa-regular fa-arrow-right"></i>
 											</a>
 										</div>
 										<div class="d-flex">

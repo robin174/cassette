@@ -8,7 +8,7 @@
 		<h5 class="ut--uc">Explore</h5>
 
 		<?php if( have_rows('repeater_gs_item')): ?>
-			<ul>
+			<ul class="atm--list-bullet">
 				<?php while( have_rows('repeater_gs_item')): the_row(); ?>
 					<li><?php the_sub_field('repeater_gs_bullet');?></li>
 				<?php endwhile; ?>	

@@ -1,21 +1,20 @@
 .org--content-newsletter {
-	margin-top: $margin--large;
 	text-align: center;
 	color: $color--white;
 	background-position: top center;
-	& .org--content-newsletter-inner {
+	& .org--content-newsletter-inner { 
 		margin: 0;
 		padding: $padding--large*3 0;
 	}
 	& h3 {
-		@include pragmaticaExtBold;
+		@include neueHaasGroBold;
 		font-size: 2.4rem;
 		margin-top: 0;
 		margin-bottom: 5px;
 		color: $color--white;
 	}
 	& p {
-		@include pragmaticaExtMedium;
+		@include neueHaasGroMedium;
 		font-size: 1.3rem;
 		color: $color--white;
 	}
@@ -30,7 +29,7 @@
 			height: 50px;
 		}
 		& button, input[type="submit"].button {
-			@include pragmaticaExtMedium;
+			@include neueHaasGroMedium;
 			color: $color--primary;
 			min-width: 150px;
 			border:none;
@@ -47,8 +46,7 @@
 }
 
 @media (min-width: $media-mobile) {
-	.org--newsletter {
-		padding:$padding--small;
+	.org--content-newsletter {
 		& .mol--newsletter-form {
 			& button, input[type="submit"].button {
 				min-width: 200px;
@@ -59,7 +57,5 @@
 }
 
 @media (min-width: $media-tablet) {
-	.org--newsletter {
-		padding: $padding--general;
-	}
+	.org--content-newsletter {}
 }

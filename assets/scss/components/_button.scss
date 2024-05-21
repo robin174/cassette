@@ -9,7 +9,7 @@ a[class*="atm--button-"] {
 }
 
 .atm--button-primary {
-	@include pragmaticaExtBook;
+	@include neueHaasGroMedium;
 	padding: 12px 28px;
 	padding-right: 40px;
 	background-color: $color--primary-alt;
@@ -53,7 +53,7 @@ a[class*="atm--button-"] {
 
 
 a.atm--download {
-	@include pragmaticaExtMedium;
+	@include neueHaasGroMedium;
 	transition: $base--transition;
 	color: $color--black;
 	text-decoration: none;

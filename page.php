@@ -8,6 +8,7 @@ get_header(); ?>
 
 <section class="templ--page-main">
 
+	<?php /* This page is not properly organised inline with the rest of the website*/ ?>
 	<?php if (is_page('Inst')) { ?>
 		<section class="org--content-inst">
 			<div class="container-fluid">
@@ -20,7 +21,6 @@ get_header(); ?>
 							<a href="https://inst.money/#/" target="_blank">https://inst.money/#/</a></p>
 							<p>Flamingo use Inst: <a href="https://flamingo.finance/on-ramp">https://flamingo.finance/on-ramp</a></p>
 							<p>On-ramps docs: <a href="https://flamingo.finance/on-ramp">https://inst.money/#/business-onRamps</a></p>
-
 							<div>
 								<iframe
 								 	src="https://pay.inst.money/buyCrypto/fastBuy?embedded=true&authorization=[your_api_key]"
@@ -35,18 +35,6 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-	<?php } elseif (is_page('Shop')) { ?>
-		<section class="org--content-shop">
-			<div class="container-fluid">
-				<div class="row justify-content-center">
-					<div class="col-10">
-						<section class="mol--content-shop">
-						</section>
-					</div>
-				</div>
-			</div>
-		</section>
-
 	<?php } elseif (is_page('Alchemy Pay')) { ?>
 		<section class="org--content-alchemy">
 			<div class="container-fluid">
@@ -75,9 +63,20 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
+	<?php } elseif (is_page('Shop')) { ?>
+		<section class="org--content-shop">
+			<div class="container-fluid">
+				<div class="row justify-content-center">
+					<div class="col-10">
+						<section class="mol--content-shop">
+							Shop
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
 	<?php } else { ?>
 		<section class="org--content-default">
-
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12 col-md-9">

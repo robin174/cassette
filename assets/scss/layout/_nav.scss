@@ -24,8 +24,7 @@ nav a {
 nav.navbar {
 	padding: $padding--general 0;
 	& h1, h1 a.navbar-brand {
-		@include headingUC; // Can we extend this 
-		font-family: $brand--font-reg;
+		@include headingUC;
 		font-size: 0.9rem;
 		color: $color--white;
 		margin-bottom: 0;
@@ -38,7 +37,6 @@ nav.navbar {
 	}
 	& li a.nav-link {
 		@include navigationUC;
-		@include pragmaticaExtBook;
 		font-size: 0.9rem;
 		transition: $base--transition;
 		margin-left: $margin--small;
@@ -64,18 +62,20 @@ nav.navbar {
 		color: $color--tertiary;
 	}
 	& li.outline a.nav-link {
-		border: 1px solid $color--white;
+		border-radius: $base--borderradius;
+		border: 2px solid $color--white;
 		color: $color--white;
 		&:hover {
-			border: 1px solid $color--tertiary;
+			border: 2px solid $color--tertiary;
 			color: $color--tertiary;
 		}
 	}
 	& li.active.outline a.nav-link {
-		border: 1px solid $color--tertiary;
+		border-radius: $base--borderradius;
+		border: 2px solid $color--tertiary;
 		color: $color--tertiary;
 		&:hover {
-			border: 1px solid $color--tertiary;
+			border: 2px solid $color--tertiary;
 			color: $color--tertiary;
 		}
 	}

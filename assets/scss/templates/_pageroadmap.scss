@@ -1,13 +1,17 @@
 .org--content-roadmap {
 	& .org--rm--item {
-		padding: $padding--small;
+		padding-right: $padding--small;
+		padding-bottom: $padding--general;
 		padding-left: 30px;
 		border-left: 5px solid $color--primary;
+		&:last-child {
+			padding-bottom: 0;
+		}
 		& .mol--rm--inner { 
 			padding: $padding--general;
 			background: $color--white;
 			box-shadow: $box--shadow-light;
-			position: relative;
+			position: relative; 
 			& .atm--rm-marker {
 				display: block;
 				position: absolute;
@@ -35,7 +39,7 @@
 				font-size: 3rem;
 			}
 			& a {
-				@include pragmaticaBold;
+				@include neueHaasGroBold;
 				color: $color--highlight-dark;
 				&:hover {
 					color: $color--primary;

@@ -17,44 +17,53 @@
 				<div class="mol--content-download">
 					<div class="row justify-content-center">
 						<div class="col-12 col-md-10 col-xl-8 justify-content-center">
-							<div class="container">
-								<div class="row">
-									<div class="col-12">
+
+							<!-- Alternative: CSS:
+							https://css-tricks.com/equal-columns-with-flexbox-its-more-complicated-than-you-might-think/ -->
+							<section class="mol--cassette-inlay">
+								<div class="row g-0">
+									<div class="col-12 atm--inlay-header">
 										<span class="atm--release-number" id="release-number"></span>
 									</div>
 								</div>
-							</div>
-							<div class="container">
-								<div class="row g-3">
-									<div class="col-4">
-										<div class="mol--download-gradient">
-											<div class="mol--download-gradient-inner">
-												<i class="fa-brands fa-4x fa-apple"></i>
-												<a type="button" class="atm--download" id='url-mac' href=''><i class="fa-sharp fa-regular fa-download"></i>Download for macOS</a>
-											</div>
+								<div class="row g-0">
+									<div class="col-6 atm--inlay-half">
+										<div class="atm--inlay-letter">
+											<span>A</span>
+										</div>
+										<div class="atm--inlay-content">
+											<span>MAC</span>
+											<?php /*
+											<figure>
+												<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-apple.png">
+											</figure>
+											*/ ?>
+										</div>
+										<div class="atm--inlay-download">
+											<a type="button" class="atm--download" id='url-mac' href=''><i class="fa-sharp fa-regular fa-download"></i>Download for macOS</a>
 										</div>
 									</div>
-									<div class="col-4">
-										<div class="mol--download-gradient">
-											<div class="mol--download-gradient-inner">
-												<i class="fa-brands fa-4x fa-windows"></i>
-												<a type="button" class="atm--download" id='url-windows' href=''><i class="fa-sharp fa-regular fa-download"></i>Download for Windows</a>
-											</div>
+									<div class="col-6 atm--inlay-half">
+										<div class="atm--inlay-letter">
+											<span>B</span>
 										</div>
-									</div>
-									<div class="col-4">
-										<div class="mol--download-gradient">
-											<div class="mol--download-gradient-inner">
-												<i class="fa-brands fa-4x fa-linux"></i>
-												<a type="button" class="atm--download" id='url-linux' href=''><i class="fa-sharp fa-regular fa-download"></i>Download forLinux</a>
-											</div>
+										<div class="atm--inlay-content">
+											<span>WIN</span>
+											<?php /*
+											<figure>
+												<img class="mw-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-windows.png">
+											</figure>
+											*/ ?>
+										</div>
+										<div class="atm--inlay-download">
+											<a type="button" class="atm--download" id='url-windows' href=''><i class="fa-sharp fa-regular fa-download"></i>Download for Windows</a>
 										</div>
 									</div>
 								</div>
-							</div>
+							</section>
 
 							<script>
-								fetch("https://api.github.com/repos/getCassette-io/release/releases/latest")
+								fetch("https://api.github.com/repos/configwizard/greenfinch.react/releases/latest")
 								.then(response => response.json())
 								.then(data => {
 									console.log(data)
@@ -63,7 +72,6 @@
 									document.querySelector("#release-number").innerHTML = data.name
 									document.querySelector("#url-mac").href = data.assets[0].browser_download_url
 									document.querySelector("#url-windows").href = data.assets[1].browser_download_url
-									document.querySelector("#url-linux").href = data.assets[2].browser_download_url
 								})
 							</script>
 

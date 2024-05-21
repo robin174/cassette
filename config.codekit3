@@ -1036,6 +1036,18 @@
       "oAP" : "\/single.php",
       "oF" : 0
     },
+    "\/style-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/style.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1047,6 +1059,14 @@
       "oAP" : "\/style-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/template-parts\/home-download-old.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/home-download-old.php",
+      "oF" : 0
     },
     "\/template-parts\/home-download.php" : {
       "cB" : 0,
@@ -1118,6 +1138,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/section-inst.php",
+      "oF" : 0
+    },
+    "\/template-parts\/section-introduction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/section-introduction.php",
       "oF" : 0
     },
     "\/template-parts\/unit-getstarted.php" : {
