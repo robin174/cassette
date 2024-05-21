@@ -16,6 +16,7 @@
 			<h2><?php the_sub_field('repeater_rm_title');?><span class="ut--secondary">&nbsp|&nbsp</span><?php the_sub_field('repeater_rm_year');?></h2>
 			<p><?php the_sub_field('repeater_rm_descr');?></p>
 			<?php if( have_rows('repeater_rm_item')): ?>
+				<h5 class="ut--uc">Key Points</h5>
 				<ul class="atm--list-nobullet">
 					<?php while( have_rows('repeater_rm_item')): the_row(); ?>
 						<li>

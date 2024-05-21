@@ -1,17 +1,9 @@
 // Organisms
 .org--content-default {
-	margin: $margin--large 0;
 	padding: $padding--general 0; 
 }
 
-.org--content-download {
-	margin: $margin--large 0;
-	padding: $padding--large 0;
-	& .org--content-download-inner {}
-}
-
 .org--content-inst {
-	margin: $margin--large 0;
 	padding: $padding--large 0;
 	color: $color--white;
 	& .org--content-inst-inner {
@@ -31,7 +23,6 @@
 
 
 .org--content-shop {
-	margin: $margin--large 0;
 	padding: $padding--large 0;
 }
 

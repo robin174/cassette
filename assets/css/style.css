@@ -339,15 +339,9 @@ nav.navbar {
       color: #40D3C1; } }
 
 .org--content-default {
-  margin: 4rem 0;
   padding: 2rem 0; }
 
-.org--content-download {
-  margin: 4rem 0;
-  padding: 4rem 0; }
-
 .org--content-inst {
-  margin: 4rem 0;
   padding: 4rem 0;
   color: #fff; }
   .org--content-inst .org--content-inst-inner h2 {
@@ -360,7 +354,6 @@ nav.navbar {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3); }
 
 .org--content-shop {
-  margin: 4rem 0;
   padding: 4rem 0; }
 
 .org--brand-gradient {
@@ -599,23 +592,6 @@ footer {
   .splide__pagination__page.is-active {
     background: #40D3C1; }
 
-.org--content-introduction {
-  margin-top: 4rem;
-  color: #000C16;
-  background-position: top center; }
-  .org--content-introduction .org--content-introduction-inner {
-    margin: 0;
-    padding: 12rem 0; }
-  .org--content-introduction h3 {
-    font-size: 3rem;
-    font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    margin-top: 0;
-    margin-bottom: 5px; }
-  .org--content-introduction p {
-    font-size: 1.3rem; }
-
 .introducing {
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
@@ -713,9 +689,6 @@ p.norm {
     margin-bottom: 8px; }
     [class*="org--content-"] ul li:last-child {
       margin-bottom: 0; }
-
-.org--content-introduction {
-  background: linear-gradient(90deg, rgba(255, 95, 95, 0.2) 0%, rgba(255, 128, 120, 0.2) 25%, rgba(227, 189, 159, 0.2) 50%, rgba(64, 206, 188, 0.2) 75%, rgba(37, 131, 131, 0.2) 100%); }
 
 .page--test {
   padding: 40px 0; }
@@ -829,6 +802,8 @@ p.norm {
         color: #FF8478; }
     .org--content-roadmap .org--rm--item .mol--rm--inner h2 {
       font-size: 3rem; }
+    .org--content-roadmap .org--rm--item .mol--rm--inner h5 {
+      color: #FF8478; }
     .org--content-roadmap .org--rm--item .mol--rm--inner a {
       font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
@@ -1028,19 +1003,35 @@ p.norm {
 .mol--line-05 {
   background-color: #FF5F5F; }
 
-.mol--content-introduction {
-  padding: 2rem 0;
-  margin-bottom: 1rem;
-  text-align: center; }
-  .mol--content-introduction h1 {
-    font-size: 2.4rem; }
-  .mol--content-introduction p {
+.org--content-introduction {
+  background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%);
+  color: #000C16;
+  background-position: top center; }
+  .org--content-introduction .org--content-introduction-inner {
+    margin: 0;
+    padding: 12rem 0; }
+  .org--content-introduction h3 {
+    font-size: 3rem;
     font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    margin-bottom: 0; }
+    margin-top: 0;
+    margin-bottom: 5px; }
+  .org--content-introduction p {
+    font-size: 1.3rem; }
+  .org--content-introduction .mol--content-introduction {
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+    text-align: center; }
+    .org--content-introduction .mol--content-introduction h1 {
+      font-size: 2.4rem; }
+    .org--content-introduction .mol--content-introduction p {
+      font-family: neue-haas-grotesk-text, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.3rem;
+      line-height: 1.5;
+      margin-bottom: 0; }
 
 @media (min-width: 992px) {
   .mol--content-introduction h1 {

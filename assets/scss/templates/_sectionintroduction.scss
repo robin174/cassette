@@ -1,19 +1,38 @@
 // For page introduction
-.mol--content-introduction {
-	padding: $padding--general 0;
-	margin-bottom: $margin--small;
-    text-align: center;
-    
-	& h1 {
-		font-size: 2.4rem;
+.org--content-introduction {
+	@include colorGradient(90deg, 0.3);
+	color: $color--primary;
+	background-position: top center;
+	& .org--content-introduction-inner {
+		margin: 0;
+		padding: $padding--large*3 0;
+	}
+	& h3 {
+		font-size: 3rem;
+		@include neueHaasGroMedium;
+		margin-top: 0;
+		margin-bottom: 5px;
 	}
 	& p {
-		@include neueHaasGroBold;
 		font-size: 1.3rem;
-		line-height: 1.5;
-		margin-bottom: 0;
+	}
+	& .mol--content-introduction {
+		padding: $padding--general  0;
+		margin-bottom: $margin--small;
+	    text-align: center;
+		& h1 {
+			font-size: 2.4rem;
+		}
+		& p {
+			@include neueHaasGroBold;
+			font-size: 1.3rem;
+			line-height: 1.5;
+			margin-bottom: 0;
+		}
 	}
 }
+
+
 
 @media (min-width: $media-mobile) {}
 
