@@ -32,7 +32,7 @@ get_header(); ?>
 											<i class="fa-brands fa-4x fa-apple"></i>
 											<h3>For macOS</h3>
 											<a class="button atm--button-primary" id='url-mac' href=''>
-												<span>Download</span><i class="fa-sharp fa-regular fa-download"></i>
+												<span>Download macOS app</span>
 											</a>
 										</div>
 									</div>
@@ -43,7 +43,7 @@ get_header(); ?>
 											<i class="fa-brands fa-4x fa-windows"></i>
 											<h3>For Windows</h3>
 											<a class="button atm--button-primary" id='url-windows' href=''>
-												<span>Download</span><i class="fa-sharp fa-regular fa-download"></i>
+												<span>Download Windows app</span>
 											</a>
 										</div>
 									</div>
@@ -54,12 +54,19 @@ get_header(); ?>
 											<i class="fa-brands fa-4x fa-linux"></i>
 											<h3>For Linux</h3>
 											<a class="button atm--button-primary" id='url-linux' href=''>
-												<span>Download</span><i class="fa-sharp fa-regular fa-download"></i>
+												<span>Download Linux app</span>
 											</a>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="row">
+								<div class="col-12 text-center">
+									<div class="mol--download-release">
+										<p class="atmAdditional">For a full list of downloads visit our <a href="https://github.com/getCassette-io/app/releases/" title="Cassette on GitHub" target="_blank">GitHub</a>.</p>
+									</div>
+								</div>
+							</div>
 						<script>
 							fetch("https://api.github.com/repos/getCassette-io/release/releases/latest")
 							.then(response => response.json())

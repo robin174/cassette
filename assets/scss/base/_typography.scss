@@ -34,6 +34,19 @@ p {
 	&:last-child {
 		margin-bottom: 0;
 	}
+	a {
+		transition: $base--transition;
+		@include neueHaasGroMedium;
+		color: $color--primary;
+		text-decoration: underline;
+		&:hover {
+			color: $color--tertiary;
+		}
+	}
+	&.atmAdditional {
+		@include neueHaasGroMedium;
+		font-size: 1.3rem !important;
+	}
 }
 
 strong {

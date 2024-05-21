@@ -10,12 +10,13 @@ a[class*="atm--button-"] {
 
 .atm--button-primary {
 	@include neueHaasGroMedium;
-	padding: 12px 28px;
+	border-radius: $base--borderradius;
+	padding: 10px 24px;
 	padding-right: 40px;
 	background-color: $color--primary-alt;
-	text-transform: uppercase;
+	
 	& span {
-		letter-spacing: 0.1em;
+		letter-spacing: 0.05em;
 		color: $color--white;
 	}
 	& i {

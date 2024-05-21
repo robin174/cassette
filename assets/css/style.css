@@ -93,6 +93,20 @@ p {
   margin-bottom: 2rem; }
   p:last-child {
     margin-bottom: 0; }
+  p a {
+    transition: 0.4s;
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #000C16;
+    text-decoration: underline; }
+    p a:hover {
+      color: #FF8478; }
+  p.atmAdditional {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem !important; }
 
 strong {
   font-family: neue-haas-grotesk-text, sans-serif;
@@ -155,12 +169,12 @@ a[class*="atm--button-"] {
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 500;
   font-style: normal;
-  padding: 12px 28px;
+  border-radius: 5px;
+  padding: 10px 24px;
   padding-right: 40px;
-  background-color: #1C2E32;
-  text-transform: uppercase; }
+  background-color: #1C2E32; }
   .atm--button-primary span {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     color: #fff; }
   .atm--button-primary i {
     color: #40D3C1;
