@@ -14,7 +14,7 @@ get_header(); ?>
 		<section class="page--test">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
-					<div class="col-11 col-md-12 col-xxl-8">
+					<div class="col-11 col-md-12 col-xxl-10">
 						
 						<div class="container">
 							<div class="row">
