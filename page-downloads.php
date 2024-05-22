@@ -14,9 +14,8 @@ get_header(); ?>
 		<section class="page--test">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
-					<div class="col-11 col-xxl-10">
+					<div class="col-11 col-lg-10 col-xxl-9">
 						
-						<div class="container">
 							<div class="row">
 								<div class="col-12 text-center">
 									<div class="mol--download-release">
@@ -25,8 +24,8 @@ get_header(); ?>
 									</div>
 								</div>
 							</div>
-							<div class="row g-3">
-								<div class="col-12 col-md-4">
+							<div class="row">
+								<div class="col-12 col-lg-4">
 									<div class="mol--download-gradient h-100">
 										<div class="mol--download-gradient-inner h-100">
 											<i class="fa-brands fa-4x fa-apple"></i>
@@ -37,7 +36,7 @@ get_header(); ?>
 										</div>
 									</div>
 								</div>
-								<div class="col-12 col-md-4">
+								<div class="col-12 col-lg-4">
 									<div class="mol--download-gradient h-100">
 										<div class="mol--download-gradient-inner h-100">
 											<i class="fa-brands fa-4x fa-windows"></i>
@@ -48,7 +47,7 @@ get_header(); ?>
 										</div>
 									</div>
 								</div>
-								<div class="col-12 col-md-4">
+								<div class="col-12 col-lg-4">
 									<div class="mol--download-gradient h-100">
 										<div class="mol--download-gradient-inner h-100">
 											<i class="fa-brands fa-4x fa-linux"></i>
@@ -59,8 +58,8 @@ get_header(); ?>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="row">
+
+							<div class="row">
 								<div class="col-12 text-center">
 									<div class="mol--download-release">
 										<p class="atmAdditional">For the latest release, visit our <a href="https://github.com/getCassette-io/release/releases/latest" title="Latest Cassette release on GitHub">GitHub</a>.</p>
