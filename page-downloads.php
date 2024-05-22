@@ -14,7 +14,7 @@ get_header(); ?>
 		<section class="page--test">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
-					<div class="col-11 col-md-12 col-xl-9 col-xxl-8">
+					<div class="col-11 col-md-12 col-xxl-8">
 						
 						<div class="container">
 							<div class="row">
@@ -63,7 +63,7 @@ get_header(); ?>
 						<div class="row">
 								<div class="col-12 text-center">
 									<div class="mol--download-release">
-										<p class="atmAdditional">For a full list of downloads visit our <a href="https://github.com/getCassette-io/app/releases/" title="Cassette on GitHub" target="_blank">GitHub</a>.</p>
+										<p class="atmAdditional">For the latest release, visit our <a href="https://github.com/getCassette-io/app/releases/latest" title="Latest Cassette release on GitHub">GitHub</a>.</p>
 									</div>
 								</div>
 							</div>
