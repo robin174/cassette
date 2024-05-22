@@ -63,7 +63,7 @@ get_header(); ?>
 						<div class="row">
 								<div class="col-12 text-center">
 									<div class="mol--download-release">
-										<p class="atmAdditional">For the latest release, visit our <a href="https://github.com/getCassette-io/app/releases/latest" title="Latest Cassette release on GitHub">GitHub</a>.</p>
+										<p class="atmAdditional">For the latest release, visit our <a href="https://github.com/getCassette-io/release/releases/latest" title="Latest Cassette release on GitHub">GitHub</a>.</p>
 									</div>
 								</div>
 							</div>
