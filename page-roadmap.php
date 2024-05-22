@@ -14,7 +14,7 @@ get_header(); ?>
 		<section class="page--test">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
-					<div class="col-11 col-md-12 col-xxl-10">
+					<div class="col-11 col-md-12 col-xxl-9">
 						<?php if( have_rows('repeater_rm')): ?>
 							<?php while( have_rows('repeater_rm')): the_row(); ?>
 								<?php get_template_part('template-parts/unit-roadmap'); ?>
