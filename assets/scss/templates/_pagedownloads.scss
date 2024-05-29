@@ -23,6 +23,7 @@
 		& .atm--release-number {
 			@include neueHaasGroBold;
 			font-size: 4rem;
+			line-height: 1.2;
 		}
 		& .atm--release-date {
 			@include neueHaasGroBold;

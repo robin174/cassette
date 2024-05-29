@@ -314,7 +314,16 @@ nav.navbar {
       border: 2px solid #FF8478;
       color: #FF8478; }
 
-@media (max-width: 767px) {
+.navbar button.atmButtonNav {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #fff; }
+  .navbar button.atmButtonNav:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff; }
+  .navbar button.atmButtonNav i {
+    color: #fff; }
+
+@media (max-width: 991px) {
   .offcanvas.offcanvas-end {
     backdrop-filter: blur(7px);
     background-color: rgba(17, 17, 17, 0.8);
@@ -326,6 +335,17 @@ nav.navbar {
       padding-top: 40px;
       padding-left: 30px;
       padding-right: 30px; }
+      .offcanvas.offcanvas-end .offcanvas-header img {
+        height: 24px; }
+      .offcanvas.offcanvas-end .offcanvas-header button.btn-close {
+        width: 2em;
+        height: 2em;
+        opacity: unset;
+        background: rgba(255, 255, 255, 0.3); }
+        .offcanvas.offcanvas-end .offcanvas-header button.btn-close i {
+          color: #fff; }
+          .offcanvas.offcanvas-end .offcanvas-header button.btn-close i:hover {
+            color: orange; }
     .offcanvas.offcanvas-end .offcanvas-body {
       padding: 0; }
     .offcanvas.offcanvas-end li.menu-item {
@@ -340,22 +360,14 @@ nav.navbar {
       background-color: black;
       border-left: 7px solid #40D3C1; }
       .offcanvas.offcanvas-end li.current-menu-item:hover, .offcanvas.offcanvas-end li.current-menu-item:hover:hover {
-        color: #40D3C1; }
-    .offcanvas.offcanvas-end .offcanvas-header button.btn-close {
-      background: unset;
-      opacity: unset;
-      background: yellow; }
-      .offcanvas.offcanvas-end .offcanvas-header button.btn-close i {
-        color: green; }
-        .offcanvas.offcanvas-end .offcanvas-header button.btn-close i:hover {
-          color: orange; } }
+        color: #40D3C1; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .offcanvas.offcanvas-end {
     backdrop-filter: unset;
     background-color: unset; }
     .offcanvas.offcanvas-end li.current-menu-item a, .offcanvas.offcanvas-end li.current-menu-item:hover a {
-      color: #40D3C1; } }
+      color: #FF8478; } }
 
 .org--content-default {
   padding: 2rem 0; }
@@ -402,13 +414,14 @@ footer {
     text-decoration: underline 2px;
     letter-spacing: 0.05em; }
     footer a:hover {
-      color: #40D3C1;
-      cursor: pointer; }
+      cursor: pointer;
+      color: #fff; }
     footer a i {
+      color: #fff;
       transition: 0.3s; }
       footer a i:hover {
         cursor: pointer;
-        color: #40D3C1; }
+        color: #fff; }
   footer .org--footer-inner {
     padding: 2rem 0; }
     footer .org--footer-inner .org--unit-logo {
@@ -742,7 +755,8 @@ p.norm {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 4rem; }
+    font-size: 4rem;
+    line-height: 1.2; }
   .org--content-downloads .mol--download-release .atm--release-date {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;

@@ -27,14 +27,15 @@ footer {
 		text-decoration: underline 2px;
 		letter-spacing: 0.05em;
 		&:hover {
-			color: $color--secondary;
 			cursor: pointer;
+			color: $color--white;
 		}
 		& i {
+			color: $color--white;
 			transition: 0.3s;
 			&:hover {
 				cursor: pointer;
-				color: $color--secondary;
+				color: $color--white;
 			}	
 		}
 	}

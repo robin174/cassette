@@ -68,7 +68,7 @@
 		<body <?php body_class(); ?> style="background:url(<?php the_field('bg_image_post','option'); ?>); background-position: top center;">
 	<?php endif; ?>
 		<header> 
-			<nav class="navbar navbar-expand-md navbar-offcanvas"> 
+			<nav class="navbar navbar-expand-lg navbar-offcanvas"> 
 				<div class="container-fluid">
 					<?php if ( is_front_page() && is_home() ) : ?>
 						<?php /* <h1><?php bloginfo( 'name' ); ?></h1> */ ?>
@@ -80,13 +80,14 @@
 						*/ ?>
 					<?php endif; ?>
 
-					<div class="d-md-none">
+					<div class="d-lg-none">
 						<button class="btn btn-primary atmButtonNav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars"></i></button>
 					</div>
 					
 					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 					 	<div class="offcanvas-header">
-					    	<h2 id="offcanvasRightLabel">Logo</h2>
+					 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo">
+					    	<?php /* <h2 id="offcanvasRightLabel">Logo</h2> */ ?>
 							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-lg fa-times"></i></button>
 					 	</div>
 						<div class="offcanvas-body">

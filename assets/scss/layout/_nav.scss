@@ -1,5 +1,5 @@
 // Set breakpoint for navigation from header.php e.g.
-$breakpoint--navigation: $media-tablet;
+$breakpoint--navigation: $media-desktop;
 
 nav a {
 	@include headingUC;
@@ -81,6 +81,19 @@ nav.navbar {
 	}
 }
 
+// focus, active...etc. 
+.navbar button.atmButtonNav {
+	background-color: rgba($color--white,0);
+	border: 2px solid $color--white;
+	&:hover {
+		background-color: rgba($color--white,0.1);
+		border: 2px solid $color--white;
+	}
+	& i {
+		color: $color--white;
+	}
+}
+
 // All the above needs to be converted to the below. What is small -> medium,  what is medium -> x-large.
 // Menu -> Medium: mobile version (off canvas)
 @media (max-width: $breakpoint--navigation - 1px){
@@ -96,6 +109,21 @@ nav.navbar {
 			padding-top: 40px;
 			padding-left: 30px;
 			padding-right: 30px;
+			& img {
+				height: 24px;
+			}
+			& button.btn-close {
+				width: 2em;
+			    height: 2em;
+				opacity: unset;
+				background: rgba($color--white, 0.3);
+				& i {
+					color: $color--white;
+					&:hover {
+						color: orange;
+					}
+				}
+			}
 		}
 		& .offcanvas-body {
 			padding: 0;
@@ -117,17 +145,7 @@ nav.navbar {
 				color: $color--secondary;
 			}
 		}
-		& .offcanvas-header button.btn-close {
-			background: unset;
-			opacity: unset;
-			background: yellow;
-			& i {
-				color: green;
-				&:hover {
-					color: orange;
-				}
-			}
-		}
+		
 	}
 }
 
@@ -138,7 +156,7 @@ nav.navbar {
 		backdrop-filter: unset;
 		background-color: unset;
 		& li.current-menu-item a, li.current-menu-item:hover a {
-			color: $color--secondary;
+			color: $color--tertiary;
 		}
 	}
 }

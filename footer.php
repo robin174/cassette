@@ -43,7 +43,7 @@
 	                				<div class="col-12 col-lg-3 d-flex align-items-center">
 	                					<section class="mol--unit-contact">
 	                						<h4>Email</h4>
-											<span><a href="mailto:<?php the_field('f_con_email', 'option'); ?>" title="Email <?php the_title();?>"><?php the_field('f_con_email', 'option'); ?></a></span>
+											<span><a href="mailto:<?php the_field('f_con_email', 'option'); ?>" title="Email <?php bloginfo( 'name' ); ?>"><?php the_field('f_con_email', 'option'); ?></a></span>
 										</section>
 	                				</div>
 	                				<div class="col-12 col-lg-3 d-flex align-items-center">
