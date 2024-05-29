@@ -11,7 +11,7 @@ get_header(); ?>
 
 		<?php get_template_part('template-parts/section-introduction'); ?>
 
-		<section class="page--test">
+		<section class="mol--content-downloads">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
 					<div class="col-11 col-lg-10 col-xxl-9">
@@ -62,7 +62,7 @@ get_header(); ?>
 							<div class="row">
 								<div class="col-12 text-center">
 									<div class="mol--download-release">
-										<p class="atmAdditional">For the latest release, visit our <a href="https://github.com/getCassette-io/release/releases/latest" title="Latest Cassette release on GitHub">GitHub</a>.</p>
+										<p class="atmAdditional">For more on the latest release, visit our <a href="https://github.com/getCassette-io/release/releases/latest" title="Latest Cassette release on GitHub">GitHub</a>.</p>
 									</div>
 								</div>
 							</div>

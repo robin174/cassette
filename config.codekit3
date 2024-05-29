@@ -764,6 +764,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/scss\/templates\/_homewelcome.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_homewelcome.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/scss\/templates\/_page.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -774,6 +789,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/css\/_page.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/scss\/templates\/_pageblog.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_pageblog.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -959,6 +989,14 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
+    "\/page-blog.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-blog.php",
+      "oF" : 0
+    },
     "\/page-downloads.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1106,6 +1144,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/home-origin.php",
+      "oF" : 0
+    },
+    "\/template-parts\/home-welcome.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/home-welcome.php",
       "oF" : 0
     },
     "\/template-parts\/post-builder.php" : {

@@ -25,8 +25,8 @@
 	}
 }
 
-.page--test {
-	padding: 40px 0;
+[class*="mol--content-"] {
+		padding: 40px 0;
 }
 
 @media (min-width: $media-mobile) {}

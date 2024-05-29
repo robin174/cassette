@@ -6,16 +6,16 @@
 get_header(); ?>
 
 <section class="templ--page-main">
-	<section class="org--content-single">
-		<section style="background-color: pink;">
+	<section class="org--content-post">
+		<section class="mol--post-intro">
 			<div class="container">
 				<div class="row g-0">
-					<div class="col-12 col-md-6 align-self-center">
+					<div class="col-12 col-md-4 align-self-center">
 						<figure>
-                            <?php the_post_thumbnail(); ?>
+                            <img class="mw-100" src="<?php the_field('unit_post_cover'); ?>" />
                         </figure>
 					</div>
-					<div class="col-12 col-md-6 align-self-center">
+					<div class="col-12 col-md-8 align-self-center">
 						<section class="mol--post-title">
 							<h1><?php the_field('unit_post_title'); ?></h1>
 							<span>Date</span>

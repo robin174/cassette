@@ -1,39 +1,6 @@
-.mol--post-title {
-	padding-top: $padding--large;
-	padding-bottom: $padding--large;
-	& h1 {
-		font-size: 3rem;
-		margin-bottom: $margin--small;
-	}
-}
 
-.mol--post-synopsis {
-	margin-top: $margin--large;
-	margin-bottom: $margin--large;
-	& p.atm--post-synopsis {
-		@include neueHaasGroBold;
-		font-size: 1.8rem;
-		line-height: 1.4;
-	}
-}
 
-.mol--post-tldr {
-	padding: $padding--general $padding--small;
-	background: rgba(0,0,0,0.05);
-	margin-bottom: $margin--general;
-	& ul {
-		padding-left: $padding--small;
-		& li {
-			font-size: 0.85rem;
-			margin-bottom:15px;
-			&:last-child {
-				margin-bottom:0;
-			}
-		}
-	}
-}
-
-.org--content-single {
+.org--content-post {
 	margin-top: $margin--large;
 	padding-bottom: $padding--xlarge;
 	& h2 {
@@ -66,7 +33,42 @@
 			margin: 0;
 		}
 	}
-
+	& .mol--post-title {
+		padding-top: $padding--large;
+		padding-bottom: $padding--large;
+		& h1 {
+			font-size: 3rem;
+			margin-bottom: $margin--small;
+		}
+	}
+	& .mol--post-intro {
+		padding: $padding--general 0;
+		@include colorGradient(90deg, 0.3);
+	}
+	& .mol--post-synopsis {
+		margin-top: $margin--large;
+		margin-bottom: $margin--large;
+		& p.atm--post-synopsis {
+			@include neueHaasGroBold;
+			font-size: 1.8rem;
+			line-height: 1.4;
+		}
+	}
+	& .mol--post-tldr {
+		padding: $padding--general $padding--small;
+		background: rgba(0,0,0,0.05);
+		margin-bottom: $margin--general;
+		& ul {
+			padding-left: $padding--small;
+			& li {
+				font-size: 0.85rem;
+				margin-bottom:15px;
+				&:last-child {
+					margin-bottom:0;
+				}
+			}
+		}
+	}
 }
 
 .hljs-copy {}

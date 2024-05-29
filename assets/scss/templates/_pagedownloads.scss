@@ -1,7 +1,7 @@
 .org--content-downloads {
 	& .mol--download-gradient {
 		@include colorGradient(90deg, 1);
-		padding:7px; 
+		padding: 7px; 
 		border: 10px solid $color--white; 
 		& .mol--download-gradient-inner {
 			background: white;
@@ -19,11 +19,10 @@
 		}
 	}
 	& .mol--download-release {
-		margin: $margin--general 0;
+		margin-bottom: $margin--general;
 		& .atm--release-number {
 			@include neueHaasGroBold;
-			padding-top: $padding--small;
-			font-size: 2rem;
+			font-size: 4rem;
 		}
 		& .atm--release-date {
 			@include neueHaasGroBold;

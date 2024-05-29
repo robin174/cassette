@@ -11,7 +11,7 @@ get_header(); ?>
 
 		<?php get_template_part('template-parts/section-introduction'); ?>
 
-		<section class="page--test">
+		<section class="mol--content-roadmap">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
 					<div class="col-11 col-lg-10 col-xxl-8">

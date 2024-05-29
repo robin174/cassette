@@ -1,0 +1,8 @@
+.org--content-welcome {
+	@include colorGradient(90deg, 0.3);
+}
+
+@media (min-width: $media-mobile) {}
+@media (min-width: $media-desktop) {}
+@media (min-width: $media-xwide) {}
+@media (min-width: $max-width) {}

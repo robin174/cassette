@@ -8,6 +8,11 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Fonts: Neue Haas
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Resolution Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Exact resolution */
+/* Minimum resolution */
+/* Maximum resolution */
 /* Variable Font Sizes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Body font size. By default 16px, based on 16px as 'root em' */
@@ -682,6 +687,9 @@ p.norm {
     .container-grid footer i {
       color: #000C16; }
 
+.org--content-welcome {
+  background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%); }
+
 [class*="org--content-"] p {
   font-size: 1.1rem;
   line-height: 1.5;
@@ -704,8 +712,13 @@ p.norm {
     [class*="org--content-"] ul li:last-child {
       margin-bottom: 0; }
 
-.page--test {
+[class*="mol--content-"] {
   padding: 40px 0; }
+
+.mol--content-blog figure {
+  transition: transform 0.2s ease-in-out; }
+  .mol--content-blog figure:hover {
+    transform: translateY(-20px); }
 
 .org--content-downloads .mol--download-gradient {
   background: linear-gradient(90deg, #ff5f5f 0%, #ff8078 25%, #e3bd9f 50%, #40cebc 75%, #258383 100%);
@@ -724,13 +737,12 @@ p.norm {
       margin-top: 1rem; }
 
 .org--content-downloads .mol--download-release {
-  margin: 2rem 0; }
+  margin-bottom: 2rem; }
   .org--content-downloads .mol--download-release .atm--release-number {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
-    padding-top: 1rem;
-    font-size: 2rem; }
+    font-size: 4rem; }
   .org--content-downloads .mol--download-release .atm--release-date {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
@@ -865,58 +877,29 @@ p.norm {
   50% {
     transform: scale(1.05); } }
 
-.mol--post-title {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
-  .mol--post-title h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem; }
-
-.mol--post-synopsis {
-  margin-top: 4rem;
-  margin-bottom: 4rem; }
-  .mol--post-synopsis p.atm--post-synopsis {
-    font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.8rem;
-    line-height: 1.4; }
-
-.mol--post-tldr {
-  padding: 2rem 1rem;
-  background: rgba(0, 0, 0, 0.05);
-  margin-bottom: 2rem; }
-  .mol--post-tldr ul {
-    padding-left: 1rem; }
-    .mol--post-tldr ul li {
-      font-size: 0.85rem;
-      margin-bottom: 15px; }
-      .mol--post-tldr ul li:last-child {
-        margin-bottom: 0; }
-
-.org--content-single {
+.org--content-post {
   margin-top: 4rem;
   padding-bottom: 6rem; }
-  .org--content-single h2 {
+  .org--content-post h2 {
     margin-top: 1rem;
     margin-bottom: 2rem; }
-  .org--content-single h3 {
+  .org--content-post h3 {
     margin-bottom: 2rem; }
-  .org--content-single h4 {
+  .org--content-post h4 {
     margin-bottom: 16px; }
-  .org--content-single p {
+  .org--content-post p {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 2rem; }
-    .org--content-single p:last-child {
+    .org--content-post p:last-child {
       margin-bottom: 0; }
-    .org--content-single p.atm--post-intro {
+    .org--content-post p.atm--post-intro {
       font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 1.4rem;
       line-height: 1.6; }
-    .org--content-single p.atm--post-outro {
+    .org--content-post p.atm--post-outro {
       font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
       font-style: normal;
@@ -924,6 +907,35 @@ p.norm {
       line-height: 1.5;
       font-style: italic;
       margin: 0; }
+  .org--content-post .mol--post-title {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+    .org--content-post .mol--post-title h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem; }
+  .org--content-post .mol--post-intro {
+    padding: 2rem 0;
+    background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%); }
+  .org--content-post .mol--post-synopsis {
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+    .org--content-post .mol--post-synopsis p.atm--post-synopsis {
+      font-family: neue-haas-grotesk-text, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.8rem;
+      line-height: 1.4; }
+  .org--content-post .mol--post-tldr {
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem; }
+    .org--content-post .mol--post-tldr ul {
+      padding-left: 1rem; }
+      .org--content-post .mol--post-tldr ul li {
+        font-size: 0.85rem;
+        margin-bottom: 15px; }
+        .org--content-post .mol--post-tldr ul li:last-child {
+          margin-bottom: 0; }
 
 .mol--post-paragraph {
   margin-bottom: 2rem; }

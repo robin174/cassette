@@ -79,9 +79,25 @@ $padding--xxlarge: $base--value*10;
 // To add Eurostile (as opposed to Pragmatica Extended) for fun
 
 
+/* Resolution Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// https://developer.mozilla.org/en-US/docs/Web/CSS/@media/resolution
+// NB. Variables can not be set within media queries
+
+/* Exact resolution */
+@media (resolution: 150dpi) {}
+
+/* Minimum resolution */
+@media (min-resolution: 72dpi) {}
+
+/* Maximum resolution */
+@media (max-resolution: 300dpi) {}
+
+
 /* Variable Font Sizes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Body font size. By default 16px, based on 16px as 'root em' */
+
 $brand--font-size: 1rem;
 
 /* Major second scale progression - see https://type-scale.com/ */
