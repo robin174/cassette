@@ -243,24 +243,8 @@ figure {
 header {
   background-color: #000C16; }
 
-nav a {
-  font-family: neue-haas-grotesk-text, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #fff; }
-  nav a:link {
-    color: #fff; }
-  nav a:visited {
-    color: #fff; }
-  nav a:hover {
-    color: #FF8478; }
-  nav a:active {
-    color: #fff; }
-  nav a:disabled {
-    color: rgba(255, 255, 255, 0.3); }
-
+/* Menu: General
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav.navbar {
   padding: 2rem 0; }
   nav.navbar h1, nav.navbar h1 a.navbar-brand {
@@ -273,99 +257,96 @@ nav.navbar {
     color: #fff;
     margin-bottom: 0; }
   nav.navbar h1 a.navbar-brand:hover {
-    color: #40D3C1; }
+    color: #FF8478; }
   nav.navbar a img {
     width: 200px; }
-  nav.navbar li a.nav-link {
+  nav.navbar ul.navbar-nav li.menu-item a.nav-link {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    font-size: 0.9rem;
     transition: 0.4s;
-    margin-left: 1rem;
-    color: #fff;
+    font-size: 0.85rem;
     padding-top: 12px; }
-    nav.navbar li a.nav-link:link {
+    nav.navbar ul.navbar-nav li.menu-item a.nav-link:link {
       color: #fff; }
-    nav.navbar li a.nav-link:visited {
+    nav.navbar ul.navbar-nav li.menu-item a.nav-link:visited {
       color: #fff; }
-    nav.navbar li a.nav-link:hover {
+    nav.navbar ul.navbar-nav li.menu-item a.nav-link:hover {
       color: #FF8478; }
-    nav.navbar li a.nav-link:active {
+    nav.navbar ul.navbar-nav li.menu-item a.nav-link:active {
       color: #fff; }
-    nav.navbar li a.nav-link:disabled {
+    nav.navbar ul.navbar-nav li.menu-item a.nav-link:disabled {
       color: rgba(255, 255, 255, 0.3); }
-  nav.navbar li.active a.nav-link {
-    color: #FF8478; }
-  nav.navbar li.outline a.nav-link {
-    border-radius: 5px;
-    border: 2px solid #fff;
-    color: #fff; }
-    nav.navbar li.outline a.nav-link:hover {
-      border: 2px solid #FF8478;
-      color: #FF8478; }
-  nav.navbar li.active.outline a.nav-link {
-    border-radius: 5px;
-    border: 2px solid #FF8478;
-    color: #FF8478; }
-    nav.navbar li.active.outline a.nav-link:hover {
-      border: 2px solid #FF8478;
-      color: #FF8478; }
 
-.navbar button.atmButtonNav {
-  background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #fff; }
-  .navbar button.atmButtonNav:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #fff; }
-  .navbar button.atmButtonNav i {
-    color: #fff; }
-
+/* Menu: Mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 991px) {
   .offcanvas.offcanvas-end {
     backdrop-filter: blur(7px);
-    background-color: rgba(17, 17, 17, 0.8);
-    color: #fff;
-    border-left: 5px solid black; }
-    .offcanvas.offcanvas-end h2 {
-      color: white; }
+    background-color: rgba(0, 12, 22, 0.8);
+    color: #fff; }
     .offcanvas.offcanvas-end .offcanvas-header {
-      padding-top: 40px;
-      padding-left: 30px;
-      padding-right: 30px; }
+      padding: 20px; }
       .offcanvas.offcanvas-end .offcanvas-header img {
         height: 24px; }
       .offcanvas.offcanvas-end .offcanvas-header button.btn-close {
-        width: 2em;
-        height: 2em;
-        opacity: unset;
-        background: rgba(255, 255, 255, 0.3); }
+        background: black;
+        opacity: unset; }
         .offcanvas.offcanvas-end .offcanvas-header button.btn-close i {
           color: #fff; }
           .offcanvas.offcanvas-end .offcanvas-header button.btn-close i:hover {
-            color: orange; }
+            color: #FF8478; }
     .offcanvas.offcanvas-end .offcanvas-body {
-      padding: 0; }
-    .offcanvas.offcanvas-end li.menu-item {
-      padding: 10px 0;
-      padding-left: 30px;
-      border-left: 7px solid #000;
-      background-color: rgba(0, 0, 0, 0.2); }
-      .offcanvas.offcanvas-end li.menu-item:hover {
-        background-color: rgba(0, 0, 0, 0.5);
-        border-left: 7px solid #40D3C1; }
-    .offcanvas.offcanvas-end li.current-menu-item, .offcanvas.offcanvas-end li.current-menu-item:hover {
-      background-color: black;
-      border-left: 7px solid #40D3C1; }
-      .offcanvas.offcanvas-end li.current-menu-item:hover, .offcanvas.offcanvas-end li.current-menu-item:hover:hover {
-        color: #40D3C1; } }
+      padding: 30px; }
+      .offcanvas.offcanvas-end .offcanvas-body li.outline a.nav-link {
+        padding-top: 30px;
+        border-top: 2px solid #fff;
+        color: #fff; }
+        .offcanvas.offcanvas-end .offcanvas-body li.outline a.nav-link:hover {
+          border-top: 2px solid #fff;
+          color: #FF8478; }
+      .offcanvas.offcanvas-end .offcanvas-body li.active.outline a.nav-link {
+        padding-top: 30px;
+        border-top: 2px solid #fff;
+        color: #FF8478; }
+        .offcanvas.offcanvas-end .offcanvas-body li.active.outline a.nav-link:hover {
+          border-top: 2px solid #fff;
+          color: #FF8478; }
+  .navbar button.atmButtonNav {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #fff; }
+    .navbar button.atmButtonNav:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid #fff; }
+    .navbar button.atmButtonNav i {
+      color: #fff; } }
 
+/* Menu: Non-mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (min-width: 992px) {
   .offcanvas.offcanvas-end {
     backdrop-filter: unset;
     background-color: unset; }
+    .offcanvas.offcanvas-end ul.navbar-nav li.menu-item a.nav-link {
+      margin-left: 1rem; }
+    .offcanvas.offcanvas-end ul.navbar-nav li.outline a.nav-link {
+      border-radius: 5px;
+      border: 2px solid #fff;
+      color: #fff;
+      margin-left: 1rem; }
+      .offcanvas.offcanvas-end ul.navbar-nav li.outline a.nav-link:hover {
+        border: 2px solid #FF8478;
+        color: #FF8478; }
+    .offcanvas.offcanvas-end ul.navbar-nav li.active.outline a.nav-link {
+      border-radius: 5px;
+      border: 2px solid #FF8478;
+      color: #FF8478;
+      margin-left: 1rem; }
+      .offcanvas.offcanvas-end ul.navbar-nav li.active.outline a.nav-link:hover {
+        border: 2px solid #FF8478;
+        color: #FF8478; }
     .offcanvas.offcanvas-end li.current-menu-item a, .offcanvas.offcanvas-end li.current-menu-item:hover a {
       color: #FF8478; } }
 

@@ -1,26 +1,8 @@
 // Set breakpoint for navigation from header.php e.g.
 $breakpoint--navigation: $media-desktop;
 
-nav a {
-	@include headingUC;
-	color: $color--white;
-	&:link {
-		color: $color--white;
-	}
-	&:visited {
-		color: $color--white;
-	}
-	&:hover {
-		color: $color--tertiary;
-	}
-	&:active {
-		color: $color--white;
-	}
-	&:disabled {
-		color: rgba($color--white, 0.3);
-	}
-}
-
+/* Menu: General
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav.navbar {
 	padding: $padding--general 0;
 	& h1, h1 a.navbar-brand {
@@ -30,131 +12,130 @@ nav.navbar {
 		margin-bottom: 0;
 	}
 	& h1 a.navbar-brand:hover {
-		color: $color--secondary;
+		color: $color--tertiary;
 	}
-	a img {
+	// Image-based logo
+	& a img {
 		width: 200px;
 	}
-	& li a.nav-link {
-		@include navigationUC;
-		font-size: 0.9rem;
-		transition: $base--transition;
-		margin-left: $margin--small;
-		color: $color--white;
-		padding-top: 12px;
-		&:link {
-			color: $color--white;
-		}
-		&:visited {
-			color: $color--white;
-		}
-		&:hover {
-			color: $color--tertiary;
-		}
-		&:active {
-			color: $color--white;
-		}
-		&:disabled {
-			color: rgba($color--white, 0.3);
-		}
-	}
-	& li.active a.nav-link {
-		color: $color--tertiary;
-	}
-	& li.outline a.nav-link {
-		border-radius: $base--borderradius;
-		border: 2px solid $color--white;
-		color: $color--white;
-		&:hover {
-			border: 2px solid $color--tertiary;
-			color: $color--tertiary;
-		}
-	}
-	& li.active.outline a.nav-link {
-		border-radius: $base--borderradius;
-		border: 2px solid $color--tertiary;
-		color: $color--tertiary;
-		&:hover {
-			border: 2px solid $color--tertiary;
-			color: $color--tertiary;
+	& ul.navbar-nav {
+		& li.menu-item {
+			a.nav-link {
+				&:link {
+					color: $color--white;
+				}
+				&:visited {
+					color: $color--white;
+				}
+				&:hover {
+					color: $color--tertiary;
+				}
+				&:active {
+					color: $color--white;
+				}
+				&:disabled {
+					color: rgba($color--white, 0.3);
+				}
+				@include navigationUC;
+				transition: $base--transition;
+				font-size: 0.85rem;
+				padding-top: 12px;
+			}
 		}
 	}
 }
 
-// focus, active...etc. 
-.navbar button.atmButtonNav {
-	background-color: rgba($color--white,0);
-	border: 2px solid $color--white;
-	&:hover {
-		background-color: rgba($color--white,0.1);
-		border: 2px solid $color--white;
-	}
-	& i {
-		color: $color--white;
-	}
-}
-
-// All the above needs to be converted to the below. What is small -> medium,  what is medium -> x-large.
-// Menu -> Medium: mobile version (off canvas)
+/* Menu: Mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: $breakpoint--navigation - 1px){
 	.offcanvas.offcanvas-end {
 		backdrop-filter: blur(7px);
-		background-color: rgba(#111,0.8);
+		background-color: rgba($color--primary,0.8);
 		color: $color--white;
-		border-left: 5px solid black;
-		& h2 {
-			color: white;
-		}
 		& .offcanvas-header {
-			padding-top: 40px;
-			padding-left: 30px;
-			padding-right: 30px;
+			padding: 20px;
 			& img {
 				height: 24px;
 			}
 			& button.btn-close {
-				width: 2em;
-			    height: 2em;
+				background: black;
 				opacity: unset;
-				background: rgba($color--white, 0.3);
 				& i {
 					color: $color--white;
 					&:hover {
-						color: orange;
+						color: $color--tertiary;
 					}
 				}
 			}
 		}
 		& .offcanvas-body {
-			padding: 0;
-		}
-		& li.menu-item {
-			padding: 10px 0;
-			padding-left: 30px;
-			border-left: 7px solid $color--black;
-			background-color: rgba(0,0,0,0.2);
-			&:hover {
-				background-color: rgba(0,0,0,0.5);
-				border-left: 7px solid $color--secondary;
+			padding: 30px;
+			& li.outline a.nav-link {
+				padding-top: 30px;
+				border-top: 2px solid $color--white;
+				color: $color--white;
+				&:hover {
+					border-top: 2px solid $color--white;
+					color: $color--tertiary;
+				}
+			}
+			& li.active.outline a.nav-link {
+				padding-top: 30px;
+				border-top: 2px solid $color--white;
+				color: $color--tertiary;
+				&:hover {
+					border-top: 2px solid $color--white;
+					color: $color--tertiary;
+				}
 			}
 		}
-		& li.current-menu-item, li.current-menu-item:hover {
-			background-color: rgba(0,0,0,1);
-			border-left: 7px solid $color--secondary;
-			&:hover {
-				color: $color--secondary;
-			}
+	}
+	.navbar button.atmButtonNav { // Hamburger menu
+		background-color: rgba($color--white,0);
+		border: 2px solid $color--white;
+		&:hover {
+			background-color: rgba($color--white,0.1);
+			border: 2px solid $color--white;
 		}
-		
+		& i {
+			color: $color--white;
+		}
 	}
 }
 
-
-// Medium -> max menu: normal menu-item
+/* Menu: Non-mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (min-width: $breakpoint--navigation){
 	.offcanvas.offcanvas-end {
 		backdrop-filter: unset;
 		background-color: unset;
+		ul.navbar-nav {
+			& li.menu-item {
+				a.nav-link {
+					margin-left: $margin--small;
+				}
+			}
+			& li.outline a.nav-link {
+				border-radius: $base--borderradius;
+				border: 2px solid $color--white;
+				color: $color--white;
+				margin-left: $margin--small;
+				&:hover {
+					border: 2px solid $color--tertiary;
+					color: $color--tertiary;
+				}
+			}
+			& li.active.outline a.nav-link {
+				border-radius: $base--borderradius;
+				border: 2px solid $color--tertiary;
+				color: $color--tertiary;
+				margin-left: $margin--small;
+				&:hover {
+					border: 2px solid $color--tertiary;
+					color: $color--tertiary;
+				}
+			}
+		}
 		& li.current-menu-item a, li.current-menu-item:hover a {
 			color: $color--tertiary;
 		}
