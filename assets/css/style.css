@@ -267,8 +267,7 @@ nav.navbar {
     text-transform: uppercase;
     letter-spacing: 0.3em;
     transition: 0.4s;
-    font-size: 0.85rem;
-    padding-top: 12px; }
+    font-size: 0.9rem; }
     nav.navbar ul.navbar-nav li.menu-item a.nav-link:link {
       color: #fff; }
     nav.navbar ul.navbar-nav li.menu-item a.nav-link:visited {
@@ -288,7 +287,7 @@ nav.navbar {
     background-color: rgba(0, 12, 22, 0.8);
     color: #fff; }
     .offcanvas.offcanvas-end .offcanvas-header {
-      padding: 20px; }
+      padding: 30px; }
       .offcanvas.offcanvas-end .offcanvas-header img {
         height: 24px; }
       .offcanvas.offcanvas-end .offcanvas-header button.btn-close {
@@ -300,15 +299,19 @@ nav.navbar {
             color: #FF8478; }
     .offcanvas.offcanvas-end .offcanvas-body {
       padding: 30px; }
+      .offcanvas.offcanvas-end .offcanvas-body li.menu-item a.nav-link {
+        padding: 12px 0; }
       .offcanvas.offcanvas-end .offcanvas-body li.outline a.nav-link {
-        padding-top: 30px;
+        margin-top: 12px;
+        padding: 24px 0;
         border-top: 2px solid #fff;
         color: #fff; }
         .offcanvas.offcanvas-end .offcanvas-body li.outline a.nav-link:hover {
           border-top: 2px solid #fff;
           color: #FF8478; }
       .offcanvas.offcanvas-end .offcanvas-body li.active.outline a.nav-link {
-        padding-top: 30px;
+        margin-top: 12px;
+        padding: 24px 0;
         border-top: 2px solid #fff;
         color: #FF8478; }
         .offcanvas.offcanvas-end .offcanvas-body li.active.outline a.nav-link:hover {
