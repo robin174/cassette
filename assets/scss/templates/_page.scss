@@ -13,6 +13,7 @@
 		}
 		&.atm--list-nobullet li {
 			list-style: none;
+			margin-left: -10px;
 		}
 		& li {
 			@include neueHaasGroMedium;

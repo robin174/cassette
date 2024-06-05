@@ -699,7 +699,8 @@ p.norm {
   [class*="org--content-"] ul.atm--list-bullet li {
     list-style: disc; }
   [class*="org--content-"] ul.atm--list-nobullet li {
-    list-style: none; }
+    list-style: none;
+    margin-left: -10px; }
   [class*="org--content-"] ul li {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
@@ -774,7 +775,6 @@ p.norm {
   .org--content-getstarted .org--gs-item h5 {
     color: #FF8478; }
   .org--content-getstarted .org--gs-item i.fa-sharp, .org--content-getstarted .org--gs-item i.fa-kit {
-    margin-left: -1rem;
     margin-right: 1rem; }
   .org--content-getstarted .org--gs-item a {
     font-family: neue-haas-grotesk-text, sans-serif;
