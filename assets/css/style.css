@@ -714,7 +714,7 @@ p.norm {
 
 @media (min-width: 992px) {
   [class*="mol--content-"] {
-    padding: 4rem 0; } }
+    padding: 16rem 0; } }
 
 .mol--content-blog figure {
   transition: transform 0.2s ease-in-out; }
