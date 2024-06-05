@@ -710,7 +710,7 @@ p.norm {
       margin-bottom: 0; }
 
 [class*="mol--content-"] {
-  padding: 1rem 0; }
+  padding: 1.2rem 0; }
 
 @media (min-width: 992px) {
   [class*="mol--content-"] {
@@ -774,6 +774,7 @@ p.norm {
   .org--content-getstarted .org--gs-item h5 {
     color: #FF8478; }
   .org--content-getstarted .org--gs-item i.fa-sharp, .org--content-getstarted .org--gs-item i.fa-kit {
+    margin-left: -1rem;
     margin-right: 1rem; }
   .org--content-getstarted .org--gs-item a {
     font-family: neue-haas-grotesk-text, sans-serif;

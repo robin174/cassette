@@ -26,7 +26,7 @@
 }
 
 [class*="mol--content-"] {
-		padding: $padding--small 0;
+		padding: $padding--small*1.2 0;
 }
 
 @media (min-width: $media-mobile) {}
