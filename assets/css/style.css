@@ -826,6 +826,8 @@ p.norm {
         color: #FF8478; }
     .org--content-roadmap .org--rm--item .mol--rm--inner h2 {
       font-size: 1.8rem; }
+    .org--content-roadmap .org--rm--item .mol--rm--inner p {
+      font-size: 0.9rem; }
     .org--content-roadmap .org--rm--item .mol--rm--inner h5 {
       color: #FF8478; }
     .org--content-roadmap .org--rm--item .mol--rm--inner a {
@@ -841,7 +843,9 @@ p.norm {
     padding-left: 4rem;
     padding-right: 10rem; }
     .org--content-roadmap .org--rm--item .mol--rm--inner h2 {
-      font-size: 3rem; } }
+      font-size: 3rem; }
+    .org--content-roadmap .org--rm--item .mol--rm--inner p {
+      font-size: 1rem; } }
 
 /*  Animation: .pulsatingDot
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

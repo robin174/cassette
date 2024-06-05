@@ -38,6 +38,9 @@
 			& h2 {
 				font-size: 1.8rem;
 			}
+			& p {
+				font-size: 0.9rem;
+			}
 			& h5 {
 				color: $color--tertiary;
 			}
@@ -62,6 +65,9 @@
 				padding-right: $padding--xxlarge;
 				& h2 {
 					font-size: 3rem;
+				}
+				& p {
+				 font-size: 1rem;
 				}
 			}
 		}
