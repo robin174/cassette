@@ -543,7 +543,7 @@ footer {
   background-position: top center; }
   .org--content-newsletter .org--content-newsletter-inner {
     margin: 0;
-    padding: 12rem 0; }
+    padding: 4rem 0; }
   .org--content-newsletter h3 {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
@@ -582,6 +582,10 @@ footer {
 @media (min-width: 576px) {
   .org--content-newsletter .mol--newsletter-form button, .org--content-newsletter .mol--newsletter-form input[type="submit"].button {
     min-width: 200px; } }
+
+@media (min-width: 992px) {
+  .org--content-newsletter {
+    padding: 12rem 0; } }
 
 .org--slider-hero .mol--slider-content {
   padding: 6rem;
@@ -714,6 +718,9 @@ p.norm {
   padding: 1.2rem 0; }
 
 @media (min-width: 992px) {
+  [class*="org--content-"] ul.atm--list-nobullet li {
+    list-style: none;
+    margin-left: -10px; }
   [class*="mol--content-"] {
     padding: 2rem 0; } }
 

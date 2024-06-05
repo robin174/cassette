@@ -27,17 +27,21 @@
 }
 
 [class*="mol--content-"] {
-		padding: $padding--small*1.2 0;
+	padding: $padding--small*1.2 0;
 }
 
 @media (min-width: $media-mobile) {}
 
 @media (min-width: $media-desktop) {
+	[class*="org--content-"] {
+		& ul {
+			&.atm--list-nobullet li {
+				list-style: none;
+				margin-left: -10px;
+			}
+		}
+	}
 	[class*="mol--content-"] {
 		padding: $padding--general 0;
 	}
 }
-
-@media (min-width: $media-xwide) {}
-
-@media (min-width: $max-width) {}
