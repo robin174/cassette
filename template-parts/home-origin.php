@@ -1,4 +1,4 @@
-<section style="background: #FF8478;padding: 100px 0;">
+<section class="org--content-origin">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">

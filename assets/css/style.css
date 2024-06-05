@@ -688,6 +688,14 @@ p.norm {
     .container-grid footer i {
       color: #000C16; }
 
+.org--content-origin {
+  background: #FF8478;
+  padding: 4rem 0; }
+
+@media (min-width: 992px) {
+  .org--content-origin {
+    padding: 12rem 0; } }
+
 .org--content-welcome {
   background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%); }
 
