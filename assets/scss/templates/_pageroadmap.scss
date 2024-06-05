@@ -41,9 +41,6 @@
 			& h5 {
 				color: $color--tertiary; 
 			}
-			& p {
-				font-size: 0.9rem;
-			}
 			& a {
 				@include neueHaasGroBold;
 				color: $color--highlight-dark;
@@ -65,9 +62,6 @@
 				padding-right: $padding--xxlarge;
 				& h2 {
 					font-size: 3rem;
-				}
-				& p {
-					font-size: 1rem;
 				}
 			}
 		}

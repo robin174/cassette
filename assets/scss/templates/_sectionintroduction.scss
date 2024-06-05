@@ -5,7 +5,7 @@
 	background-position: top center;
 	& .org--content-introduction-inner {
 		margin: 0;
-		padding: $padding--large*3 0;
+		padding: $padding--large 0;
 	}
 	& h3 {
 		font-size: 3rem;
@@ -37,17 +37,22 @@
 @media (min-width: $media-mobile) {}
 
 @media (min-width: $media-desktop) {
-    .mol--content-introduction {
-        & h1 {
-        	font-size: 3rem;
-        	margin-top: 5px;
-        }
-        & p {
-			font-size: 1.3rem;
-			line-height: 1.5;
-			margin-bottom: 0;
+	.org--content-introduction {
+		& .org--content-introduction-inner {
+			padding: $padding--large*3 0;
 		}
-    }
+		& .mol--content-introduction {
+	        & h1 {
+	        	font-size: 3rem;
+	        	margin-top: 5px;
+	        }
+	        & p {
+				font-size: 1.3rem;
+				line-height: 1.5;
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 @media (min-width: $media-xwide) {}
