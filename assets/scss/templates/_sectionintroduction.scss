@@ -3,15 +3,6 @@
 	@include colorGradient(90deg, 0.3);
 	color: $color--primary;
 	background-position: top center;
-	& h3 {
-		font-size: 3rem;
-		@include neueHaasGroMedium;
-		margin-top: 0;
-		margin-bottom: 5px;
-	}
-	& p {
-		font-size: 1.3rem;
-	}
 	& .mol--content-introduction {
 		margin-bottom: $margin--small;
 	    text-align: center;
