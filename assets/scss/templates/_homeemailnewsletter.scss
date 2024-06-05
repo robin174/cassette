@@ -4,11 +4,11 @@
 	background-position: top center;
 	& .org--content-newsletter-inner { 
 		margin: 0;
-		padding: $padding--large 0;
+		padding: $padding--general 0;
 	}
 	& h3 {
 		@include neueHaasGroBold;
-		font-size: 2.4rem;
+		font-size: 2.1rem;
 		margin-top: 0;
 		margin-bottom: 5px;
 		color: $color--white;
@@ -56,7 +56,13 @@
 }
 
 @media (min-width: $media-desktop) {
-	.org--content-newsletter-inner {
-		padding: $padding--large*3 0;
+	.org--content-newsletter {
+		& h3 {
+			@include neueHaasGroBold;
+			font-size: 2.4rem;
+		}
+		& .org--content-newsletter-inner {
+			padding: $padding--large*3 0;
+		}
 	}
 }
