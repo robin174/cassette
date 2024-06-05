@@ -1054,7 +1054,7 @@ p.norm {
     margin-bottom: 1rem;
     text-align: center; }
     .org--content-introduction .mol--content-introduction h1 {
-      font-size: 2.4rem; }
+      font-size: 2.1rem; }
     .org--content-introduction .mol--content-introduction p {
       font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
@@ -1065,8 +1065,8 @@ p.norm {
 
 @media (min-width: 992px) {
   .mol--content-introduction h1 {
-    margin-top: 5px;
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin-top: 5px; }
   .mol--content-introduction p {
     font-size: 1.3rem;
     line-height: 1.5;

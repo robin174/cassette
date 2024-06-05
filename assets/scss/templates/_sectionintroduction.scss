@@ -21,7 +21,7 @@
 		margin-bottom: $margin--small;
 	    text-align: center;
 		& h1 {
-			font-size: 2.4rem;
+			font-size: 2.1rem;
 		}
 		& p {
 			@include neueHaasGroBold;
@@ -39,8 +39,8 @@
 @media (min-width: $media-desktop) {
     .mol--content-introduction {
         & h1 {
+        	font-size: 3rem;
         	margin-top: 5px;
-            font-size: 3rem;
         }
         & p {
 			font-size: 1.3rem;
