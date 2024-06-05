@@ -710,7 +710,7 @@ p.norm {
       margin-bottom: 0; }
 
 [class*="mol--content-"] {
-  padding: 2rem 0; }
+  padding: 1rem 0; }
 
 @media (min-width: 992px) {
   [class*="mol--content-"] {
