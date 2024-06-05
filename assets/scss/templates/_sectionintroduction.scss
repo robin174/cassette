@@ -13,7 +13,6 @@
 		font-size: 1.3rem;
 	}
 	& .mol--content-introduction {
-		padding: $padding--general 0;
 		margin-bottom: $margin--small;
 	    text-align: center;
 		& h1 {
@@ -27,8 +26,6 @@
 		}
 	}
 }
-
-
 
 @media (min-width: $media-mobile) {}
 
