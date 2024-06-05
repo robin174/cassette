@@ -38,11 +38,11 @@
 			& h2 {
 				font-size: 1.8rem;
 			}
+			& h5 {
+				color: $color--tertiary; 
+			}
 			& p {
 				font-size: 0.9rem;
-			}
-			& h5 {
-				color: $color--tertiary;
 			}
 			& a {
 				@include neueHaasGroBold;

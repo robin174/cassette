@@ -826,10 +826,10 @@ p.norm {
         color: #FF8478; }
     .org--content-roadmap .org--rm--item .mol--rm--inner h2 {
       font-size: 1.8rem; }
-    .org--content-roadmap .org--rm--item .mol--rm--inner p {
-      font-size: 0.9rem; }
     .org--content-roadmap .org--rm--item .mol--rm--inner h5 {
       color: #FF8478; }
+    .org--content-roadmap .org--rm--item .mol--rm--inner p {
+      font-size: 0.9rem; }
     .org--content-roadmap .org--rm--item .mol--rm--inner a {
       font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
