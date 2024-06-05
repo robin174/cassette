@@ -4,7 +4,6 @@
 	color: $color--primary;
 	background-position: top center;
 	& .mol--content-introduction {
-		margin-bottom: $margin--small;
 	    text-align: center;
 		& h1 {
 			font-size: 2.1rem; 
@@ -23,6 +22,7 @@
 @media (min-width: $media-desktop) {
 	.org--content-introduction {
 		& .mol--content-introduction {
+			margin-bottom: $margin--small;
 	        & h1 {
 	        	font-size: 3rem;
 	        	margin-top: 5px;
