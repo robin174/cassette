@@ -710,7 +710,11 @@ p.norm {
       margin-bottom: 0; }
 
 [class*="mol--content-"] {
-  padding: 40px 0; }
+  padding: 2rem 0; }
+
+@media (min-width: 992px) {
+  [class*="mol--content-"] {
+    padding: 4rem 0; } }
 
 .mol--content-blog figure {
   transition: transform 0.2s ease-in-out; }
@@ -1033,9 +1037,6 @@ p.norm {
   background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%);
   color: #000C16;
   background-position: top center; }
-  .org--content-introduction .org--content-introduction-inner {
-    margin: 0;
-    padding: 4rem 0; }
   .org--content-introduction h3 {
     font-size: 3rem;
     font-family: neue-haas-grotesk-text, sans-serif;
@@ -1060,8 +1061,6 @@ p.norm {
       margin-bottom: 0; }
 
 @media (min-width: 992px) {
-  .org--content-introduction .org--content-introduction-inner {
-    padding: 12rem 0; }
   .org--content-introduction .mol--content-introduction h1 {
     font-size: 3rem;
     margin-top: 5px; }

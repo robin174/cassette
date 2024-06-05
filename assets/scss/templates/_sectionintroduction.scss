@@ -3,10 +3,6 @@
 	@include colorGradient(90deg, 0.3);
 	color: $color--primary;
 	background-position: top center;
-	& .org--content-introduction-inner {
-		margin: 0;
-		padding: $padding--large 0;
-	}
 	& h3 {
 		font-size: 3rem;
 		@include neueHaasGroMedium;
@@ -38,9 +34,6 @@
 
 @media (min-width: $media-desktop) {
 	.org--content-introduction {
-		& .org--content-introduction-inner {
-			padding: $padding--large*3 0;
-		}
 		& .mol--content-introduction {
 	        & h1 {
 	        	font-size: 3rem;
