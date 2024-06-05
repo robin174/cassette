@@ -584,7 +584,7 @@ footer {
     min-width: 200px; } }
 
 @media (min-width: 992px) {
-  .org--content-newsletter {
+  .org--content-newsletter-inner {
     padding: 12rem 0; } }
 
 .org--slider-hero .mol--slider-content {
