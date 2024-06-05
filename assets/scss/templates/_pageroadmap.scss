@@ -36,7 +36,7 @@
 				}
 			}
 			& h2 {
-				font-size: 3rem;
+				font-size: 2rem;
 			}
 			& h5 {
 				color: $color--tertiary;
@@ -60,6 +60,9 @@
 			& .mol--rm--inner { 
 				padding-left: $padding--large;
 				padding-right: $padding--xxlarge;
+				& h2 {
+					font-size: 3rem;
+				}
 			}
 		}
 	}

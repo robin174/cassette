@@ -70,6 +70,8 @@
 		<header> 
 			<nav class="navbar navbar-expand-lg navbar-offcanvas"> 
 				<div class="container-fluid">
+
+					<!-- This is normal view -->
 					<?php if ( is_front_page() && is_home() ) : ?>
 						<?php /* <h1><?php bloginfo( 'name' ); ?></h1> */ ?>
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo">
@@ -82,6 +84,9 @@
 					<div class="d-lg-none">
 						<button class="btn btn-primary atmButtonNav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars"></i></button>
 					</div>
+
+
+					<!-- This is the right hand drawer-->
 					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 					 	<div class="offcanvas-header">
 					 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo">
@@ -92,6 +97,8 @@
 							<?php cassette_nav(); ?>
 					    </div>
 					</div>
+
+
 
 				</div> 
 			</nav> 
