@@ -1,10 +1,4 @@
 .org--content-origin {
-	background: #FF8478;
+	background: $color--tertiary;
 	padding: $padding--large 0;
-}
-
-@media (min-width: $media-desktop) {
-	.org--content-origin {
-		padding: $padding--large*3 0;
-	}
 }

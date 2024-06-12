@@ -543,7 +543,7 @@ footer {
   background-position: top center; }
   .org--content-newsletter .org--content-newsletter-inner {
     margin: 0;
-    padding: 2rem 0; }
+    padding: 4rem 0; }
   .org--content-newsletter h3 {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
@@ -597,7 +597,7 @@ footer {
     font-style: normal;
     font-size: 2.4rem; }
   .org--content-newsletter .org--content-newsletter-inner {
-    padding: 12rem 0; } }
+    padding: 10rem 0; } }
 
 .org--slider-hero .mol--slider-content {
   padding: 6rem;
@@ -703,10 +703,6 @@ p.norm {
 .org--content-origin {
   background: #FF8478;
   padding: 4rem 0; }
-
-@media (min-width: 992px) {
-  .org--content-origin {
-    padding: 12rem 0; } }
 
 .org--content-welcome {
   background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%); }
