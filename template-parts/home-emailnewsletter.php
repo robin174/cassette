@@ -8,7 +8,7 @@
 	<?php elseif (get_field('newsletter_select', 'option') == 'colorgradient') : ?>
 		<div class="org--content-newsletter-inner" style="background:<?php the_field('newsletter_gradient','option'); ?>">
 	<?php endif; ?>	
-			<div class="container-fluid" >
+			<div class="container-fluid">
 				<div class="mol--content-newsletter">
 					<div class="row justify-content-center">
 						<div class="col-12 col-md-10 col-xl-8 justify-content-center">
