@@ -15,7 +15,7 @@ nav.navbar {
 		color: $color--tertiary;
 	}
 	// Image-based logo
-	& a img {
+	& img, & a img {
 		width: 200px;
 	}
 	& ul.navbar-nav {

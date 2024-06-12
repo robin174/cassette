@@ -258,7 +258,7 @@ nav.navbar {
     margin-bottom: 0; }
   nav.navbar h1 a.navbar-brand:hover {
     color: #FF8478; }
-  nav.navbar a img {
+  nav.navbar img, nav.navbar a img {
     width: 200px; }
   nav.navbar ul.navbar-nav li.menu-item a.nav-link {
     font-family: neue-haas-grotesk-text, sans-serif;

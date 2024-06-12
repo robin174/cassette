@@ -176,6 +176,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/assets\/images\/logo-cassette-c.png" : {
+      "ft" : 32768,
+      "iS" : 12485,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/logo-cassette-c.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/assets\/images\/logo-cassette-dk.svg" : {
       "ft" : 2097152,
       "miP" : 0,
