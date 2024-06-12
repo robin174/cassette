@@ -31,9 +31,9 @@
 							</form>
 							*/ ?>
 							<div class="mol--newsletter-form">
-								<form action="https://getcassette.us18.list-manage.com/subscribe/post?u=0e1673d9b7bae2600be77f1a8&amp;id=8e8b4b9ecd&amp;f_id=0095c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+								<form action="https://getcassette.us18.list-manage.com/subscribe/post?u=0e1673d9b7bae2600be77f1a8&amp;id=8e8b4b9ecd&amp;f_id=0095c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							        <div class="d-flex" id="mc_embed_signup_scroll">
-							            <input class="flex-grow-1 email helper_text" placeholder="Email address" type="email" name="EMAIL" id="mce-EMAIL required" required="" value="">
+							            <input class="flex-grow-1 email helper_text" placeholder="Email address" type="email" name="EMAIL" id="mce-EMAIL required">
 									    <div aria-hidden="true" style="position: absolute; left: -5000px;">
 									        <input type="text" name="b_0e1673d9b7bae2600be77f1a8_8e8b4b9ecd" tabindex="-1" value="">
 									    </div>
@@ -74,7 +74,6 @@
 								    	</div>
 									</form>
 								</div>
-								<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 							</div>
 							*/ ?>
 							
