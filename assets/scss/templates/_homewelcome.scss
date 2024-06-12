@@ -1,8 +1,15 @@
 .org--content-welcome {
 	@include colorGradient(90deg, 0.3);
+	& .org--content-welcome-inner {
+		margin: 0;
+		padding: $padding--large 0;
+	}
 }
 
-@media (min-width: $media-mobile) {}
-@media (min-width: $media-desktop) {}
-@media (min-width: $media-xwide) {}
-@media (min-width: $max-width) {}
+@media (min-width: $media-desktop) {
+	.org--content-welcome {
+		& .org--content-welcome-inner {
+			padding: $padding--xxlarge 0;
+		}
+	}
+}

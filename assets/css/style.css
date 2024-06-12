@@ -706,6 +706,13 @@ p.norm {
 
 .org--content-welcome {
   background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%); }
+  .org--content-welcome .org--content-welcome-inner {
+    margin: 0;
+    padding: 4rem 0; }
+
+@media (min-width: 992px) {
+  .org--content-welcome .org--content-welcome-inner {
+    padding: 10rem 0; } }
 
 [class*="org--content-"] p {
   font-size: 1.1rem;
