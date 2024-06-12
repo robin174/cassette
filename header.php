@@ -74,11 +74,9 @@
 					<!-- This is normal view -->
 					<?php if ( is_front_page() || is_home() ) : ?>
 						<img style="width: 55px;margin-right: 10px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-c.png" alt="Cassette logo">
-						<img class="d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo">
+						<img class="d-none d-lg-inline-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo">
 					<?php else : ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							<img style="width: 55px;margin-right: 10px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-c.png" alt="Cassette logo">
-							<img class="d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo"></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img style="width: 55px;margin-right: 10px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-c.png" alt="Cassette logo"><img class="d-none d-lg-inline-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-wh.svg" alt="Cassette logo"></a>
 						<?php /*
 						<h1><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						*/ ?>
