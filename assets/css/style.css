@@ -556,7 +556,7 @@ footer {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
     color: #fff; }
   .org--content-newsletter .mol--newsletter-form input {
     border: none !important; }
@@ -578,6 +578,13 @@ footer {
     .org--content-newsletter .mol--newsletter-form button:hover, .org--content-newsletter .mol--newsletter-form input[type="submit"].button:hover {
       color: #000C16;
       background-color: #2fcbb8; }
+  .org--content-newsletter .mol--newsletter-form .response {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 5px; }
 
 @media (min-width: 576px) {
   .org--content-newsletter .mol--newsletter-form button, .org--content-newsletter .mol--newsletter-form input[type="submit"].button {

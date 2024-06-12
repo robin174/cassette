@@ -15,7 +15,7 @@
 	}
 	& p {
 		@include neueHaasGroMedium;
-		font-size: 1.3rem;
+		font-size: 1.3rem !important; 
 		color: $color--white;
 	}
 	& .mol--newsletter-form {
@@ -41,6 +41,12 @@
 				color: $color--primary;
 				background-color: darken($color--secondary, 5%);
 			}
+		}
+		& .response {
+			@include neueHaasGroMedium;
+			font-size: 1.3rem;
+			color: $color--white;
+			margin-top: 5px;
 		}
 	}
 }
