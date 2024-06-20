@@ -19,16 +19,6 @@
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png">
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png" />
 
-		<!-- Google tag (gtag.js) -->
-		<!-- <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3D32WBVSWG"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-
-				gtag('config', 'G-3D32WBVSWG');
-			</script>  -->
-
 		<!-- Slider: Splide
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/js/splide/css/splide.min.css">
@@ -58,6 +48,8 @@
 
 		  gtag('config', 'G-K888EZLYXC');
 		</script> 
+
+		<?php wp_head(); ?>
 	</head>
 
 	<?php if(is_page()) : ?>
