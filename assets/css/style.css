@@ -175,19 +175,39 @@ a[class*="atm--button-"] {
   font-weight: 500;
   font-style: normal;
   border-radius: 5px;
-  padding: 10px 24px;
-  padding-right: 40px;
+  padding-right: 32px;
+  padding-left: 15px;
+  padding-bottom: 6px;
   background-color: #1C2E32; }
   .atm--button-primary span {
+    font-size: 1.1rem;
     letter-spacing: 0.05em;
     color: #fff; }
   .atm--button-primary i {
+    font-size: 1.1rem;
     color: #40D3C1;
     margin-left: 12px; }
   .atm--button-primary:hover {
     background-color: #000C16; }
     .atm--button-primary:hover i {
       transform: translate(12px, 0); }
+
+.atm--button-primary-temp {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 6px;
+  background-color: #1C2E32; }
+  .atm--button-primary-temp span {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    color: #fff; }
+  .atm--button-primary-temp:hover {
+    background-color: #000C16; }
 
 .atm--button-secondary {
   padding: 12px 28px;
@@ -204,14 +224,15 @@ a[class*="atm--button-"] {
 .atm--button-primary + .atm--button-secondary {
   margin-left: 1rem; }
 
-a.atm--download {
+a.atm--button-download {
+  padding: 20px;
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 500;
   font-style: normal;
   transition: 0.4s;
   color: #000;
   text-decoration: none; }
-  a.atm--download:hover {
+  a.atm--button-download:hover {
     text-decoration: underline;
     color: #000; }
 

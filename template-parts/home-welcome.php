@@ -12,7 +12,11 @@
 						<!-- Description -->
 						<h2 style="font-size:1.8rem;line-height: 1.4;"><?php the_field('intro_description','option');?></</h2>
 						<!-- Call to action button-->
-						<p>Button</p>
+						<div style="margin-top: 20px;">
+							<a class="button atm--button-primary" href="/downloads">
+								<span>Download Cassette</span><i class="fa-sharp fa-solid fa-arrow-right"></i>
+							</a>
+						</div>
 					</section>
 
 				</div>

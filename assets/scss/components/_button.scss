@@ -11,15 +11,17 @@ a[class*="atm--button-"] {
 .atm--button-primary {
 	@include neueHaasGroMedium;
 	border-radius: $base--borderradius;
-	padding: 10px 24px;
-	padding-right: 40px;
+	padding-right: 32px;
+	padding-left: 15px;
+	padding-bottom: 6px;
 	background-color: $color--primary-alt;
-	
 	& span {
+		font-size: 1.1rem;
 		letter-spacing: 0.05em;
 		color: $color--white;
 	}
 	& i {
+		font-size: 1.1rem;
 		color: $color--secondary;
 		margin-left: 12px;
 	}
@@ -28,6 +30,24 @@ a[class*="atm--button-"] {
 		& i {
 			transform: translate(12px,0);
 		}
+	}
+}
+
+.atm--button-primary-temp { // download
+	@include neueHaasGroMedium;
+	border-radius: $base--borderradius;
+	padding-top:6px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 6px;
+	background-color: $color--primary-alt;
+	& span {
+		font-size: 1rem;
+		letter-spacing: 0.05em;
+		color: $color--white;
+	}
+	&:hover {
+		background-color: $color--primary;
 	}
 }
 
@@ -53,7 +73,8 @@ a[class*="atm--button-"] {
 }
 
 
-a.atm--download {
+a.atm--button-download {
+	padding:20px;
 	@include neueHaasGroMedium;
 	transition: $base--transition;
 	color: $color--black;

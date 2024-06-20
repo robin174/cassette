@@ -30,7 +30,7 @@ get_header(); ?>
 										<div class="mol--download-gradient-inner h-100">
 											<i class="fa-brands fa-4x fa-apple"></i>
 											<h3>For macOS</h3>
-											<a class="button atm--button-primary" id='url-mac' href=''>
+											<a class="button atm--button-primary-temp" id='url-mac' href=''>
 												<span>Download macOS app</span>
 											</a>
 										</div>
@@ -41,7 +41,7 @@ get_header(); ?>
 										<div class="mol--download-gradient-inner h-100">
 											<i class="fa-brands fa-4x fa-windows"></i>
 											<h3>For Windows</h3>
-											<a class="button atm--button-primary" id='url-windows' href=''>
+											<a class="button atm--button-primary-temp" id='url-windows' href=''>
 												<span>Download Windows app</span>
 											</a>
 										</div>
@@ -52,7 +52,7 @@ get_header(); ?>
 										<div class="mol--download-gradient-inner h-100">
 											<i class="fa-brands fa-4x fa-linux"></i>
 											<h3>For Linux</h3>
-											<a class="button atm--button-primary" id='url-linux' href=''>
+											<a class="button atm--button-primary-temp" id='url-linux' href=''>
 												<span>Download Linux app</span>
 											</a>
 									</div>

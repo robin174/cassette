@@ -91,8 +91,7 @@
 		</footer>
 
 		<script>hljs.highlightAll(); hljs.initLineNumbersOnLoad();</script>
-
-		<!-- <script defer data-domain="greenfinch.app" src="https://plausible.io/js/script.js"></script> -->
+		<script defer data-domain="getcassette.io" src="https://plausible.io/js/script.js"></script>
 		<?php wp_footer(); ?>
 	</body>
 </html>
