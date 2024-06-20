@@ -57,7 +57,7 @@
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-K888EZLYXC');
-		</script>
+		</script> 
 	</head>
 
 	<?php if(is_page()) : ?>
