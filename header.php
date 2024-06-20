@@ -49,17 +49,15 @@
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="stylesheet" href="https://use.typekit.net/xhv0zds.css">
 
-        <!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SN59VN9949"></script>
+		<!-- Google tag (gtag.js) / Cassette-specific account -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-K888EZLYXC"></script>
 		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
-			gtag('config', 'G-SN59VN9949');
+		  gtag('config', 'G-K888EZLYXC');
 		</script>
-
-		<?php wp_head(); ?>
 	</head>
 
 	<?php if(is_page()) : ?>
