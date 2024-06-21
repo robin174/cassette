@@ -945,7 +945,7 @@ p.norm {
     margin-bottom: 16px; }
   .org--content-post p {
     font-size: 1.2rem;
-    line-height: 1.8;
+    line-height: 1.75;
     margin-bottom: 2rem; }
     .org--content-post p:last-child {
       margin-bottom: 0; }
@@ -963,12 +963,13 @@ p.norm {
       line-height: 1.5;
       font-style: italic;
       margin: 0; }
-  .org--content-post ul, .org--content-post ol {
+  .org--content-post ul li, .org--content-post ol li {
     font-size: 1.1rem;
     font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    color: #000C16; }
+    color: #000C16;
+    margin-bottom: 10px; }
   .org--content-post .mol--post-title {
     padding-top: 4rem;
     padding-bottom: 4rem; }

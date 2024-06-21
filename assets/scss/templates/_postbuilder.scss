@@ -15,7 +15,7 @@
 	}
 	p {
 		font-size: 1.2rem;
-		line-height: 1.8; 
+		line-height: 1.75; 
 		margin-bottom: $margin--general;
 		&:last-child {
 			margin-bottom:0;
@@ -33,10 +33,11 @@
 			margin: 0;
 		}
 	}
-	& ul, ol {
+	& ul li, ol li {
 		font-size: 1.1rem;
-		@include neueHaasGroRoman;
+		@include neueHaasGroMedium;
 		color: $color--primary;
+		margin-bottom: 10px;
 	}
 	& .mol--post-title {
 		padding-top: $padding--large;
