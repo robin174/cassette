@@ -91,7 +91,7 @@
 		</footer>
 
 		<script>hljs.highlightAll(); hljs.initLineNumbersOnLoad();</script>
-		<script defer data-domain="getcassette.io" src="https://plausible.io/js/script.js"></script>
+		<script defer add-file-types="AppImage" data-domain="getcassette.io" src="https://plausible.io/js/script.file-downloads.js"></script>
 		<?php wp_footer(); ?>
 	</body>
 </html>
