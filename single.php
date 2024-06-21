@@ -18,7 +18,7 @@ get_header(); ?>
 					<div class="col-12 col-md-8 align-self-center">
 						<section class="mol--post-title">
 							<h1><?php the_field('unit_post_title'); ?></h1>
-							<span>Date</span>
+							<!-- <span>Date</span> -->
 						</section>
 					</div>
 				</div>
@@ -37,7 +37,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="col-12 col-lg-4 col-xl-3">
 						<section class="mol--post-tldr">
-							<h4>TL;DR</h4>
+							<!-- <h4>TL;DR</h4> -->
 							<?php get_template_part('template-parts/post-tldr'); ?>
 						</section>
 					</div>
