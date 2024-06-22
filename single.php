@@ -9,8 +9,8 @@ get_header(); ?>
 	<section class="org--content-post">
 		<section class="mol--post-intro">
 			<div class="container">
-				<div class="row g-0">
-					<div class="col-12 col-md-4 align-self-center">
+				<div class="row g-0 justify-content-center">
+					<div class="d-none col-12 col-md-4 align-self-center">
 						<figure>
                             <img class="mw-100" src="<?php the_field('unit_post_cover'); ?>" />
                         </figure>
@@ -27,8 +27,8 @@ get_header(); ?>
 		
 		<section>
 			<div class="container">
-				<div class="row">
-					<div class="col-12">
+				<div class="row justify-content-center">
+					<div class="col-8">
 						<section class="mol--post-synopsis">
 							<p class="atm--post-synopsis"><?php the_field('unit_post_intro'); ?></p>
 						</section>
