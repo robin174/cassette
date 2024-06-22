@@ -980,12 +980,12 @@ p.norm {
     background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%); }
   .org--content-post .mol--post-synopsis {
     margin-top: 4rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 1rem; }
     .org--content-post .mol--post-synopsis p.atm--post-synopsis {
       font-family: neue-haas-grotesk-text, sans-serif;
-      font-weight: 700;
+      font-weight: 500;
       font-style: normal;
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       line-height: 1.4; }
   .org--content-post .mol--post-tldr {
     padding: 2rem 1rem;
@@ -1071,6 +1071,16 @@ p.norm {
     padding-right: 5px; }
   .mol--code-block .hljs-ln-code {
     padding-left: 15px; }
+
+@media (min-width: 992px) {
+  .org--content-post .mol--post-synopsis {
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+    .org--content-post .mol--post-synopsis p.atm--post-synopsis {
+      font-family: neue-haas-grotesk-text, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.8rem; } }
 
 [class*="mol--line"] {
   height: 5px;
