@@ -939,7 +939,7 @@ p.norm {
     margin-top: 1rem;
     margin-bottom: 2rem; }
   .org--content-post h3 {
-    margin-bottom: 2rem; }
+    margin-bottom: 0; }
   .org--content-post h4 {
     margin-bottom: 16px; }
   .org--content-post p {
@@ -1073,6 +1073,8 @@ p.norm {
     padding-left: 15px; }
 
 @media (min-width: 992px) {
+  .org--content-post h3 {
+    margin-bottom: 2rem; }
   .org--content-post .mol--post-title {
     padding-top: 4rem;
     padding-bottom: 4rem; }

@@ -5,7 +5,7 @@
 		margin-bottom: $margin--general;
 	}
 	& h3 {
-		margin-bottom: $margin--general;
+		margin-bottom: 0;
 	}
 	& h4 {
 		margin-bottom: 16px;
@@ -164,6 +164,9 @@
 @media (min-width: $media-mobile) {}
 @media (min-width: $media-desktop) {
 	.org--content-post {
+		& h3 {
+			margin-bottom: $margin--general;
+		}
 		& .mol--post-title {
 			padding-top: $padding--large;
 			padding-bottom: $padding--large;
