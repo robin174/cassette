@@ -36,13 +36,14 @@ get_header(); ?>
 				</div>
 				<div class="row justify-content-center">
 
-					<div class="d-none d-md-block col-12 col-lg-4 col-xl-3">
+					<div class="d-none col-12 col-lg-4 col-xl-3">
 						<section class="mol--post-tldr">
 							<!-- <h4>TL;DR</h4> -->
 							<?php get_template_part('template-parts/post-tldr'); ?>
 						</section>
 					</div>
-					<div class="col-12 offset-xl-1 col-lg-8">
+					<!-- with TLDR <div class="col-12 offset-xl-1 col-lg-8"> -->
+					<div class="col-12 col-lg-8">
 						<article>
 							<?php get_template_part('template-parts/post-builder'); ?>
 						</article>
