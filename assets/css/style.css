@@ -970,8 +970,8 @@ p.norm {
     color: #000C16;
     margin-bottom: 10px; }
   .org--content-post .mol--post-title {
-    padding-top: 4rem;
-    padding-bottom: 4rem; }
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
     .org--content-post .mol--post-title h1 {
       font-size: 3rem;
       margin-bottom: 1rem; }
@@ -1073,6 +1073,9 @@ p.norm {
     padding-left: 15px; }
 
 @media (min-width: 992px) {
+  .org--content-post .mol--post-title {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
   .org--content-post .mol--post-synopsis {
     margin-top: 4rem;
     margin-bottom: 4rem; }
