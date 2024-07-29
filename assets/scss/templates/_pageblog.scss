@@ -8,3 +8,37 @@
 		}
 	}
 }
+
+
+.atm--post-category {
+	@include headingUC;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	transition: $base--transition;
+	color: $color--primary;
+	font-size: 0.65rem;
+}
+
+.atm--post-title {
+	margin-top: 4px;
+	margin-bottom: 2px;
+	& a {
+		@include neueHaasGroMedium;
+		transition: $base--transition;
+		color: $color--primary;
+		font-size: 1.2rem;
+		line-height: 1.2;
+		text-decoration: none;
+		&:hover {
+			color: $color--tertiary;
+			text-decoration: none;
+		}
+	}
+}
+
+.atm--post-date {
+	@include neueHaasGroBold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 0.85rem;
+}

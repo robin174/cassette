@@ -45,12 +45,40 @@
 		<div class="row justify-content-center">
 			<div class="col-12">
 				<div class="mol--image-full d-flex justify-content-center">
+					<?php if(get_sub_field('unit_image_outline')) : ?>
+						<figure class="atm--post-img atm--post-img-outline">
+							<?php if(get_sub_field('unit_image_maxwidth')) : ?>
+								<img class="mw-100" style="width:<?php the_sub_field('unit_image_maxwidth'); ?>px" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
+								<?php if(get_sub_field('unit_image_caption')) : ?>
+									<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+								<?php endif; ?>
+							<?php else : ?>
+								<img class="mw-100" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
+								<?php if(get_sub_field('unit_image_caption')) : ?>
+									<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+								<?php endif; ?>
+							<?php endif; ?>
+						</figure>
+					<?php else : ?>
 					<figure class="atm--post-img">
-						<img class="mw-100" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
-						<?php if(get_sub_field('unit_image_caption')) : ?>
-							<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+						<?php if(get_sub_field('unit_image_maxwidth')) : ?>
+							<img class="mw-100" style="width:<?php the_sub_field('unit_image_maxwidth'); ?>px" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
+							<?php if(get_sub_field('unit_image_caption')) : ?>
+								<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+							<?php endif; ?>
+						<?php else : ?>
+							<img class="mw-100" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
+							<?php if(get_sub_field('unit_image_caption')) : ?>
+								<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+							<?php endif; ?>
 						<?php endif; ?>
 					</figure>
+					<?php endif; ?>
+
+					<!-- Add outline (light, grey, max. 1px)
+						Add max-width if you want to resize e.g. partial element of UI
+						Would like it to be bigger, if a full screen video -->
+
 				</div>
 			</div>
 		</div>
@@ -176,21 +204,21 @@
 	<?php if(get_row_layout() == 'post_bullet_list'): // Bullet List  ?>
 	        <div class="row">
 	            <div class="col-12">
-	                <section>
+	                <section class="mol--list">
 	                    <?php if( get_sub_field('unit_introduction_para') ): ?>
 	                    	<p class="bullet-intro"><?php the_sub_field('unit_introduction_para'); ?></p>
 	                    <?php endif; ?>
 	                    <?php 
 	                    $values = get_sub_field('unit_bullet_point');
 	                    if ($values){ 
-	                    echo '<ul class="bullet">';
+	                    echo '<ul>';
 	                    foreach($values as $value){
-	                        echo '<li class="">'.$value['item_list'].'</li>'; 
+	                        echo '<li class="atm--list-bullet">'.$value['item_list'].'</li>'; 
 	                    }
 	                    echo '</ul>';
 	                    } ?>
 	                    <?php if( get_sub_field('unit_conclusion_para') ): ?>
-	                    	<p><?php the_sub_field('unit_conclusion_para'); ?></p>
+	                    	<p class="bullet-outro"><?php the_sub_field('unit_conclusion_para'); ?></p>
 	                    <?php endif; ?>
 	                </section>
 	            </div>
@@ -200,21 +228,21 @@
     <?php if(get_row_layout() == 'post_number_list'): // Number List  ?>
         <div class="row">
             <div class="col-12">
-                <section>
+                <section class="mol--list">
                     <?php if( get_sub_field('unit_introduction_para') ): ?>
                     	<p class="bullet-intro"><?php the_sub_field('unit_introduction_para'); ?></p>
                     <?php endif; ?>
                     <?php 
-                    $values = get_sub_field('unit_bullet_point');
+                    $values = get_sub_field('unit_number_point');
                     if ($values){ 
-                    echo '<ul class="bullet">';
+                    echo '<ol>';
                     foreach($values as $value){
-                        echo '<li class="">'.$value['item_list'].'</li>'; 
+                        echo '<li class="atm--list-number">'.$value['item_list'].'</li>'; 
                     }
-                    echo '</ul>';
+                    echo '</ol>';
                     } ?>
                     <?php if( get_sub_field('unit_conclusion_para') ): ?>
-                    	<p><?php the_sub_field('unit_conclusion_para'); ?></p>
+                    	<p class="bullet-outro"><?php the_sub_field('unit_conclusion_para'); ?></p>
                     <?php endif; ?>
                 </section>
             </div>

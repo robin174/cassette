@@ -1,8 +1,17 @@
 .org--content-post {
+	// Set some high level styles for posts,
+	// And then drop down in specificity
 	padding-bottom: $padding--xlarge;
+	& .mol--post-title {
+		padding-top: $padding--small;
+		padding-bottom: $padding--small;
+		& h1 {
+			font-size: 3rem;
+			margin-bottom: $margin--small;
+		}
+	}
 	& h2 {
-		margin-top: $margin--small;
-		margin-bottom: $margin--general;
+		margin-bottom: $margin--small;
 	}
 	& h3 {
 		margin-bottom: 0;
@@ -12,7 +21,8 @@
 	}
 	p {
 		font-size: 1.2rem;
-		line-height: 1.75; 
+		line-height: 1.75;
+		margin-top: 0;
 		margin-bottom: $margin--general;
 		&:last-child {
 			margin-bottom:0;
@@ -29,21 +39,29 @@
 			font-style: italic;
 			margin: 0;
 		}
+		&.bullet-intro {
+			margin-bottom: $margin--small;
+		}
+		&.bullet-outro {
+
+		}
+	}
+	& .mol--list {
+		& ul, & ol {
+			font-size: 1.2rem;
+			margin-top: 0;
+		}
+	}
+	& ul, & ol {
+		margin-bottom: $margin--general;
 	}
 	& ul li, ol li {
 		font-size: 1.1rem;
-		@include neueHaasGroMedium;
+		@include neueHaasGroRoman;
 		color: $color--primary;
 		margin-bottom: 10px;
 	}
-	& .mol--post-title {
-		padding-top: $padding--small;
-		padding-bottom: $padding--small;
-		& h1 {
-			font-size: 3rem;
-			margin-bottom: $margin--small;
-		}
-	}
+
 	& .mol--post-intro {
 		padding: $padding--general 0;
 		@include colorGradient(90deg, 0.3);
@@ -95,10 +113,14 @@
 			background-color: #fffbf3;
 			border-top: 5px solid $color--tertiary;
 			font-size: 0.9rem;
-			box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+			box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
 			border-top-right-radius: 3px;
 			border-bottom-right-radius: 3px;
 		}
+	}
+	& figure.atm--post-img-outline {
+		border: 1px solid rgba(0,0,0,0.1);
+		box-shadow: 0 0 15px rgba(0,0,0,0.1);
 	}
 }
 
@@ -165,7 +187,7 @@
 @media (min-width: $media-desktop) {
 	.org--content-post {
 		& h3 {
-			margin-bottom: $margin--general;
+			margin-bottom: $margin--small;
 		}
 		& .mol--post-title {
 			padding-top: $padding--large;

@@ -773,6 +773,42 @@ p.norm {
   .mol--content-blog figure:hover {
     transform: translateY(-20px); }
 
+.atm--post-category {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  transition: 0.4s;
+  color: #000C16;
+  font-size: 0.65rem; }
+
+.atm--post-title {
+  margin-top: 4px;
+  margin-bottom: 2px; }
+  .atm--post-title a {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: 0.4s;
+    color: #000C16;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-decoration: none; }
+    .atm--post-title a:hover {
+      color: #FF8478;
+      text-decoration: none; }
+
+.atm--post-date {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem; }
+
 .org--content-downloads .mol--download-gradient {
   background: linear-gradient(90deg, #ff5f5f 0%, #ff8078 25%, #e3bd9f 50%, #40cebc 75%, #258383 100%);
   padding: 7px;
@@ -935,9 +971,14 @@ p.norm {
 
 .org--content-post {
   padding-bottom: 6rem; }
+  .org--content-post .mol--post-title {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    .org--content-post .mol--post-title h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem; }
   .org--content-post h2 {
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   .org--content-post h3 {
     margin-bottom: 0; }
   .org--content-post h4 {
@@ -945,6 +986,7 @@ p.norm {
   .org--content-post p {
     font-size: 1.2rem;
     line-height: 1.75;
+    margin-top: 0;
     margin-bottom: 2rem; }
     .org--content-post p:last-child {
       margin-bottom: 0; }
@@ -962,19 +1004,20 @@ p.norm {
       line-height: 1.5;
       font-style: italic;
       margin: 0; }
+    .org--content-post p.bullet-intro {
+      margin-bottom: 1rem; }
+  .org--content-post .mol--list ul, .org--content-post .mol--list ol {
+    font-size: 1.2rem;
+    margin-top: 0; }
+  .org--content-post ul, .org--content-post ol {
+    margin-bottom: 2rem; }
   .org--content-post ul li, .org--content-post ol li {
     font-size: 1.1rem;
     font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     color: #000C16;
     margin-bottom: 10px; }
-  .org--content-post .mol--post-title {
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
-    .org--content-post .mol--post-title h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem; }
   .org--content-post .mol--post-intro {
     padding: 2rem 0;
     background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%); }
@@ -1018,9 +1061,13 @@ p.norm {
     background-color: #fffbf3;
     border-top: 5px solid #FF8478;
     font-size: 0.9rem;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px; }
+
+.mol--image-full figure.atm--post-img-outline {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); }
 
 .mol--post-conclusion {
   padding: 40px 80px;
@@ -1074,7 +1121,7 @@ p.norm {
 
 @media (min-width: 992px) {
   .org--content-post h3 {
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   .org--content-post .mol--post-title {
     padding-top: 4rem;
     padding-bottom: 4rem; }
