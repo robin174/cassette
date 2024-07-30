@@ -117,10 +117,10 @@ function cassette_login_logo() { ?>
         body.login div#login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/appicon.png);
             padding-bottom: 2px;
-            -webkit-background-size: 180px 180px;
-            background-size: 180px 180px;
-            height: 180px;
-            width: 180px;
+            -webkit-background-size: 120px 120px;
+            background-size: 120px 120px;
+            height: 120px;
+            width: 120px;
         }
     </style>
 <?php }
