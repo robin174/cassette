@@ -85,6 +85,19 @@
       "oAP" : "\/assets\/fonts\/AvertaStdPESemibold\/font.woff2",
       "oF" : 0
     },
+    "\/assets\/images\/appicon.png" : {
+      "ft" : 32768,
+      "iS" : 65769,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/appicon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/assets\/images\/favicon.png" : {
       "ft" : 32768,
       "iS" : 265,
@@ -912,6 +925,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/scss\/templates\/_sectionnewsbanner.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_sectionnewsbanner.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/scss\/templates\/_sectionnotification.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1205,6 +1233,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/section-introduction.php",
+      "oF" : 0
+    },
+    "\/template-parts\/section-newsbanner.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/section-newsbanner.php",
       "oF" : 0
     },
     "\/template-parts\/unit-getstarted.php" : {

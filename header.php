@@ -57,6 +57,7 @@
 	<?php elseif(is_single()) : ?>
 		<body <?php body_class(); ?> style="background:url(<?php the_field('bg_image_post','option'); ?>); background-position: top center;">
 	<?php endif; ?>
+		
 		<header> 
 			<nav class="navbar navbar-expand-lg navbar-offcanvas"> 
 				<div class="container-fluid">
@@ -75,7 +76,6 @@
 						<button class="btn btn-primary atmButtonNav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars"></i></button>
 					</div>
 
-
 					<!-- This is the right hand drawer-->
 					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 					 	<div class="offcanvas-header">
@@ -87,8 +87,6 @@
 							<?php cassette_nav(); ?>
 					    </div>
 					</div>
-
-
 
 				</div> 
 			</nav> 

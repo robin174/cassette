@@ -111,6 +111,21 @@ function cassette_nav() {
     );
 }
 
+/* Custom Admin Menu logo */
+function cassette_login_logo() { ?>
+    <style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/appicon.png);
+            padding-bottom: 2px;
+            -webkit-background-size: 180px 180px;
+            background-size: 180px 180px;
+            height: 180px;
+            width: 180px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'cassette_login_logo' );
+
 /* Remove author from Discord preview */
 add_filter( 'oembed_response_data', 
 'disable_embeds_filter_oembed_response_data_' );
