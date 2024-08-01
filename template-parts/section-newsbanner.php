@@ -1,4 +1,3 @@
-<section class="d-flex justify-content-center align-items-center" style="padding:20px; height: 20px; background:red; color:white;">
-	<span><?php the_field('bn_con_text','option'); ?></span>
-	<span><a href="<?php the_field('bn_con_text','option'); ?>">Find out more</a>.</span>
+<section class="mol--news-banner d-flex justify-content-center align-items-center collapse">
+	<span class="atm--news-text"><i class="fa-sharp fa-lg fa-solid fa-megaphone"></i><?php the_field('bn_con_text','option'); ?></span>&nbsp;<span class="atm--news-link"><a href="<?php the_field('bn_con_link','option'); ?>">Find out more</a></span>
 </section>

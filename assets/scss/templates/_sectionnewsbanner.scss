@@ -1,0 +1,20 @@
+.mol--news-banner {
+	@include neueHaasGroMedium;
+	background-color: $color--secondary;
+	font-size: 1.1rem;
+	color: $color--white;
+	padding:12px 0; 
+	& span.atm--news-text {
+		color: $color--primary;
+		& i {
+			margin-right: 7px;
+		}
+	}
+	& span.atm--news-link a {
+		transition: $base--transition;
+		color: rgba($color--primary, 0.5);
+		&:hover {
+			color: $color--primary;
+		}
+	}
+}

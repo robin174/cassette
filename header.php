@@ -57,7 +57,9 @@
 	<?php elseif(is_single()) : ?>
 		<body <?php body_class(); ?> style="background:url(<?php the_field('bg_image_post','option'); ?>); background-position: top center;">
 	<?php endif; ?>
-		
+	<?php if(get_field('bt_con_advert', 'option') && is_front_page() ) : ?>
+		<?php get_template_part('template-parts/section-newsbanner'); ?>
+	<?php endif; ?>
 		<header> 
 			<nav class="navbar navbar-expand-lg navbar-offcanvas"> 
 				<div class="container-fluid">

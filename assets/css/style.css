@@ -1179,3 +1179,21 @@ p.norm {
       font-size: 1.3rem;
       line-height: 1.5;
       margin-bottom: 0; } }
+
+.mol--news-banner {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #40D3C1;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 12px 0; }
+  .mol--news-banner span.atm--news-text {
+    color: #000C16; }
+    .mol--news-banner span.atm--news-text i {
+      margin-right: 7px; }
+  .mol--news-banner span.atm--news-link a {
+    transition: 0.4s;
+    color: rgba(0, 12, 22, 0.5); }
+    .mol--news-banner span.atm--news-link a:hover {
+      color: #000C16; }

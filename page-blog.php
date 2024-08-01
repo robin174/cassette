@@ -7,7 +7,7 @@
 get_header(); ?>
 
 <div class="templ--page-main">
-	<div class="org--content-roadmap">
+	<div class="org--content-blog">
 
 		<?php get_template_part('template-parts/section-introduction'); ?>
 
