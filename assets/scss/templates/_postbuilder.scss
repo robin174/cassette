@@ -1,3 +1,5 @@
+// This need to be organised into header, introduction and body/content
+
 .org--content-post {
 	// Set some high level styles for posts,
 	// And then drop down in specificity
@@ -11,12 +13,15 @@
 		}
 	}
 	& h2 {
+		font-size: 2.4rem;
 		margin-bottom: $margin--small;
 	}
 	& h3 {
+		font-size: 1.8rem;
 		margin-bottom: 0;
 	}
 	& h4 {
+		font-size: 1.2rem;
 		margin-bottom: 16px;
 	}
 	p {
@@ -124,18 +129,8 @@
 	}
 }
 
-.mol--post-conclusion {
-	padding: 40px 80px;
-	margin-top: 60px;
-	border-top: 1px solid $color--secondary;
-	border-bottom: 1px solid $color--secondary;
-}
-
-.mol--post-break {
+.mol--image-row {
 	margin-bottom: $margin--general;
-	& figure {
-		max-width: 140px;
-	}
 }
 
 .mol--code-block {
@@ -181,6 +176,50 @@
     & .hljs-ln-code {
     	padding-left: 15px;
     }
+}
+
+.mol--post-callout {
+	@include neueHaasGroMedium;
+	@include colorGradient(45deg, 0.25);
+	border-radius: 10px;
+	padding: $padding--large;
+	margin-bottom: $margin--general;
+	font-size: 1.2rem;
+}
+
+.mol--post-break {
+	margin-bottom: $margin--general;
+	& figure {
+		max-width: 140px;
+	}
+}
+
+.mol--post-button {
+	margin-top: $margin--small;
+	margin-bottom: $margin--large;
+	& a {
+		@include neueHaasGroMedium;
+		padding: 12px 40px;
+		background-color: $color--primary;
+		border-radius: 20px;
+		font-size: 1.2rem;
+		color: $color--tertiary;
+		text-decoration: none;
+		letter-spacing: 0.02em;
+		&:hover {
+			text-decoration: none;
+			color: $color--secondary;
+			background-color: darken($color--primary, 10%);
+		}
+	}
+}
+
+.mol--post-conclusion {
+	padding: 40px 80px;
+	margin-top: 60px;
+	border-top: 1px solid $color--secondary;
+	border-bottom: 1px solid $color--secondary;
+	margin-bottom: $margin--general;
 }
 
 @media (min-width: $media-mobile) {}

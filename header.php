@@ -57,13 +57,12 @@
 	<?php elseif(is_single()) : ?>
 		<body <?php body_class(); ?> style="background:url(<?php the_field('bg_image_post','option'); ?>); background-position: top center;">
 	<?php endif; ?>
-	<?php if(get_field('bt_con_advert', 'option') && is_front_page() ) : ?>
-		<?php get_template_part('template-parts/section-newsbanner'); ?>
-	<?php endif; ?>
-		<header> 
+		<?php if(get_field('bn_con_advert', 'option') && is_front_page() ) : ?>
+			<?php get_template_part('template-parts/section-newsbanner'); ?>
+		<?php endif; ?>
+		<header>
 			<nav class="navbar navbar-expand-lg navbar-offcanvas"> 
 				<div class="container-fluid">
-
 					<!-- This is normal view -->
 					<?php if ( is_front_page() || is_home() ) : ?>
 						<img style="width: 55px;margin-right: 10px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-c.png" alt="Cassette logo">

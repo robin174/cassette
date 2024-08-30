@@ -1,0 +1,29 @@
+.org--feature-block {
+	margin-bottom: $margin--general;
+	& h2 {
+		font-size: 1.4rem;
+	} 
+	&.atm--comingsoon {
+		& .mol--feature-block {
+			//padding: $padding--general;
+			border: 3px solid $color--secondary;
+			& .atm--cassette-spine {
+				padding: $margin--small;
+				writing-mode: vertical-lr;
+				font-size:1.8rem;
+				border-right: 3px solid $color--secondary;
+			}
+		}
+	}
+}
+
+@media (min-width: $media-desktop) {
+	.org--feature-block {
+		& h2 {
+			font-size: 1.8rem;
+		} 
+		& p {
+			padding-right: $padding--xlarge;
+		}
+	}
+}
