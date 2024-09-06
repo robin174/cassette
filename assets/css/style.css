@@ -425,8 +425,7 @@ nav.navbar {
         text-transform: uppercase;
         letter-spacing: 0.2em;
         display: block;
-        font-size: 0.85rem;
-        font-style: italic;
+        font-size: 0.75rem;
         margin-bottom: 3px; }
 
 .mol--single-introduction .mol--single-synopsis {
