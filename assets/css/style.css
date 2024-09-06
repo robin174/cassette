@@ -444,11 +444,15 @@ nav.navbar {
   margin-bottom: 7px;
   color: #000C16; }
   .mol--single-content .mol--single-navigation ul.atm--single-navitem li a, .mol--single-content .mol--single-navigation ol.atm--single-navitem li a {
-    color: rgba(0, 12, 22, 0.65);
-    text-decoration: none; }
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: #000C16;
+    background: rgba(64, 211, 193, 0.33); }
     .mol--single-content .mol--single-navigation ul.atm--single-navitem li a:hover, .mol--single-content .mol--single-navigation ol.atm--single-navitem li a:hover {
-      text-decoration: none;
-      color: #000c16; }
+      color: #000C16;
+      background: rgba(64, 211, 193, 0.66); }
 
 .mol--single-content .mol--single-tldr {
   padding: 2rem 1rem;

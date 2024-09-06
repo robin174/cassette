@@ -35,15 +35,15 @@ get_header(); ?>
 					<div class="col-12 col-lg-3">
 						<div class="mol--single-navigation">
 							<h4>Table of contents</h4>
-							<ol class="atm--single-navitem">
+							<ul class="atm--single-navitem">
 								<?php while(has_sub_field('post_builder')): ?>
 									<?php if(get_row_layout() == 'post_subheading'): // Subheading: Select ?>
 										<?php if(get_sub_field('unit_subheading_select') == 'subheadingh2') : ?>
-											<li><i class="fa-sharp-duotone fa-solid fa-play"></i>&nbsp;&nbsp;<a href="#<?php the_sub_field('unit_subheading_anchor');?>"><?php the_sub_field('unit_subheading_text');?></a></h2>
+											<li><a href="#<?php the_sub_field('unit_subheading_anchor');?>"><?php the_sub_field('unit_subheading_text');?></a></h2>
 										<?php endif; ?></li>
 									<?php endif; ?>
 								<?php endwhile; ?>
-							</ol>
+							</ul>
 						</div>
 					</div>
 					<div class="col-12 col-lg-9">

@@ -47,11 +47,13 @@
 				margin-bottom: 7px;
 				color: $color--primary;
 				& a {
-					color: rgba($color--primary, 0.65);
+					@include neueHaasGroBold;
 					text-decoration: none;
+					color: $color--primary;
+					background: rgba($color--secondary, 0.33);
 					&:hover {
-						text-decoration: none;
-						color: rgba($color--primary, 1);
+						color: $color--primary;
+						background: rgba($color--secondary, 0.66);
 					}
 				}
 			}
