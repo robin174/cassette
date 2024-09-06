@@ -1,0 +1,86 @@
+.mol--single-header {
+	margin-bottom: $margin--general;
+	padding: $padding--general 0;
+	@include colorGradient(90deg, 0.3);
+	& .mol--single-title {
+		padding-top: $padding--small;
+		padding-bottom: $padding--small;
+		& span.atm--title-short {
+			@include headingUC;
+			display: block;
+			font-size: 0.85rem;
+			margin-bottom: 3px;
+		}
+		& h1 {
+			font-size: 3rem;
+			margin-bottom: $margin--small;
+		}
+		& h5 {
+			font-size: 1.6rem;
+			margin-bottom: 0;
+			& span {
+				@include headingUC;
+				display: block;
+				font-size: 0.85rem;
+				font-style: italic;
+				margin-bottom: 3px;
+			}
+		}
+	}
+}
+
+.mol--single-introduction {
+	& .mol--single-synopsis {
+		margin-bottom: $margin--large;
+		& p.atm--single-synopsis {
+			@include neueHaasGroBold;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+.mol--single-content {
+	& .mol--single-navigation {
+		ul.atm--single-navitem, ol.atm--single-navitem {
+			& li {
+				@include neueHaasGroMedium;
+				font-size: 1.1rem;
+				margin-bottom: 7px;
+				color: $color--primary;
+				& a {
+					color: rgba($color--primary, 0.65);
+					text-decoration: none;
+					&:hover {
+						text-decoration: none;
+						color: rgba($color--primary, 1);
+					}
+				}
+			}
+		}
+	}
+	& .mol--single-tldr {
+		padding: $padding--general $padding--small;
+		background: rgba(0,0,0,0.05);
+		margin-bottom: $margin--general;
+		& ul {
+			padding-left: $padding--small;
+			& li {
+				font-size: 0.85rem;
+				margin-bottom:15px;
+				&:last-child {
+					margin-bottom:0;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $media-desktop) {
+	.mol--single-header {
+		margin-bottom: $margin--large;
+		& .mol--single-title {
+			padding-top: $padding--large;
+			padding-bottom: $padding--large;
+		}
+	}
+}

@@ -1,5 +1,4 @@
-// Split into Banner types... and 
-
+// Split into Banner types... and organise AND FINALISE
 .mol--news-banner {
 	& .atm--banner-default {
 		@include neueHaasGroMedium;
@@ -35,7 +34,12 @@
 	}
 }
 
-$tickerduration: 20s; // This could be set for mobile, desktop and wider
+$tickerduration: 20s; 
+@media (min-width: $media-mobile) {}
+@media (min-width: $media-desktop) {}
+@media (min-width: $media-wide) {}
+@media (min-width: $media-xwide) {}
+@media (min-width: $max-width) {}
 
 // Live
 .mol--ticker2-wrap {

@@ -32,16 +32,15 @@ get_header(); ?>
 				                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img class="mw-100" src="<?php the_field('unit_post_cover'); ?>"></a>
 				                        </figure>
 				                        <?php if(in_category('Uncategorized')) { ?>
-					            			<span class="d-block atm--post-category">-</span>
+					            			<span class="d-block atm--post-category"><i class="fa-sharp fa-solid fa-square"></i></span>
 					            		<?php } else { ?>
 					            			<span class="d-block atm--post-category"><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ''; } ?></span>
 					            		<?php } ?>
-				                        <span class="d-block atm--post-title"><a href="<?php the_permalink(); ?>"><?php the_field('unit_post_title'); ?></a><!-- FYI This is not the title of the post --></span>
+				                        <span class="d-block atm--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
 				                        <span class="atm--post-date"><?php echo get_the_date( 'M'.' / '.'y' ); ?></span>
 					            	</div>
 					            <?php endwhile; }
-					        wp_reset_query();  // Restore global post data stomped by the_post().
-					        ?>
+					        wp_reset_query(); ?>
 				    	</div>
 
 

@@ -58,6 +58,10 @@ li {
 	color: $color--primary;
 }
 
+code {
+	color: $color--tertiary;
+	background: rgba($color--primary, 0.03);
+}
 
 .ut--uc {
 	@include headingUC;

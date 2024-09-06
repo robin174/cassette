@@ -7,69 +7,54 @@ get_header(); ?>
 
 <section class="templ--page-main">
 	<section class="org--content-post">
-		<section class="mol--post-intro">
+
+		<div class="mol--single-header">
 			<div class="container">
-				<div class="row g-0 justify-content-center">
-					<div class="d-none col-12 col-md-4 align-self-center">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-3 align-self-center">
 						<figure>
                             <img class="mw-100" src="<?php the_field('unit_post_cover'); ?>" />
                         </figure>
 					</div>
-					<div class="col-12 col-md-8 align-self-center">
-						<section class="mol--post-title">
-							<h1>Sample help post<?php the_field('unit_post_title'); ?></h1>
-							<!-- <span>Last Updated Date</span> -->
-						</section>
+					<div class="col-12 col-lg-9 align-self-center">
+						<div class="row justify-content-center">
+							<div class="col-12 col-lg-10">
+								<div class="mol--single-title">
+									<h1><?php the_title(); ?></h1>
+									<h5><span>Last updated</span> <?php the_modified_date(); ?></h5>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		
-		<section>
+		</div>
+		<div class="mol--single-content">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-8">
-						<section class="mol--post-synopsis">
-							<p class="atm--post-synopsis"><?php the_field('unit_post_intro'); ?></p>
-						</section>
+					<div class="col-12 col-lg-3">
+						<div class="mol--single-navigation">
+							<h4>Table of contents</h4>
+							<ol class="atm--single-navitem">
+								<?php while(has_sub_field('post_builder')): ?>
+									<?php if(get_row_layout() == 'post_subheading'): // Subheading: Select ?>
+										<?php if(get_sub_field('unit_subheading_select') == 'subheadingh2') : ?>
+											<li><i class="fa-sharp-duotone fa-solid fa-play"></i>&nbsp;&nbsp;<a href="#<?php the_sub_field('unit_subheading_anchor');?>"><?php the_sub_field('unit_subheading_text');?></a></h2>
+										<?php endif; ?></li>
+									<?php endif; ?>
+								<?php endwhile; ?>
+							</ol>
+						</div>
+					</div>
+					<div class="col-12 col-lg-9">
+						<article>
+							<?php get_template_part('template-parts/builder-post'); ?>
+						</article>
 					</div>
 				</div>
 			</div>
-		</section>
-
-		<!-- And then the page builder -->				
-		<article>
-			<?php get_template_part('template-parts/builder-post'); ?>
-		</article>
-
-
-		<?php /*
-		<div class="row justify-content-center">
-			<div class="d-none col-12 col-lg-4 col-xl-3">
-				<section class="mol--post-tldr">
-					<!-- <h4>TL;DR</h4> -->
-					<?php get_template_part('template-parts/post-tldr'); ?>
-				</section>
-			</div>
-			<!-- with TLDR <div class="col-12 offset-xl-1 col-lg-8"> -->
-			<div class="col-12 col-lg-8">
-				<article>
-					<?php get_template_part('template-parts/builder-post'); ?>
-				</article>
-			</div>
 		</div>
-		*/ ?>
 
-		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<div class="col-12 col-lg-8 col-xxl-6">
-					<p style="font-size:80%;">
-			            <i>This page was last updated: <?php the_modified_date(); ?></i>
-			        </p>
-			    </div>
-			</div>
-		</div>
-		
 	</section>
 </section>
 

@@ -673,6 +673,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/scss\/layout\/_single.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_single.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/scss\/style.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -880,6 +895,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/scss\/templates\/_pagehelp.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/css\/_pagehelp.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/scss\/templates\/_pageroadmap.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1077,6 +1107,14 @@
       "oAP" : "\/page-getstarted.php",
       "oF" : 0
     },
+    "\/page-help.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-help.php",
+      "oF" : 0
+    },
     "\/page-home.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1242,14 +1280,6 @@
       "oAP" : "\/template-parts\/home-welcome.php",
       "oF" : 0
     },
-    "\/template-parts\/post-tldr.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/post-tldr.php",
-      "oF" : 0
-    },
     "\/template-parts\/section-footerborder.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1280,6 +1310,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/section-newsbanner.php",
+      "oF" : 0
+    },
+    "\/template-parts\/single-tldr.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/single-tldr.php",
       "oF" : 0
     },
     "\/template-parts\/unit-getstarted.php" : {

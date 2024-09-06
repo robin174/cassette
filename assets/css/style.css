@@ -124,6 +124,10 @@ li {
   font-style: normal;
   color: #000C16; }
 
+code {
+  color: #FF8478;
+  background: rgba(0, 12, 22, 0.03); }
+
 .ut--uc {
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
@@ -391,6 +395,80 @@ nav.navbar {
 
 .org--content-shop {
   padding: 4rem 0; }
+
+.mol--single-header {
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%); }
+  .mol--single-header .mol--single-title {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    .mol--single-header .mol--single-title span.atm--title-short {
+      font-family: neue-haas-grotesk-text, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      display: block;
+      font-size: 0.85rem;
+      margin-bottom: 3px; }
+    .mol--single-header .mol--single-title h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem; }
+    .mol--single-header .mol--single-title h5 {
+      font-size: 1.6rem;
+      margin-bottom: 0; }
+      .mol--single-header .mol--single-title h5 span {
+        font-family: neue-haas-grotesk-text, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        display: block;
+        font-size: 0.85rem;
+        font-style: italic;
+        margin-bottom: 3px; }
+
+.mol--single-introduction .mol--single-synopsis {
+  margin-bottom: 4rem; }
+  .mol--single-introduction .mol--single-synopsis p.atm--single-synopsis {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem; }
+
+.mol--single-content .mol--single-navigation ul.atm--single-navitem li, .mol--single-content .mol--single-navigation ol.atm--single-navitem li {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem;
+  margin-bottom: 7px;
+  color: #000C16; }
+  .mol--single-content .mol--single-navigation ul.atm--single-navitem li a, .mol--single-content .mol--single-navigation ol.atm--single-navitem li a {
+    color: rgba(0, 12, 22, 0.65);
+    text-decoration: none; }
+    .mol--single-content .mol--single-navigation ul.atm--single-navitem li a:hover, .mol--single-content .mol--single-navigation ol.atm--single-navitem li a:hover {
+      text-decoration: none;
+      color: #000c16; }
+
+.mol--single-content .mol--single-tldr {
+  padding: 2rem 1rem;
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem; }
+  .mol--single-content .mol--single-tldr ul {
+    padding-left: 1rem; }
+    .mol--single-content .mol--single-tldr ul li {
+      font-size: 0.85rem;
+      margin-bottom: 15px; }
+      .mol--single-content .mol--single-tldr ul li:last-child {
+        margin-bottom: 0; }
+
+@media (min-width: 992px) {
+  .mol--single-header {
+    margin-bottom: 4rem; }
+    .mol--single-header .mol--single-title {
+      padding-top: 4rem;
+      padding-bottom: 4rem; } }
 
 .org--brand-gradient {
   background: linear-gradient(90deg, #ff5f5f 0%, #ff8078 25%, #e3bd9f 50%, #40cebc 75%, #258383 100%);
@@ -902,6 +980,12 @@ p.norm {
     .org--content-getstarted .org--gs-item h2 {
       font-size: 2rem; } }
 
+.mol--content-help span.atm--coming-soon {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem; }
+
 .org--content-roadmap .org--rm--item {
   padding-right: 1rem;
   padding-bottom: 2rem;
@@ -989,12 +1073,6 @@ p.norm {
 
 .org--content-post {
   padding-bottom: 6rem; }
-  .org--content-post .mol--post-title {
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
-    .org--content-post .mol--post-title h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem; }
   .org--content-post h2 {
     font-size: 2.4rem;
     margin-bottom: 1rem; }
@@ -1039,29 +1117,6 @@ p.norm {
     font-style: normal;
     color: #000C16;
     margin-bottom: 10px; }
-  .org--content-post .mol--post-intro {
-    padding: 2rem 0;
-    background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%); }
-  .org--content-post .mol--post-synopsis {
-    margin-top: 4rem;
-    margin-bottom: 1rem; }
-    .org--content-post .mol--post-synopsis p.atm--post-synopsis {
-      font-family: neue-haas-grotesk-text, sans-serif;
-      font-weight: 500;
-      font-style: normal;
-      font-size: 1.4rem;
-      line-height: 1.4; }
-  .org--content-post .mol--post-tldr {
-    padding: 2rem 1rem;
-    background: rgba(0, 0, 0, 0.05);
-    margin-bottom: 2rem; }
-    .org--content-post .mol--post-tldr ul {
-      padding-left: 1rem; }
-      .org--content-post .mol--post-tldr ul li {
-        font-size: 0.85rem;
-        margin-bottom: 15px; }
-        .org--content-post .mol--post-tldr ul li:last-child {
-          margin-bottom: 0; }
 
 .mol--post-paragraph {
   margin-bottom: 2rem; }
@@ -1166,6 +1221,9 @@ p.norm {
       color: #40D3C1;
       background-color: black; }
 
+.mol--video-embed {
+  margin-bottom: 2rem; }
+
 .mol--post-conclusion {
   padding: 40px 80px;
   margin-top: 60px;
@@ -1175,18 +1233,7 @@ p.norm {
 
 @media (min-width: 992px) {
   .org--content-post h3 {
-    margin-bottom: 1rem; }
-  .org--content-post .mol--post-title {
-    padding-top: 4rem;
-    padding-bottom: 4rem; }
-  .org--content-post .mol--post-synopsis {
-    margin-top: 4rem;
-    margin-bottom: 4rem; }
-    .org--content-post .mol--post-synopsis p.atm--post-synopsis {
-      font-family: neue-haas-grotesk-text, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      font-size: 1.8rem; } }
+    margin-bottom: 1rem; } }
 
 [class*="mol--line"] {
   height: 5px;

@@ -4,14 +4,6 @@
 	// Set some high level styles for posts,
 	// And then drop down in specificity
 	padding-bottom: $padding--xlarge;
-	& .mol--post-title {
-		padding-top: $padding--small;
-		padding-bottom: $padding--small;
-		& h1 {
-			font-size: 3rem;
-			margin-bottom: $margin--small;
-		}
-	}
 	& h2 {
 		font-size: 2.4rem;
 		margin-bottom: $margin--small;
@@ -65,35 +57,6 @@
 		@include neueHaasGroRoman;
 		color: $color--primary;
 		margin-bottom: 10px;
-	}
-
-	& .mol--post-intro {
-		padding: $padding--general 0;
-		@include colorGradient(90deg, 0.3);
-	}
-	& .mol--post-synopsis {
-		margin-top: $margin--large;
-		margin-bottom: $margin--small;
-		& p.atm--post-synopsis {
-			@include neueHaasGroMedium;
-			font-size: 1.4rem;
-			line-height: 1.4;
-		}
-	}
-	& .mol--post-tldr {
-		padding: $padding--general $padding--small;
-		background: rgba(0,0,0,0.05);
-		margin-bottom: $margin--general;
-		& ul {
-			padding-left: $padding--small;
-			& li {
-				font-size: 0.85rem;
-				margin-bottom:15px;
-				&:last-child {
-					margin-bottom:0;
-				}
-			}
-		}
 	}
 }
 
@@ -214,6 +177,10 @@
 	}
 }
 
+.mol--video-embed {
+	margin-bottom: $margin--general;
+}
+
 .mol--post-conclusion {
 	padding: 40px 80px;
 	margin-top: 60px;
@@ -228,18 +195,7 @@
 		& h3 {
 			margin-bottom: $margin--small;
 		}
-		& .mol--post-title {
-			padding-top: $padding--large;
-			padding-bottom: $padding--large;
-		}
-		& .mol--post-synopsis {
-			margin-top: $margin--large;
-			margin-bottom: $margin--large;
-			& p.atm--post-synopsis {
-				@include neueHaasGroBold;
-				font-size: 1.8rem;
-			}
-		}
+		
 	}
 }
 @media (min-width: $media-xwide) {}
