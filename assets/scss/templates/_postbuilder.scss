@@ -5,7 +5,7 @@
 	// And then drop down in specificity
 	padding-bottom: $padding--xlarge;
 	& h2 {
-		font-size: 2.4rem;
+		font-size: 2.1rem;
 		margin-bottom: $margin--small;
 	}
 	& h3 {
@@ -17,7 +17,7 @@
 		margin-bottom: 16px;
 	}
 	p {
-		font-size: 1.2rem;
+		font-size: 1.15rem;
 		line-height: 1.75;
 		margin-top: 0;
 		margin-bottom: $margin--general;
@@ -37,20 +37,20 @@
 			margin: 0;
 		}
 		&.bullet-intro {
-			margin-bottom: $margin--small;
+			margin-bottom: $margin--small*0.8;
 		}
 		&.bullet-outro {
-
+			margin-bottom: $margin--general;
 		}
 	}
 	& .mol--list {
 		& ul, & ol {
-			font-size: 1.2rem;
+			font-size: 1.15rem;
 			margin-top: 0;
 		}
 	}
 	& ul, & ol {
-		margin-bottom: $margin--general;
+		margin-bottom: $margin--small*0.8;
 	}
 	& ul li, ol li {
 		font-size: 1.1rem;

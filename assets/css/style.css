@@ -436,6 +436,15 @@ nav.navbar {
     font-style: normal;
     font-size: 1.8rem; }
 
+.mol--single-content .mol--single-navigation h4 {
+  color: #FF8478;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem; }
+
 .mol--single-content .mol--single-navigation ul.atm--single-navitem li, .mol--single-content .mol--single-navigation ol.atm--single-navitem li {
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 500;
@@ -988,6 +997,8 @@ p.norm {
   font-weight: 500;
   font-style: normal;
   font-size: 1.2rem; }
+  .mol--content-help span.atm--coming-soon i {
+    margin-right: 1rem; }
 
 .org--content-roadmap .org--rm--item {
   padding-right: 1rem;
@@ -1077,7 +1088,7 @@ p.norm {
 .org--content-post {
   padding-bottom: 6rem; }
   .org--content-post h2 {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     margin-bottom: 1rem; }
   .org--content-post h3 {
     font-size: 1.8rem;
@@ -1086,7 +1097,7 @@ p.norm {
     font-size: 1.2rem;
     margin-bottom: 16px; }
   .org--content-post p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     line-height: 1.75;
     margin-top: 0;
     margin-bottom: 2rem; }
@@ -1107,12 +1118,14 @@ p.norm {
       font-style: italic;
       margin: 0; }
     .org--content-post p.bullet-intro {
-      margin-bottom: 1rem; }
+      margin-bottom: 0.8rem; }
+    .org--content-post p.bullet-outro {
+      margin-bottom: 2rem; }
   .org--content-post .mol--list ul, .org--content-post .mol--list ol {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     margin-top: 0; }
   .org--content-post ul, .org--content-post ol {
-    margin-bottom: 2rem; }
+    margin-bottom: 0.8rem; }
   .org--content-post ul li, .org--content-post ol li {
     font-size: 1.1rem;
     font-family: neue-haas-grotesk-text, sans-serif;

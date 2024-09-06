@@ -2,5 +2,8 @@
 	& span.atm--coming-soon {
 		@include neueHaasGroMedium;
 		font-size: 1.2rem;
+		& i {
+			margin-right: $margin--small;
+		}
 	}
 }

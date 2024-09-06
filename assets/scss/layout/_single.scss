@@ -40,7 +40,12 @@
 
 .mol--single-content {
 	& .mol--single-navigation {
-		ul.atm--single-navitem, ol.atm--single-navitem {
+		& h4 {
+		color: $color--tertiary; 
+			@include headingUC;
+			font-size: 0.9rem;
+		}
+		& ul.atm--single-navitem, ol.atm--single-navitem {
 			& li {
 				@include neueHaasGroMedium;
 				font-size: 1.1rem;
