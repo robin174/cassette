@@ -8,12 +8,11 @@
 }
 
 .atm--post-category {
-	@include headingUC;
+	@include headingUC(0.7rem);
 	margin-top: 6px;
 	margin-bottom: 6px;
 	transition: $base--transition;
 	color: $color--primary;
-	font-size: 0.65rem;
 }
 
 .atm--post-title {

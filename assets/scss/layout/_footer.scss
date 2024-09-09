@@ -70,9 +70,8 @@ footer {
 				margin-top: $margin--general;
 				color: $color--white;
 				& h4 {
-			  		@include headingUC;
+			  		@include headingUC(0.9rem);
 			  		color: $color--white;
-			  		font-size: 0.9rem;
 			  		margin-bottom: 12px;
 			  	}
 			  	& span {

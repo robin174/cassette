@@ -1,15 +1,21 @@
-@mixin headingUC {
-	@include neueHaasGroBold;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
-}
-
 @mixin navigationUC {
 	@include neueHaasGroMedium;
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
 }
 
+@mixin headingUC($headingSize) {
+	@include neueHaasGroBold;
+	font-size: $headingSize;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
 @mixin colorGradient($gradientAngle, $gradientOpacity) { // $gradientAngle = e.g. 180deg, $gradientOpacity = e.g. 0.5
-    background: linear-gradient($gradientAngle, rgba(255,95,95,$gradientOpacity) 0%, rgba(255,128,120,$gradientOpacity) 25%, rgba(227,189,159,$gradientOpacity) 50%, rgba(64,206,188,$gradientOpacity) 75%, rgba(37,131,131,$gradientOpacity) 100%);
+    background: linear-gradient($gradientAngle, 
+    	rgba(255,95,95,$gradientOpacity) 0%, 
+    	rgba(255,128,120,$gradientOpacity) 25%, 
+    	rgba(227,189,159,$gradientOpacity) 50%, 
+    	rgba(64,206,188,$gradientOpacity) 75%, 
+    	rgba(37,131,131,$gradientOpacity) 100%);
 }

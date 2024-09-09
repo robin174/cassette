@@ -64,7 +64,9 @@ code {
 }
 
 .ut--uc {
-	@include headingUC;
+	@include neueHaasGroBold;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
 .ut--secondary {

@@ -6,9 +6,8 @@
 		padding-top: $padding--small;
 		padding-bottom: $padding--small;
 		& span.atm--title-short {
-			@include headingUC;
+			@include headingUC(0.85rem);
 			display: block;
-			font-size: 0.85rem;
 			margin-bottom: 3px;
 		}
 		& h1 {
@@ -19,9 +18,8 @@
 			font-size: 1.1rem;
 			margin-bottom: 0;
 			& span {
-				@include headingUC;
+				@include headingUC(0.6rem);
 				display: block;
-				font-size: 0.6rem;
 				margin-bottom: 3px;
 			}
 		}
@@ -42,8 +40,7 @@
 	& .mol--single-navigation {
 		& h4 {
 		color: $color--tertiary; 
-			@include headingUC;
-			font-size: 0.9rem;
+			@include headingUC(0.9rem);
 		}
 		& ul.atm--single-navitem, ol.atm--single-navitem {
 			& li {

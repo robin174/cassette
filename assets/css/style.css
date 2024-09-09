@@ -276,9 +276,9 @@ nav.navbar {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-size: 0.9rem;
     color: #fff;
     margin-bottom: 0; }
   nav.navbar h1 a.navbar-brand:hover {
@@ -407,10 +407,10 @@ nav.navbar {
       font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
       font-style: normal;
+      font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.2em;
       display: block;
-      font-size: 0.85rem;
       margin-bottom: 3px; }
     .mol--single-header .mol--single-title h1 {
       font-size: 3rem;
@@ -422,10 +422,10 @@ nav.navbar {
         font-family: neue-haas-grotesk-text, sans-serif;
         font-weight: 700;
         font-style: normal;
+        font-size: 0.6rem;
         text-transform: uppercase;
         letter-spacing: 0.2em;
         display: block;
-        font-size: 0.6rem;
         margin-bottom: 3px; }
 
 .mol--single-introduction .mol--single-synopsis {
@@ -441,9 +441,9 @@ nav.navbar {
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.9rem; }
+  letter-spacing: 0.2em; }
 
 .mol--single-content .mol--single-navigation ul.atm--single-navitem li, .mol--single-content .mol--single-navigation ol.atm--single-navitem li {
   font-family: neue-haas-grotesk-text, sans-serif;
@@ -550,10 +550,10 @@ footer {
           font-family: neue-haas-grotesk-text, sans-serif;
           font-weight: 700;
           font-style: normal;
+          font-size: 0.9rem;
           text-transform: uppercase;
           letter-spacing: 0.2em;
           color: #fff;
-          font-size: 0.9rem;
           margin-bottom: 12px; }
         footer .org--footer-inner .org--unit section.mol--unit-contact span {
           font-size: 1.2rem; }
@@ -867,13 +867,13 @@ p.norm {
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-top: 6px;
   margin-bottom: 6px;
   transition: 0.4s;
-  color: #000C16;
-  font-size: 0.65rem; }
+  color: #000C16; }
 
 .atm--post-title {
   margin-top: 4px;
@@ -1204,32 +1204,32 @@ p.norm {
     padding-left: 15px; }
 
 .mol--post-callout {
-  margin-top: 2rem;
-  position: relative;
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #000C16;
   background: linear-gradient(45deg, rgba(255, 95, 95, 0.25) 0%, rgba(255, 128, 120, 0.25) 25%, rgba(227, 189, 159, 0.25) 50%, rgba(64, 206, 188, 0.25) 75%, rgba(37, 131, 131, 0.25) 100%);
-  border-radius: 10px;
+  position: relative;
+  margin: 2rem 0;
   padding: 3rem 4rem;
-  margin-bottom: 2rem;
+  color: #000C16;
+  border-radius: 10px;
   font-size: 1.2rem; }
   .mol--post-callout .atm--callout-gtk {
+    border: 3px solid white;
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     background: linear-gradient(90deg, rgba(255, 95, 95, 0.5) 0%, rgba(255, 128, 120, 0.5) 25%, rgba(227, 189, 159, 0.5) 50%, rgba(64, 206, 188, 0.5) 75%, rgba(37, 131, 131, 0.5) 100%);
     position: absolute;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    top: -15px;
+    top: -16px;
     left: 30px;
     padding: 4px 12px;
     padding-top: 5px;
-    color: #000C16;
-    font-size: 0.95rem; }
+    color: #000C16; }
   .mol--post-callout a {
     color: #000C16;
     text-decoration: underline; }
