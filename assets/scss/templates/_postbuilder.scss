@@ -143,11 +143,19 @@
 
 .mol--post-callout {
 	@include neueHaasGroMedium;
+	color: $color--primary;
 	@include colorGradient(45deg, 0.25);
 	border-radius: 10px;
 	padding: $padding--large;
 	margin-bottom: $margin--general;
 	font-size: 1.2rem;
+	& a {
+		color: $color--primary;
+		text-decoration: underline;
+		&:hover {
+			color: $color--tertiary;
+		}
+	}
 }
 
 .mol--post-break {

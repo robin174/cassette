@@ -416,7 +416,7 @@ nav.navbar {
       font-size: 3rem;
       margin-bottom: 1rem; }
     .mol--single-header .mol--single-title h5 {
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       margin-bottom: 0; }
       .mol--single-header .mol--single-title h5 span {
         font-family: neue-haas-grotesk-text, sans-serif;
@@ -1207,11 +1207,17 @@ p.norm {
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #000C16;
   background: linear-gradient(45deg, rgba(255, 95, 95, 0.25) 0%, rgba(255, 128, 120, 0.25) 25%, rgba(227, 189, 159, 0.25) 50%, rgba(64, 206, 188, 0.25) 75%, rgba(37, 131, 131, 0.25) 100%);
   border-radius: 10px;
   padding: 4rem;
   margin-bottom: 2rem;
   font-size: 1.2rem; }
+  .mol--post-callout a {
+    color: #000C16;
+    text-decoration: underline; }
+    .mol--post-callout a:hover {
+      color: #FF8478; }
 
 .mol--post-break {
   margin-bottom: 2rem; }
