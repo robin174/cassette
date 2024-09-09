@@ -142,6 +142,7 @@
 }
 
 .mol--post-callout {
+	margin-top: $margin--general;
 	position: relative;
 	@include neueHaasGroMedium;
 	color: $color--primary;
