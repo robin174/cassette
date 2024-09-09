@@ -221,6 +221,7 @@
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-10">
 				<div class="mol--post-callout">
+					<div class="atm--callout-gtk">Good to know</div>
 					<span><?php the_sub_field('unit_callout'); ?></span>
 				</div>
 			</div>

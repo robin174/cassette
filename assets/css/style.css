@@ -416,7 +416,7 @@ nav.navbar {
       font-size: 3rem;
       margin-bottom: 1rem; }
     .mol--single-header .mol--single-title h5 {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       margin-bottom: 0; }
       .mol--single-header .mol--single-title h5 span {
         font-family: neue-haas-grotesk-text, sans-serif;
@@ -1204,20 +1204,36 @@ p.norm {
     padding-left: 15px; }
 
 .mol--post-callout {
+  position: relative;
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 500;
   font-style: normal;
   color: #000C16;
   background: linear-gradient(45deg, rgba(255, 95, 95, 0.25) 0%, rgba(255, 128, 120, 0.25) 25%, rgba(227, 189, 159, 0.25) 50%, rgba(64, 206, 188, 0.25) 75%, rgba(37, 131, 131, 0.25) 100%);
   border-radius: 10px;
-  padding: 4rem;
+  padding: 3rem 4rem;
   margin-bottom: 2rem;
   font-size: 1.2rem; }
+  .mol--post-callout .atm--callout-gtk {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: linear-gradient(90deg, rgba(255, 95, 95, 0.5) 0%, rgba(255, 128, 120, 0.5) 25%, rgba(227, 189, 159, 0.5) 50%, rgba(64, 206, 188, 0.5) 75%, rgba(37, 131, 131, 0.5) 100%);
+    position: absolute;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    top: -15px;
+    left: 30px;
+    padding: 4px 12px;
+    padding-top: 5px;
+    color: #000C16;
+    font-size: 0.95rem; }
   .mol--post-callout a {
     color: #000C16;
     text-decoration: underline; }
     .mol--post-callout a:hover {
-      color: #FF8478; }
+      color: #40D3C1; }
 
 .mol--post-break {
   margin-bottom: 2rem; }

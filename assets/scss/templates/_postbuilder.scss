@@ -142,18 +142,31 @@
 }
 
 .mol--post-callout {
+	position: relative;
 	@include neueHaasGroMedium;
 	color: $color--primary;
 	@include colorGradient(45deg, 0.25);
 	border-radius: 10px;
-	padding: $padding--large;
+	padding: $padding--general*1.5 $padding--large;
 	margin-bottom: $margin--general;
 	font-size: 1.2rem;
+	& .atm--callout-gtk {
+		@include headingUC;
+		@include colorGradient(90deg, 0.5);
+		position: absolute;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+		top: -15px;
+		left: 30px;
+		padding: 4px 12px;
+		padding-top: 5px;
+		color: $color--primary;
+		font-size: 0.95rem;
+	}
 	& a {
 		color: $color--primary;
 		text-decoration: underline;
 		&:hover {
-			color: $color--tertiary;
+			color: $color--secondary;
 		}
 	}
 }
