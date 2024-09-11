@@ -3,8 +3,9 @@
 	padding: $padding--general 0;
 	@include colorGradient(90deg, 0.3);
 	& .mol--single-title {
-		padding-top: $padding--small;
+		padding-top: $padding--general;
 		padding-bottom: $padding--small;
+		padding-left: $padding--small;
 		& span.atm--title-short {
 			@include headingUC(0.85rem);
 			display: block;
@@ -28,10 +29,11 @@
 
 .mol--single-introduction {
 	& .mol--single-synopsis {
-		margin-bottom: $margin--large;
+		margin-bottom: $margin--general;
 		& p.atm--single-synopsis {
 			@include neueHaasGroBold;
-			font-size: 1.8rem;
+			font-size: 1.4rem;
+			line-height: 1.6;
 		}
 	}
 }
@@ -84,6 +86,15 @@
 		& .mol--single-title {
 			padding-top: $padding--large;
 			padding-bottom: $padding--large;
+			padding-left: 0;
+		}
+	}
+	.mol--single-introduction {
+		& .mol--single-synopsis {
+			margin-bottom: $margin--large;
+			& p.atm--single-synopsis {
+				font-size: 1.8rem;
+			}
 		}
 	}
 }

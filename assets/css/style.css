@@ -401,8 +401,9 @@ nav.navbar {
   padding: 2rem 0;
   background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%); }
   .mol--single-header .mol--single-title {
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem; }
     .mol--single-header .mol--single-title span.atm--title-short {
       font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 700;
@@ -429,12 +430,13 @@ nav.navbar {
         margin-bottom: 3px; }
 
 .mol--single-introduction .mol--single-synopsis {
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
   .mol--single-introduction .mol--single-synopsis p.atm--single-synopsis {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.8rem; }
+    font-size: 1.4rem;
+    line-height: 1.6; }
 
 .mol--single-content .mol--single-navigation h4 {
   color: #FF8478;
@@ -480,7 +482,12 @@ nav.navbar {
     margin-bottom: 4rem; }
     .mol--single-header .mol--single-title {
       padding-top: 4rem;
-      padding-bottom: 4rem; } }
+      padding-bottom: 4rem;
+      padding-left: 0; }
+  .mol--single-introduction .mol--single-synopsis {
+    margin-bottom: 4rem; }
+    .mol--single-introduction .mol--single-synopsis p.atm--single-synopsis {
+      font-size: 1.8rem; } }
 
 .org--brand-gradient {
   background: linear-gradient(90deg, #ff5f5f 0%, #ff8078 25%, #e3bd9f 50%, #40cebc 75%, #258383 100%);
@@ -1123,13 +1130,13 @@ p.norm {
       margin-bottom: 2rem; }
   .org--content-post .mol--list ul, .org--content-post .mol--list ol {
     font-size: 1.15rem;
-    margin-top: 0; }
-  .org--content-post ul, .org--content-post ol {
-    margin-bottom: 0.8rem; }
-  .org--content-post ul li, .org--content-post ol li {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem; }
+  .org--content-post .mol--list ul li, .org--content-post .mol--list ol li {
     font-size: 1.1rem;
     font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     color: #000C16;
     margin-bottom: 10px; }
@@ -1158,7 +1165,7 @@ p.norm {
     border-bottom-right-radius: 3px; }
 
 .mol--image-full figure.atm--post-img-outline {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); }
 
 .mol--image-row {
@@ -1272,7 +1279,9 @@ p.norm {
 
 @media (min-width: 992px) {
   .org--content-post h3 {
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+  .org--content-post .mol--list ul, .org--content-post .mol--list ol {
+    margin-left: 1rem; } }
 
 [class*="mol--line"] {
   height: 5px;

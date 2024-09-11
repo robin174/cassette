@@ -46,18 +46,18 @@
 	& .mol--list {
 		& ul, & ol {
 			font-size: 1.15rem;
-			margin-top: 0;
+			margin-top: $margin--general;
+			margin-left: $margin--xsmall;
+			margin-bottom: $margin--general;
+		}
+		& ul li, ol li {
+			font-size: 1.1rem;
+			@include neueHaasGroMedium;
+			color: $color--primary;
+			margin-bottom: 10px;
 		}
 	}
-	& ul, & ol {
-		margin-bottom: $margin--small*0.8;
-	}
-	& ul li, ol li {
-		font-size: 1.1rem;
-		@include neueHaasGroRoman;
-		color: $color--primary;
-		margin-bottom: 10px;
-	}
+
 }
 
 .hljs-copy {}
@@ -87,7 +87,7 @@
 		}
 	}
 	& figure.atm--post-img-outline {
-		border: 1px solid rgba(0,0,0,0.1);
+		border: 1px solid rgba(0,0,0,0.15);
 		box-shadow: 0 0 15px rgba(0,0,0,0.1);
 	}
 }
@@ -216,7 +216,11 @@
 		& h3 {
 			margin-bottom: $margin--small;
 		}
-		
+		& .mol--list {
+			& ul, & ol {
+				margin-left: $margin--small;
+			}
+		}
 	}
 }
 @media (min-width: $media-xwide) {}
