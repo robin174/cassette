@@ -209,9 +209,6 @@
 		                    } 
 		                ?>
                     <?php endif; ?>
-                    <?php if( get_sub_field('unit_conclusion_para') ): ?>
-                    	<p class="bullet-outro"><?php the_sub_field('unit_conclusion_para'); ?></p>
-                    <?php endif; ?>
                 </section>
             </div>
         </div>
