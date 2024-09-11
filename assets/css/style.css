@@ -1124,13 +1124,8 @@ p.norm {
       line-height: 1.5;
       font-style: italic;
       margin: 0; }
-    .org--content-post p.bullet-intro {
-      margin-bottom: 0.8rem; }
-    .org--content-post p.bullet-outro {
-      margin-bottom: 2rem; }
   .org--content-post .mol--list ul, .org--content-post .mol--list ol {
     font-size: 1.15rem;
-    margin-top: 2rem;
     margin-left: 0.5rem;
     margin-bottom: 2rem; }
   .org--content-post .mol--list ul li, .org--content-post .mol--list ol li {

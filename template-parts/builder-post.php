@@ -183,9 +183,6 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
                 <section class="mol--list">
-                    <?php if( get_sub_field('unit_introduction_para') ): ?>
-                    	<p class="bullet-intro"><?php the_sub_field('unit_introduction_para'); ?></p>
-                    <?php endif; ?>
                     <?php if(get_sub_field('unit_list_type') == 'listbullet') : ?>
                     	<?php 
 		                    $values = get_sub_field('unit_bullet_point');
