@@ -839,7 +839,6 @@ p.norm {
   margin-bottom: 1rem; }
 
 [class*="org--content-"] ul {
-  margin-top: 1rem;
   margin-bottom: 0; }
   [class*="org--content-"] ul.atm--list-bullet li {
     list-style: disc; }
