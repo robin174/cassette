@@ -452,8 +452,9 @@ nav.navbar {
   font-weight: 500;
   font-style: normal;
   font-size: 1.1rem;
-  margin-bottom: 7px;
-  color: #000C16; }
+  margin-bottom: 8px;
+  color: #000C16;
+  line-height: 1.5; }
   .mol--single-content .mol--single-navigation ul.atm--single-navitem li a, .mol--single-content .mol--single-navigation ol.atm--single-navitem li a {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 700;
@@ -578,6 +579,44 @@ footer {
       margin-top: 0; }
     footer .org--footer-inner .org--unit section.mol--unit-contact {
       margin-top: 0; } }
+
+/* Toggle switch styling */
+.toggle-switch {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.25rem; }
+  .toggle-switch span {
+    margin: 0 10px; }
+
+.toggle-btn {
+  appearance: none;
+  width: 60px;
+  height: 30px;
+  background-color: #FF8478;
+  border-radius: 15px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+
+.toggle-btn::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s; }
+
+.toggle-btn:checked {
+  background-color: #40D3C1; }
+
+.toggle-btn:checked::before {
+  transform: translateX(30px); }
 
 .org--content-download {
   margin-top: 4rem;

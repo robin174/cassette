@@ -28,6 +28,10 @@ get_header(); ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
 					<?php get_template_part('template-parts/home-download'); ?>
 				<?php } ?>
+			<?php elseif(get_sub_field('ts_options') == 'calculator') : ?>
+				<?php if(get_sub_field('ts_visible')) { ?>
+					<?php get_template_part('template-parts/home-calculator'); ?>
+				<?php } ?>
 			<?php elseif(get_sub_field('ts_options') == 'newsletter') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
 					<?php get_template_part('template-parts/home-emailnewsletter'); ?>

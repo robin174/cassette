@@ -1,0 +1,40 @@
+ /* Toggle switch styling */
+// This could be filed under component: toggle
+.toggle-switch {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.25rem;
+    & span {
+    	margin: 0 10px;
+    }
+}
+.toggle-btn {
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    background-color: $color--tertiary;
+    border-radius: 15px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.toggle-btn::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.toggle-btn:checked {
+    background-color: $color--secondary;
+}
+.toggle-btn:checked::before {
+    transform: translateX(30px);
+}

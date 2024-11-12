@@ -61,6 +61,12 @@ if( function_exists('acf_add_options_page') ) {
         'parent_slug'   => 'homepage-site-content',
     ));
     acf_add_options_sub_page(array(
+        'page_title'    => 'Calculator',
+        'menu_title'    => 'Calculator',
+        'parent_slug'   => 'homepage-site-content',
+    ));
+    /*
+    acf_add_options_sub_page(array(
         'page_title'    => 'Inst Money',
         'menu_title'    => 'Inst Money',
         'parent_slug'   => 'homepage-site-content',
@@ -70,6 +76,7 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'    => 'Alchemy Pay',
         'parent_slug'   => 'homepage-site-content',
     ));
+    */
     acf_add_options_sub_page(array(
         'page_title'    => 'Newsletter Signup',
         'menu_title'    => 'Newsletter Signup',

@@ -48,8 +48,9 @@
 			& li {
 				@include neueHaasGroMedium;
 				font-size: 1.1rem;
-				margin-bottom: 7px;
+				margin-bottom: 8px;
 				color: $color--primary;
+				line-height: 1.5;
 				& a {
 					@include neueHaasGroBold;
 					text-decoration: none;
