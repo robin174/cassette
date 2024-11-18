@@ -438,6 +438,20 @@ nav.navbar {
     font-size: 1.4rem;
     line-height: 1.6; }
 
+.mol--single-breadcrumb {
+  padding-bottom: 2rem;
+  font-size: 0.9rem; }
+  .mol--single-breadcrumb a {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+    color: #000C16; }
+    .mol--single-breadcrumb a:hover {
+      color: #FF8478; }
+  .mol--single-breadcrumb span i {
+    margin-right: 0.5rem; }
+
 .mol--single-content .mol--single-navigation h4 {
   color: #FF8478;
   font-family: neue-haas-grotesk-text, sans-serif;

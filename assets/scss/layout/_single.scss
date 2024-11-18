@@ -38,6 +38,22 @@
 	}
 }
 
+.mol--single-breadcrumb {
+	padding-bottom: $padding--general;
+	font-size: 0.9rem;
+	& a {
+		@include neueHaasGroMedium;
+		text-decoration: underline;
+		color: $color--primary;
+		&:hover {
+			color: $color--tertiary;
+		}
+	}
+	& span i {
+		margin-right: $margin--xsmall;
+	}
+}
+
 .mol--single-content {
 	& .mol--single-navigation {
 		& h4 {

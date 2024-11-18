@@ -29,6 +29,15 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
+		<div class="mol--single-breadcrumb">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<span><i class="fa-sharp fa-solid fa-house"></i><a href="<?php echo get_permalink( get_page_by_path( 'Help Docs' ) ); ?>" title="Help Docs">Help Docs</a>&nbsp;&nbsp;/&nbsp;&nbsp;<?php $terms = get_the_terms($post->ID, 'level'); $term_names = wp_list_pluck($terms, 'name'); echo implode(', ', $term_names); ?>&nbsp;&nbsp;/&nbsp;&nbsp;<?php the_title();?></span>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="mol--single-content">
 			<div class="container">
 				<div class="row justify-content-center">
