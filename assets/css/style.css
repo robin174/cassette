@@ -1290,13 +1290,17 @@ p.norm {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
     font-style: normal;
-    padding: 12px 40px;
+    padding: 10px 30px;
     background-color: #000C16;
-    border-radius: 20px;
-    font-size: 1.2rem;
+    border-radius: 15px;
     color: #FF8478;
     text-decoration: none;
     letter-spacing: 0.02em; }
+    .mol--post-button a span {
+      background: linear-gradient(90deg, #ff5f5f 0%, #ff8078 25%, #e3bd9f 50%, #40cebc 75%, #258383 100%);
+      font-size: 1.3rem;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
     .mol--post-button a:hover {
       text-decoration: none;
       color: #40D3C1;

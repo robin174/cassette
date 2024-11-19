@@ -173,13 +173,18 @@
 	margin-bottom: $margin--large;
 	& a {
 		@include neueHaasGroMedium;
-		padding: 12px 40px;
+		padding: 10px 30px;
 		background-color: $color--primary;
-		border-radius: 20px;
-		font-size: 1.2rem;
+		border-radius: 15px;
 		color: $color--tertiary;
 		text-decoration: none;
 		letter-spacing: 0.02em;
+		& span {
+			@include colorGradient(90deg, 1);
+			font-size: 1.3rem;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
 		&:hover {
 			text-decoration: none;
 			color: $color--secondary;

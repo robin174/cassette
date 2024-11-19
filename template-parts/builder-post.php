@@ -238,7 +238,7 @@
 			<div class="col-12 col-lg-10">
 				<div class="mol--post-button d-flex justify-content-center">
 					<a class="button" href="<?php the_sub_field('unit_button_link'); ?>">
-						<?php the_sub_field('unit_button_text'); ?>
+						<span><?php the_sub_field('unit_button_text'); ?></span>
 					</a>
 				</div>
 			</div>
