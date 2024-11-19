@@ -1302,6 +1302,18 @@ p.norm {
       color: #40D3C1;
       background-color: black; }
 
+.mol--image-placeholder {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  color: rgba(0, 12, 22, 0.5);
+  background-color: rgba(0, 12, 22, 0.1);
+  font-style: italic; }
+  .mol--image-placeholder i {
+    color: rgba(0, 12, 22, 0.5);
+    margin-bottom: 2px; }
+
 .mol--video-embed {
   margin-bottom: 2rem; }
 

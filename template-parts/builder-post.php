@@ -91,6 +91,17 @@
 		<?php endif; ?>
 	<?php endif; ?>
 
+	<?php if(get_row_layout() == 'post_img_placeholder'): // Image Placeholder (for ease of building content) ?>
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-10">
+				<div class="mol--image-placeholder">
+					<div><i class="fa-sharp fa-regular fa-2x fa-image"></i></div>
+					<span><?php the_sub_field('unit_placeholder'); ?></span>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
+
 	<?php if(get_row_layout() == 'post_image_two'): // Two images in a row, no captions  ?>
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-10">

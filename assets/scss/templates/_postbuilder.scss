@@ -188,6 +188,20 @@
 	}
 }
 
+.mol--image-placeholder {
+	text-align: center;
+	margin-top: $margin--small;
+	margin-bottom: $margin--general;
+	padding: $padding--small $padding--general;
+	color: rgba($color--primary, 0.5);
+	background-color: rgba($color--primary, 0.1);
+	font-style: italic;
+	& i {
+		color: rgba($color--primary, 0.5);
+		margin-bottom: 2px;
+	}
+}
+
 .mol--video-embed {
 	margin-bottom: $margin--general;
 }
