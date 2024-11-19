@@ -26,16 +26,6 @@
 		& i.fa-sharp, & i.fa-kit {
 			margin-right: $margin--small;
 		}
-		& a {
-			@include neueHaasGroBold;
-			text-decoration: none;
-			color: $color--primary;
-			background: rgba($color--secondary, 0.33);
-			&:hover {
-				color: $color--primary;
-				background: rgba($color--secondary, 0.66);
-			}
-		}
 	}
 }
 

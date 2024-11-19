@@ -41,13 +41,6 @@
 			& h5 {
 				color: $color--tertiary; 
 			}
-			& a {
-				@include neueHaasGroBold;
-				color: $color--highlight-dark;
-				&:hover {
-					color: $color--primary;
-				}
-			}
 		}
 	}
 }

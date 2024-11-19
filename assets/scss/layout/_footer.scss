@@ -26,8 +26,10 @@ footer {
 		color: $color--white;
 		text-decoration: underline 2px;
 		letter-spacing: 0.05em;
+		background: unset;
 		&:hover {
 			cursor: pointer;
+			background: unset;
 			color: $color--white;
 		}
 		& i {

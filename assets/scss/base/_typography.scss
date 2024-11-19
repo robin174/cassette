@@ -34,18 +34,20 @@ p {
 	&:last-child {
 		margin-bottom: 0;
 	}
-	a {
-		transition: $base--transition;
-		@include neueHaasGroMedium;
-		color: $color--primary;
-		text-decoration: underline;
-		&:hover {
-			color: $color--tertiary;
-		}
-	}
 	&.atmAdditional {
 		@include neueHaasGroMedium;
 		font-size: 1.3rem !important;
+	}
+}
+
+a {
+	@include neueHaasGroBold;
+	text-decoration: none;
+	color: $color--primary;
+	background: rgba($color--secondary, 0.33);
+	&:hover {
+		color: $color--primary;
+		background: rgba($color--secondary, 0.66);
 	}
 }
 
@@ -60,7 +62,7 @@ li {
 
 code {
 	color: $color--tertiary;
-	background: rgba($color--primary, 0.03);
+	background: rgba($color--primary, 0.07);
 }
 
 .ut--uc {

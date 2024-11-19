@@ -45,8 +45,10 @@
 		@include neueHaasGroMedium;
 		text-decoration: underline;
 		color: $color--primary;
+		background: unset;
 		&:hover {
-			color: $color--tertiary;
+			color: $color--secondary;
+			background: unset;
 		}
 	}
 	& span i {
@@ -67,16 +69,6 @@
 				margin-bottom: 8px;
 				color: $color--primary;
 				line-height: 1.5;
-				& a {
-					@include neueHaasGroBold;
-					text-decoration: none;
-					color: $color--primary;
-					background: rgba($color--secondary, 0.33);
-					&:hover {
-						color: $color--primary;
-						background: rgba($color--secondary, 0.66);
-					}
-				}
 			}
 		}
 	}

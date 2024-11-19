@@ -98,20 +98,22 @@ p {
   margin-bottom: 2rem; }
   p:last-child {
     margin-bottom: 0; }
-  p a {
-    transition: 0.4s;
-    font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #000C16;
-    text-decoration: underline; }
-    p a:hover {
-      color: #FF8478; }
   p.atmAdditional {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.3rem !important; }
+
+a {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  color: #000C16;
+  background: rgba(64, 211, 193, 0.33); }
+  a:hover {
+    color: #000C16;
+    background: rgba(64, 211, 193, 0.66); }
 
 strong {
   font-family: neue-haas-grotesk-text, sans-serif;
@@ -126,7 +128,7 @@ li {
 
 code {
   color: #FF8478;
-  background: rgba(0, 12, 22, 0.03); }
+  background: rgba(0, 12, 22, 0.07); }
 
 .ut--uc {
   font-family: neue-haas-grotesk-text, sans-serif;
@@ -279,12 +281,15 @@ nav.navbar {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    background: unset;
     color: #fff;
     margin-bottom: 0; }
   nav.navbar h1 a.navbar-brand:hover {
     color: #FF8478; }
   nav.navbar img, nav.navbar a img {
     width: 200px; }
+  nav.navbar a {
+    background: unset; }
   nav.navbar ul.navbar-nav li.menu-item a.nav-link {
     font-family: neue-haas-grotesk-text, sans-serif;
     font-weight: 500;
@@ -292,12 +297,15 @@ nav.navbar {
     text-transform: uppercase;
     letter-spacing: 0.3em;
     transition: 0.4s;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    background: unset;
+    color: #fff; }
     nav.navbar ul.navbar-nav li.menu-item a.nav-link:link {
       color: #fff; }
     nav.navbar ul.navbar-nav li.menu-item a.nav-link:visited {
       color: #fff; }
     nav.navbar ul.navbar-nav li.menu-item a.nav-link:hover {
+      background: unset;
       color: #FF8478; }
     nav.navbar ul.navbar-nav li.menu-item a.nav-link:active {
       color: #fff; }
@@ -378,6 +386,9 @@ nav.navbar {
     .offcanvas.offcanvas-end li.current-menu-item a, .offcanvas.offcanvas-end li.current-menu-item:hover a {
       color: #FF8478; } }
 
+.current_page_item a {
+  color: #FF8478 !important; }
+
 .org--content-default {
   padding: 2rem 0; }
 
@@ -446,9 +457,11 @@ nav.navbar {
     font-weight: 500;
     font-style: normal;
     text-decoration: underline;
-    color: #000C16; }
+    color: #000C16;
+    background: unset; }
     .mol--single-breadcrumb a:hover {
-      color: #FF8478; }
+      color: #40D3C1;
+      background: unset; }
   .mol--single-breadcrumb span i {
     margin-right: 0.5rem; }
 
@@ -469,16 +482,6 @@ nav.navbar {
   margin-bottom: 8px;
   color: #000C16;
   line-height: 1.5; }
-  .mol--single-content .mol--single-navigation ul.atm--single-navitem li a, .mol--single-content .mol--single-navigation ol.atm--single-navitem li a {
-    font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    color: #000C16;
-    background: rgba(64, 211, 193, 0.33); }
-    .mol--single-content .mol--single-navigation ul.atm--single-navitem li a:hover, .mol--single-content .mol--single-navigation ol.atm--single-navitem li a:hover {
-      color: #000C16;
-      background: rgba(64, 211, 193, 0.66); }
 
 .mol--single-content .mol--single-tldr {
   padding: 2rem 1rem;
@@ -529,9 +532,11 @@ footer {
     font-style: normal;
     color: #fff;
     text-decoration: underline 2px;
-    letter-spacing: 0.05em; }
+    letter-spacing: 0.05em;
+    background: unset; }
     footer a:hover {
       cursor: pointer;
+      background: unset;
       color: #fff; }
     footer a i {
       color: #fff;
@@ -1030,16 +1035,6 @@ p.norm {
     color: #FF8478; }
   .org--content-getstarted .org--gs-item i.fa-sharp, .org--content-getstarted .org--gs-item i.fa-kit {
     margin-right: 1rem; }
-  .org--content-getstarted .org--gs-item a {
-    font-family: neue-haas-grotesk-text, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-decoration: none;
-    color: #000C16;
-    background: rgba(64, 211, 193, 0.33); }
-    .org--content-getstarted .org--gs-item a:hover {
-      color: #000C16;
-      background: rgba(64, 211, 193, 0.66); }
 
 @media (min-width: 992px) {
   .org--content-getstarted .org--gs-item {
@@ -1095,13 +1090,6 @@ p.norm {
       font-size: 1.8rem; }
     .org--content-roadmap .org--rm--item .mol--rm--inner h5 {
       color: #FF8478; }
-    .org--content-roadmap .org--rm--item .mol--rm--inner a {
-      font-family: neue-haas-grotesk-text, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      color: #2cbeac; }
-      .org--content-roadmap .org--rm--item .mol--rm--inner a:hover {
-        color: #000C16; }
 
 @media (min-width: 992px) {
   .org--content-roadmap .org--rm--item .mol--rm--inner {

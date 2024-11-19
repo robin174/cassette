@@ -7,6 +7,7 @@ nav.navbar {
 	padding: $padding--general 0;
 	& h1, h1 a.navbar-brand {
 		@include headingUC(0.9rem);
+		background: unset;
 		color: $color--white;
 		margin-bottom: 0;
 	}
@@ -17,9 +18,17 @@ nav.navbar {
 	& img, & a img {
 		width: 200px;
 	}
+	& a {
+		background: unset;
+	}
 	& ul.navbar-nav {
 		& li.menu-item {
 			a.nav-link {
+				@include navigationUC;
+				transition: $base--transition;
+				font-size: 0.9rem;
+				background: unset;
+				color: $color--white;
 				&:link {
 					color: $color--white;
 				}
@@ -27,6 +36,7 @@ nav.navbar {
 					color: $color--white;
 				}
 				&:hover {
+					background: unset;
 					color: $color--tertiary;
 				}
 				&:active {
@@ -35,10 +45,6 @@ nav.navbar {
 				&:disabled {
 					color: rgba($color--white, 0.3);
 				}
-				@include navigationUC;
-				transition: $base--transition;
-				font-size: 0.9rem;
-				
 			}
 		}
 	}
@@ -146,4 +152,8 @@ nav.navbar {
 			color: $color--tertiary;
 		}
 	}
+}
+
+.current_page_item a {
+	color: $color--tertiary !important;
 }
