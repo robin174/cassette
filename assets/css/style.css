@@ -1046,21 +1046,34 @@ p.norm {
     .org--content-getstarted .org--gs-item h2 {
       font-size: 2rem; } }
 
-.mol--content-help span.atm--coming-soon {
-  font-family: neue-haas-grotesk-text, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.2rem; }
-  .mol--content-help span.atm--coming-soon i {
-    margin-right: 1rem; }
-
-.mol--content-help ul.mol--help-pages {
-  list-style: none;
-  padding-left: 1rem; }
-  .mol--content-help ul.mol--help-pages li {
-    margin-bottom: 0.5rem; }
-    .mol--content-help ul.mol--help-pages li i {
+.mol--content-help {
+  margin: 1rem 0; }
+  .mol--content-help .mol--help-cat {
+    margin-bottom: 2rem; }
+    .mol--content-help .mol--help-cat:last-child {
+      margin-bottom: 0; }
+  .mol--content-help span.atm--coming-soon {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem; }
+    .mol--content-help span.atm--coming-soon i {
       margin-right: 1rem; }
+  .mol--content-help ul.mol--help-pages {
+    list-style: none;
+    padding-left: 5px; }
+    .mol--content-help ul.mol--help-pages li {
+      margin-bottom: 0.5rem; }
+      .mol--content-help ul.mol--help-pages li:last-child {
+        margin-bottom: 0; }
+      .mol--content-help ul.mol--help-pages li i {
+        margin-right: 1rem; }
+
+@media (min-width: 992px) {
+  .mol--content-help {
+    margin: 2rem 0; }
+    .mol--content-help .mol--help-cat {
+      margin-bottom: 0; } }
 
 .org--content-roadmap .org--rm--item {
   padding-right: 1rem;

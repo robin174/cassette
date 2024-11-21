@@ -1,4 +1,11 @@
 .mol--content-help {
+	margin: $margin--small 0;
+	& .mol--help-cat {
+		margin-bottom: $margin--general;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 	& span.atm--coming-soon {
 		@include neueHaasGroMedium;
 		font-size: 1.2rem;
@@ -8,12 +15,24 @@
 	}
 	& ul.mol--help-pages {
 		list-style: none;
-		padding-left: 1rem;
+		padding-left: 5px;
 		& li {
 			margin-bottom: $margin--xsmall;
+			&:last-child {
+				margin-bottom: 0;
+			}
 			& i {
 				margin-right: $margin--small;
 			}
+		}
+	}
+}
+
+@media (min-width: $media-desktop) {
+	.mol--content-help {
+		margin: $margin--general 0;
+		& .mol--help-cat {
+			margin-bottom: 0;
 		}
 	}
 }
