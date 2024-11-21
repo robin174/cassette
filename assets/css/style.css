@@ -1274,9 +1274,11 @@ p.norm {
     color: #000C16; }
   .mol--post-callout a {
     color: #000C16;
-    text-decoration: underline; }
+    text-decoration: underline;
+    background: unset; }
     .mol--post-callout a:hover {
-      color: #40D3C1; }
+      color: rgba(0, 12, 22, 0.7);
+      background: unset; }
 
 .mol--post-break {
   margin-bottom: 2rem; }
