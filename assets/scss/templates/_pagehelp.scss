@@ -6,4 +6,14 @@
 			margin-right: $margin--small;
 		}
 	}
+	& ul.mol--help-pages {
+		list-style: none;
+		padding-left: 1rem;
+		& li {
+			margin-bottom: $margin--xsmall;
+			& i {
+				margin-right: $margin--small;
+			}
+		}
+	}
 }

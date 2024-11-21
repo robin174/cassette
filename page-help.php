@@ -30,9 +30,9 @@ get_header(); ?>
 							            $my_query = null;
 							            $my_query = new WP_Query($args);
 							            if(!empty($my_query->have_posts()) ) { ?>
-							            	<ul>
+							            	<ul class="mol--help-pages">
 									            <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-									            	<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+									            	<li><i class="fa-sharp fa-lg fa-solid fa-file-lines"></i><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
 								            	<?php endwhile; ?>
 											</ul>
 							            <?php } else { ?>
@@ -56,7 +56,7 @@ get_header(); ?>
 							            	<ul>
 									            <?php 
 									            while ($my_query->have_posts()) : $my_query->the_post(); ?>
-									            	<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+									            	<li><i class="fa-sharp fa-lg fa-solid fa-file-lines"></i><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
 									            <?php endwhile; ?>
 									        </ul>
 									    <?php } else { ?> 
@@ -80,7 +80,7 @@ get_header(); ?>
 							            	<ul>
 									            <?php 
 									            while ($my_query->have_posts()) : $my_query->the_post(); ?>
-									            	<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+									            	<li><i class="fa-sharp fa-lg fa-solid fa-file-lines"></i><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
 									            <?php endwhile; ?>
 									        </ul>
 									    <?php } else { ?> 

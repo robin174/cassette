@@ -1054,6 +1054,14 @@ p.norm {
   .mol--content-help span.atm--coming-soon i {
     margin-right: 1rem; }
 
+.mol--content-help ul.mol--help-pages {
+  list-style: none;
+  padding-left: 1rem; }
+  .mol--content-help ul.mol--help-pages li {
+    margin-bottom: 0.5rem; }
+    .mol--content-help ul.mol--help-pages li i {
+      margin-right: 1rem; }
+
 .org--content-roadmap .org--rm--item {
   padding-right: 1rem;
   padding-bottom: 2rem;
