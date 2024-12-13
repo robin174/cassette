@@ -1084,14 +1084,23 @@ p.norm:last-child {
 }
 
 .org--content-screenshot {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 .org--content-screenshot h2 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   line-height: 1.4;
 }
 
+@media (min-width: 992px) {
+  .org--content-screenshot {
+    padding: 4rem 0;
+  }
+  .org--content-screenshot h2 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}
 .org--content-welcome {
   background: linear-gradient(90deg, rgba(255, 95, 95, 0.3) 0%, rgba(255, 128, 120, 0.3) 25%, rgba(227, 189, 159, 0.3) 50%, rgba(64, 206, 188, 0.3) 75%, rgba(37, 131, 131, 0.3) 100%);
 }
@@ -1099,10 +1108,18 @@ p.norm:last-child {
   margin: 0;
   padding: 4rem 0;
 }
+.org--content-welcome h1 {
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
 
 @media (min-width: 992px) {
   .org--content-welcome .org--content-welcome-inner {
     padding: 10rem 0;
+  }
+  .org--content-welcome h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
   }
 }
 [class*=org--content-] p {

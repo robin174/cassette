@@ -1,8 +1,18 @@
 .org--content-screenshot {
-	padding: $padding--large 0;
+	padding: $padding--general 0;
 	& h2 {
 		text-align: center;
-		font-size: 1.8rem;
+		font-size: 1.2rem;
 		line-height: 1.4;
+	}
+}
+
+@media (min-width: $media-desktop) {
+	.org--content-screenshot {
+		padding: $padding--large 0;
+		& h2 {
+			font-size: 1.8rem;
+			line-height: 1.4;
+		}
 	}
 }

@@ -8,9 +8,9 @@
 						<!-- Introducing -->
 						<span class="introducing d-block"><?php the_field('intro_verb','option');?></span>
 						<!-- Logo -->
-						<img class="mw-100" style="width: 840px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-dk.svg" alt="Cassette logo">
+						<img class="mw-100" style="width: 720px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cassette-dk.svg" alt="Cassette logo">
 						<!-- Description -->
-						<h1 style="font-size:1.8rem;line-height: 1.4;"><?php the_field('intro_description','option');?></</h1>
+						<h1><?php the_field('intro_description','option');?></</h1>
 						<!-- Call to action button-->
 						<div style="margin-top: 20px;">
 							<a class="button atm--button-primary" href="/downloads">
