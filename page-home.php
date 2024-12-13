@@ -20,6 +20,10 @@ get_header(); ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
 					<?php get_template_part('template-parts/home-introduction'); ?>
 				<?php } ?>
+			<?php elseif(get_sub_field('ts_options') == 'screenshot') : ?>
+				<?php if(get_sub_field('ts_visible')) { ?>
+					<?php get_template_part('template-parts/home-screenshot'); ?>
+				<?php } ?>
 			<?php elseif(get_sub_field('ts_options') == 'origin') : ?>
 				<?php if(get_sub_field('ts_visible')) { ?>
 					<?php get_template_part('template-parts/home-origin'); ?>
