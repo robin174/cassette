@@ -28,8 +28,10 @@ get_header(); ?>
 			<div class="row justify-content-center">
 				<div class="col-11 col-xl-9 col-xxl-8">
 					
+					<!-- 
 					Mixtape image or jumbled cassette...etc<br>
 					Add to Site settings, options
+				-->
 
 					<div>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Return to Homepage<i class="far fa-long-arrow-right"></i></a>
