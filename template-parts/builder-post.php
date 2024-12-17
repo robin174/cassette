@@ -33,7 +33,7 @@
 						<figure class="atm--post-img">
 							<img class="mw-100" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
 							<?php if(get_sub_field('unit_image_caption')) : ?>
-								<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+								<figcaption class="atm--caption" style="margin-top: -30px;margin-left: 30px;"><?php the_sub_field('unit_image_caption'); ?></figcaption>
 							<?php endif; ?>
 						</figure>
 					</div>
@@ -48,12 +48,12 @@
 								<?php if(get_sub_field('unit_image_maxwidth')) : ?>
 									<img class="mw-100" style="width:<?php the_sub_field('unit_image_maxwidth'); ?>px" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
 									<?php if(get_sub_field('unit_image_caption')) : ?>
-										<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+										<figcaption class="atm--caption"><?php the_sub_field('unit_image_caption'); ?></figcaption>
 									<?php endif; ?>
 								<?php else : ?>
 									<img class="mw-100" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
 									<?php if(get_sub_field('unit_image_caption')) : ?>
-										<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+										<figcaption class="atm--caption"><?php the_sub_field('unit_image_caption'); ?></figcaption>
 									<?php endif; ?>
 								<?php endif; ?>
 							</figure>
@@ -62,12 +62,12 @@
 								<?php if(get_sub_field('unit_image_maxwidth')) : ?>
 									<img class="mw-100" style="width:<?php the_sub_field('unit_image_maxwidth'); ?>px" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
 									<?php if(get_sub_field('unit_image_caption')) : ?>
-										<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+										<figcaption class="atm--caption"><?php the_sub_field('unit_image_caption'); ?></figcaption>
 									<?php endif; ?>
 								<?php else : ?>
 									<img class="mw-100" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
 									<?php if(get_sub_field('unit_image_caption')) : ?>
-										<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+										<figcaption class="atm--caption"><?php the_sub_field('unit_image_caption'); ?></figcaption>
 									<?php endif; ?>
 								<?php endif; ?>
 							</figure>
@@ -82,7 +82,7 @@
 						<figure class="atm--post-img">
 							<img class="mw-100" src="<?php the_sub_field('unit_image'); ?>" alt="<?php the_sub_field('unit_image_caption'); ?>">
 							<?php if(get_sub_field('unit_image_caption')) : ?>
-								<figcaption><?php the_sub_field('unit_image_caption'); ?></figcaption>
+								<figcaption class="atm--caption-general"><?php the_sub_field('unit_image_caption'); ?></figcaption>
 							<?php endif; ?>
 						</figure>
 					</div>

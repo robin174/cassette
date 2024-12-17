@@ -45,7 +45,7 @@
 		}
 		& ul li, ol li {
 			font-size: 1.1rem;
-			@include neueHaasGroMedium;
+			@include neueHaasGroRoman;
 			color: $color--primary;
 			margin-bottom: 10px;
 		}
@@ -60,7 +60,14 @@
 	& figure.atm--post-img {
 		margin-bottom: $margin--general;
 		position: relative;
-		& figcaption {
+		& figcaption.atm--caption {
+			@include neueHaasGroMedium;
+			font-size: 0.9rem;
+			font-style: italic;
+			margin-top: 5px;
+			padding: 3px 0;
+		}
+		& figcaption.atm--caption-label {
 			@include neueHaasGroMedium;
 			position: absolute;
 			font-style: italic;
@@ -76,9 +83,12 @@
 			border-bottom-right-radius: 3px;
 		}
 	}
-	& figure.atm--post-img-outline {
+	& figure.atm--post-img-outline img {
 		border: 1px solid rgba(0,0,0,0.15);
 		box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	}
+	& div.atm--tape-general {
+		margin-bottom: $margin--small;
 	}
 }
 
