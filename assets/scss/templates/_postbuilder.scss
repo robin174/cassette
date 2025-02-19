@@ -54,6 +54,11 @@
 
 .mol--post-paragraph {
 	margin-bottom: $margin--general;
+	& p {
+		overflow-wrap: break-word;
+  		word-wrap: break-word;
+		word-break: break-word;
+	}
 }
 
 .mol--image-full {

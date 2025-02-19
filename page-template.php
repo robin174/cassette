@@ -12,7 +12,7 @@ get_header(); ?>
 		<section class="intro--test">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
-					<div class="col-11 col-xl-8 col-xxl-7">
+					<div class="col-11 col-lg-10 col-xxl-8">
 						<section class="mol--content-introduction">
 							<h1><?php the_field('atm_page_name'); ?></h1>
 							<p><?php the_field('atm_page_intro'); ?></p>

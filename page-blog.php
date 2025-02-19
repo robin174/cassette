@@ -14,7 +14,7 @@ get_header(); ?>
 		<section class="mol--content-blog">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
-					<div class="col-11 col-lg-10 col-xxl-9">
+					<div class="col-11 col-lg-10 col-xxl-8">
 						
 						<div class="row g-0">
 							<?php

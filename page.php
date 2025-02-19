@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-<section class="templ--page-main">
+<div class="templ--page-main">
 
 	<?php /* This page is not properly organised inline with the rest of the website*/ ?>
 	<?php if (is_page('Inst')) { ?>
@@ -97,6 +97,6 @@ get_header(); ?>
 		</section>
 	<?php } ?>
 
-</section>
+</div>
 
 <?php get_footer(); ?>

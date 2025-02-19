@@ -1507,6 +1507,11 @@ p.norm:last-child {
 .mol--post-paragraph {
   margin-bottom: 2rem;
 }
+.mol--post-paragraph p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
 
 .mol--image-full figure.atm--post-img {
   margin-bottom: 2rem;
